@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Jewellery shop</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="preload" href="fonts/cormorantgaramond-italic.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/cormorantgaramond-semibold.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/cormorantgaramond-bold.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/poppins-regular.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/poppins-medium.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/poppins-bold.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="css/style.min.css" as="style">
+  <!--<link rel="preload" href="js/main.js" as="script" />-->
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <header class="page-header container">
+      <div>
+        <button class="page-header__burger-menu burger-menu burger-menu--nojs">
+          <svg width="25" height="16">
+            <use xlink:href="img/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <form action="https://echo.htmlacademy.ru" method="post" class="page-header__search search__form form">
+        <div>
+          <input tabindex="0" class="form__field" type="text" value="" placeholder="Type here to search">
+        </div>
+      </form>
+
+      <div class="page-header__logo logo">
+        <img src="img/logo.svg" width="66" height="66" alt="Логотип магазина ювелирных украшений">
+      </div>
+
+      <div>
+        <button class="page-header__login login-btn">Login</button>
+      </div>
+
+      <div>
+        <a href="login.html">Cart 0</a>
+        <svg width="18" height="16">
+          <use xlink:href="img/sprite.svg#icon-cart"></use>
+        </svg>
+      </div>
+
+      <nav class="page-header__nav navigation">
+        <ul class="navigation__jewellery">
+          <li><a href="#">What’s new</a></li>
+          <li><a href="#">Chokers</a></li>
+          <li><a href="#">Necklaces</a></li>
+          <li><a href="#">Rings</a></li>
+          <li><a href="#">Earrings</a></li>
+        </ul>
+        <ul class="navigation__links">
+          <li><a href="#">About CH</a></li>
+          <li><a href="#">Stores & Hours</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <section class="intro">
+        <h1>PERFECTION</h1>
+        <p>made to be yours</p>
+      </section>
+      <section class="newin">
+        <h2>New In</h2>
+        <p><a href="catalog.html">Shop now</a></p>
+        <!-- Swiper -->
+        <div class="newin__slider slider swiper-container">
+          <div class="slider__wrapper swiper-wrapper">
+            <div class="slider__item swiper-slide">Slide 1</div>
+            <div class="slider__item swiper-slide">Slide 2</div>
+            <div class="slider__item swiper-slide">Slide 3</div>
+            <div class="slider__item swiper-slide">Slide 4</div>
+            <div class="slider__item swiper-slide">Slide 5</div>
+            <div class="slider__item swiper-slide">Slide 6</div>
+            <div class="slider__item swiper-slide">Slide 7</div>
+            <div class="slider__item swiper-slide">Slide 8</div>
+            <div class="slider__item swiper-slide">Slide 9</div>
+            <div class="slider__item swiper-slide">Slide 10</div>
+            <div class="slider__item swiper-slide">Slide 11</div>
+            <div class="slider__item swiper-slide">Slide 12</div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="slider__pagination swiper-pagination"></div>
+          <!-- Add Arrows -->
+          <div class="slider__buttons">
+            <div class="review__button-prev swiper-button-prev">
+              <svg width="29" height="9">
+                <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+              </svg>
+            </div>
+            <div class="review__button-next swiper-button-next">
+              <svg width="29" height="9">
+                <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="blog container">
+        <h2>Blog</h2>
+        <a href="#">Read all</a>
+        <div class="blog__wrapper">
+          <article class="blog__article article">
+            <picture>
+          <!-- 1х: 290px; 2x: 580px -->
+          <source type="image/webp" media="(max-width: 767px)" srcset="img/blog-care-mobile@1x.webp 1x, img/blog-care-mobile@2x.webp 2x">
+          <!-- 1х: 339px; 2x: 678px -->
+          <source type="image/webp" media="(max-width: 1023px)" srcset="img/blog-care-tablet@1x.webp 1x, img/blog-care-tablet@2x.webp 2x">
+          <!-- 1х: 285px; 2x: 570px -->
+          <source type="image/webp" srcset="img/blog-care-desktop.webp 1x, img/blog-care-desktop.webp 2x">
+          <!-- 1х: 285px; 2x: 570px -->
+          <img data-src="img/blog-care-desktop.jpg" src="img/blog-care-desktop.jpg" srcset="img/blog-care-desktop@2x.jpg 2x" alt="как заботиться об украшениях" width="285" height="300" loading="lazy" class="lazyload">
+        </picture>
+        <div class="article__description">
+          <time datetime="2019-09-30">September 30, 2019</time>
+          <h3>How to care for your jewellery</h3>
+          <a href="#">Read Article</a>
+        </div>
+      </article>
+      <article class="blog__article article">
+        <picture>
+          <!-- 1х: 290px; 2x: 580px -->
+          <source type="image/webp" media="(max-width: 767px)" srcset="img/blog-power-mobile@1x.webp 1x, img/blog-power-mobile@2x.webp 2x">
+          <!-- 1х: 339px; 2x: 678px -->
+          <source type="image/webp" media="(max-width: 1023px)" srcset="img/blog-power-tablet@1x.webp 1x, img/blog-power-tablet@2x.webp 2x">
+          <!-- 1х: 285px; 2x: 570px -->
+          <source type="image/webp" srcset="img/blog-power-desktop.webp 1x, img/blog-power-desktop.webp 2x">
+          <!-- 1х: 285px; 2x: 570px -->
+          <img data-src="img/blog-power-desktop.jpg" src="img/blog-power-desktop.jpg" srcset="img/blog-power-desktop@2x.jpg 2x" alt="сила кристаллов" width="285" height="300" loading="lazy" class="lazyload">
+        </picture>
+        <div class="article__description">
+          <time datetime="2019-09-23">September 23, 2019</time>
+          <h3>Power of crystals</h3>
+          <a href="#">Read Article</a>
+        </div>
+      </article>
+      <article class="blog__article article">
+        <picture>
+          <!-- 1х: 290px; 2x: 580px -->
+          <source type="image/webp" media="(max-width: 767px)" srcset="img/blog-trends-mobile@1x.webp 1x, img/blog-trends-mobile@2x.webp 2x">
+          <!-- 1х: 339px; 2x: 678px -->
+          <source type="image/webp" media="(max-width: 1023px)" srcset="img/blog-trends-tablet@1x.webp 1x, img/blog-trends-tablet@2x.webp 2x">
+          <!-- 1х: 570px; 2x: 1140px -->
+          <source type="image/webp" srcset="img/blog-trends-desktop.webp 1x, img/blog-trends-desktop.webp 2x">
+          <!-- 1х: 570px; 2x: 1140px -->
+          <img data-src="img/blog-trends-desktop.jpg" src="img/blog-trends-desktop.jpg" srcset="img/blog-trends-desktop@2x.jpg 2x" alt="тренды осень-зима 2019 года" width="570" height="630" loading="lazy" class="lazyload">
+        </picture>
+        <div class="article__description">
+          <time datetime="2019-09-23">September 16, 2019</time>
+          <h3>AW 19 trends</h3>
+          <a href="#">Read Article</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="faq container">
+    <h2>Frequently asked questions</h2>
+    <div id="accordion" class="faq__accordion accordion">
+      <div class="accordion__item">
+        <button class="accordion__item-trigger" rel="tab1" aria-label="What materials are the jewellery made of?">
+          What materials are the jewellery made of?
+          <svg class="accordion__item-svg" width="15" height="8">
+            <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+          </svg>
+        </button>
+        <div class="accordion__item-content" id="tab1">
+          Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.
+        </div>
+      </div>
+      <div class="accordion__item">
+        <button class="accordion__item-trigger" rel="tab2" aria-label="What materials are the jewellery made of?">
+          Which countries do you deliver to?
+          <svg class="accordion__item-svg" width="15" height="8">
+            <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+          </svg>
+        </button>
+        <div class="accordion__item-content" id="tab2">
+          We currently offer online delivery services to customers in the United States, United Kingdom, France and the EU. To shop online for one of these countries, use the country selector located in our footer to set the website to your shipping country.
+        </div>
+      </div>
+      <div class="accordion__item">
+        <button class="accordion__item-trigger" rel="tab3" aria-label="What materials are the jewellery made of?">
+          What are the payment methods?
+          <svg class="accordion__item-svg" width="15" height="8">
+            <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+          </svg>
+        </button>
+        <div class="accordion__item-content" id="tab3">
+          Accepted Payment Methods: Paypal.
+          We're sorry, we do not accept: CODs, Layaway plans, Personal Checks, Money Orders, Credit Cards with billing addresses outside of the United States.
+          For your security, your billing name and address must match that of the credit card used for payment. We reserve the right ot cancel any order that does not match these criteria.
+        </div>
+      </div>
+      <div class="accordion__item">
+        <button class="accordion__item-trigger" rel="tab4" aria-label="What materials are the jewellery made of?">
+          Can I return the jewellery if it didn’t fit me?
+          <svg class="accordion__item-svg" width="15" height="8">
+            <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+          </svg>
+        </button>
+        <div class="accordion__item-content" id="tab4">
+          If you received the item as a gift or wish to exchange it for another item, directions will be provided. Only products purchased on CH.com may be returned. Please note that items from the Desert Gems collection (i.e. Venus, Day&Night, The Moon) are final sale and cannot be returned.
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section class="gallery">
+      <h2>@Chjewellery</h2>
+      <a href="#">Follow us</a>
+      <div class="gallery__wrapper">
+        <a href="#">
+          <picture>
+            <!-- 1х: 130px; 2x: 260px -->
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/1-inst-1-mobile.webp 1x, img/1-inst-1-mobile@2x.webp 2x">
+            <!-- 1х: 133px; 2x: 266px -->
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/1-inst-1-tablet.webp 1x, img/1-inst-1-tablet@2x.webp 2x">
+            <!-- 1х: 230px; 2x: 460px -->
+            <source type="image/webp" srcset="img/1-inst-1-desktop.webp 1x, img/1-inst-1-desktop.webp 2x">
+            <!-- 1х: 230px; 2x: 460px -->
+            <img data-src="img/1-inst-1-desktop.jpg" src="img/1-inst-1-desktop.jpg" srcset="img/1-inst-1-desktop@2x.jpg 2x" alt="изображение 1 в инстаграме" width="230" height="230" loading="lazy" class="lazyload">
+          </picture>
+        </a>
+        <a href="#">
+          <picture>
+            <!-- 1х: 130px; 2x: 260px -->
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/2-inst-1-mobile.webp 1x, img/2-inst-1-mobile@2x.webp 2x">
+            <!-- 1х: 133px; 2x: 266px -->
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/2-inst-1-tablet.webp 1x, img/2-inst-1-tablet@2x.webp 2x">
+            <!-- 1х: 230px; 2x: 460px -->
+            <source type="image/webp" srcset="img/2-inst-1-desktop.webp 1x, img/2-inst-1-desktop.webp 2x">
+            <!-- 1х: 230px; 2x: 460px -->
+            <img data-src="img/2-inst-1-desktop.jpg" src="img/2-inst-1-desktop.jpg" srcset="img/2-inst-1-desktop@2x.jpg 2x" alt="изображение 2 в инстаграме" width="230" height="154" loading="lazy" class="lazyload">
+          </picture>
+        </a>
+        <a href="#">
+          <picture>
+            <!-- 1х: 145px; 2x: 290px -->
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/3-inst-1-mobile.webp 1x, img/3-inst-1-mobile@2x.webp 2x">
+            <!-- 1х: 231px; 2x: 462px -->
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/3-inst-1-tablet.webp 1x, img/3-inst-1-tablet@2x.webp 2x">
+            <!-- 1х: 400px; 2x: 800px -->
+            <source type="image/webp" srcset="img/3-inst-1-desktop.webp 1x, img/3-inst-1-desktop.webp 2x">
+            <!-- 1х: 400px; 2x: 800px -->
+            <img data-src="img/3-inst-1-desktop.png" src="img/3-inst-1-desktop.png" srcset="img/3-inst-1-desktop@2x.png 2x" alt="изображение 3 в инстаграме" width="400" height="414" loading="lazy" class="lazyload">
+          </picture>
+        </a>
+        <a href="#">
+          <picture>
+            <!-- 1х: 145px; 2x: 290px -->
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/4-inst-1-mobile.webp 1x, img/4-inst-1-mobile@2x.webp 2x">
+            <!-- 1х: 134px; 2x: 268px -->
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/4-inst-1-tablet.webp 1x, img/4-inst-1-tablet@2x.webp 2x">
+            <!-- 1х: 232px; 2x: 464px -->
+            <source type="image/webp" srcset="img/4-inst-1-desktop.webp 1x, img/4-inst-1-desktop.webp 2x">
+            <!-- 1х: 232px; 2x: 464px -->
+            <img data-src="img/4-inst-1-desktop.png" src="img/4-inst-1-desktop.png" srcset="img/4-inst-1-desktop@2x.png 2x" alt="изображение 4 в инстаграме" width="232" height="193" loading="lazy" class="lazyload">
+          </picture>
+        </a>
+        <a href="#">
+          <picture>
+            <!-- 1х: 130x; 2x: 260px -->
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/5-inst-1-mobile.webp 1x, img/5-inst-1-mobile@2x.webp 2x">
+            <!-- 1х: 126px; 2x: 252px -->
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/5-inst-1-tablet.webp 1x, img/5-inst-1-tablet@2x.webp 2x">
+            <!-- 1х: 218px; 2x: 436px -->
+            <source type="image/webp" srcset="img/5-inst-1-desktop.webp 1x, img/5-inst-1-desktop.webp 2x">
+            <!-- 1х: 218px; 2x: 436px -->
+            <img data-src="img/5-inst-1-desktop.png" src="img/5-inst-1-desktop.png" srcset="img/5-inst-1-desktop@2x.png 2x" alt="изображение 5 в инстаграме" width="218" height="191" loading="lazy" class="lazyload">
+          </picture>
+        </a>
+        <a href="#">
+          <picture>
+            <!-- 1х: 130x; 2x: 260px -->
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/6-inst-1-mobile.webp 1x, img/6-inst-1-mobile@2x.webp 2x">
+            <!-- 1х: 126px; 2x: 252px -->
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/6-inst-1-tablet.webp 1x, img/6-inst-1-tablet@2x.webp 2x">
+            <!-- 1х: 218px; 2x: 436px -->
+            <source type="image/webp" srcset="img/6-inst-1-desktop.webp 1x, img/6-inst-1-desktop.webp 2x">
+            <!-- 1х: 218px; 2x: 436px -->
+            <img data-src="img/6-inst-1-desktop.png" src="img/6-inst-1-desktop.png" srcset="img/6-inst-1-desktop@2x.png 2x" alt="изображение 6 в инстаграме" width="218" height="218" loading="lazy" class="lazyload">
+          </picture>
+        </a>
+        <a href="#">
+          <picture>
+            <!-- 1х: 130x; 2x: 260px -->
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/7-inst-1-mobile.webp 1x, img/7-inst-1-mobile@2x.webp 2x">
+            <!-- 1х: 134px; 2x: 268px -->
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/7-inst-1-tablet.webp 1x, img/7-inst-1-tablet@2x.webp 2x">
+            <!-- 1х: 232px; 2x: 464px -->
+            <source type="image/webp" srcset="img/7-inst-1-desktop.webp 1x, img/7-inst-1-desktop.webp 2x">
+            <!-- 1х: 232px; 2x: 464x -->
+            <img data-src="img/7-inst-1-desktop.png" src="img/7-inst-1-desktop.png" srcset="img/7-inst-1-desktop@2x.png 2x" alt="изображение 7 в инстаграме" width="232" height="166" loading="lazy" class="lazyload">
+          </picture>
+        </a>
+      </div>
+    </section>
+    </main>
+
+    <footer class="page-footer container">
+      <section class="page-header__form-container">
+        <h2>The good stuff in your inbox </h2>
+        <p>News and updates from CH. No spam, we promise.</p>
+        <form action="https://echo.htmlacademy.ru" method="post" class="page-header__search search__form form">
+          <div>
+            <input tabindex="0" class="form__field" type="email" value="" placeholder="Your E-mail">
+            <button>Sign up
+              <svg width="29" height="9">
+                <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </section>
+        <div class="page-footer__service service">
+          <a href="#">Ordering & Payment</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Returns & Exchanges</a>
+          <a href="#">Delivery</a>
+        </div>
+        <div class="page-footer__information information">
+          <a href="#">About CH</a>
+          <a href="#">Stores & Hours</a>
+          <a href="#">Jobs</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <ul class="page-footer__social-list social-list">
+          <li>
+            <a href="https://facebook.com/" aria-label="facebook" class="page-footer__social-link">
+              <svg width="8" height="15">
+                <use xlink:href="img/sprite.svg#icon-fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com/" aria-label="instagram" class="page-footer__social-link">
+              <svg width="15" height="15">
+                <use xlink:href="img/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://pinterest.com/" aria-label="pinterest" class="page-footer__social-link">
+              <svg width="15" height="15">
+                <use xlink:href="img/sprite.svg#icon-pinterest"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/" aria-label="twitter" class="page-footer__social-link">
+              <svg width="15" height="13">
+                <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+    </footer>
+  </div>
+
+  <!-- Swiper JS -->
+  <!--<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="js/main.min.js"></script>
+  <script src="js/vendor.min.js" defer=""></script>-->
+
+</body>
+
+</html>

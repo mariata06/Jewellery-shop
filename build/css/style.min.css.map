@@ -1,0 +1,1 @@
+{"version":3,"sources":["blocks/_page-header.scss"],"names":[],"mappings":"AAAA,Y,CACE,sB","file":"style.min.css","sourcesContent":[".page-header {\n  background-color: green;\n}\n"]}
