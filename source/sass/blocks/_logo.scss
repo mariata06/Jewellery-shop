@@ -1,0 +1,44 @@
+.logo {
+  width: 10%;
+  margin-bottom: 44px;
+  text-align: center;
+
+  @media (max-width: $max-tablet-width) {
+    width: 10%;
+    margin: 0 auto;
+  }
+}
+
+.logo__beige {
+  display: block;
+
+  @media (max-width: $max-tablet-width) {
+    display: block;
+
+    &--nojs {
+      display: none;
+    }
+
+    &--show {
+      display: block;
+    }
+
+    &--hide {
+      display: none;
+    }
+  }
+}
+
+.logo__white {
+  display: none;
+
+  @media (max-width: $max-tablet-width) {
+    &--nojs {
+      display: block;
+    }
+
+    &--show {
+      display: block;
+    }
+  }
+}

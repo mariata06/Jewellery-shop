@@ -1,3 +1,93 @@
 .page-header {
-  background-color: green;
+  background-color: $white;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 41px 98px 25px 98px;
+  align-items: center;
+
+  a {
+    color: $black;
+  }
+
+  @media (max-width: $max-tablet-width) {
+    padding: 30px 45px;
+    justify-content: space-between;
+
+    &--nojs {
+      background-color: $beige;
+    }
+
+    &--show {
+      background-color: $beige;
+    }
+  }
+
+  @media (max-width: $max-mobile-width) {
+    padding: 20px 15px;
+  }
+}
+
+.page-header__burger-menu {
+  display: none;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding: 0;
+
+  @media (max-width: $max-tablet-width) {
+    display: block;
+  }
+}
+
+.page-header__login {
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+  color: $black;
+  padding: 0;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+
+  @media (max-width: $max-tablet-width) {
+    width: 100%;
+    order: 5;
+    text-align: left;
+    font-size: 18px;
+    line-height: 23px;
+    display: none;
+
+    &--nojs {
+      display: block;
+    }
+
+    &--show {
+      display: block;
+    }
+  }
+}
+
+.page-header__cart {
+  margin-left: 35px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+
+  @media (max-width: $max-tablet-width) {
+    margin-left: 0;
+  }
+
+  svg {
+    display: none;
+
+    @media (max-width: $max-tablet-width) {
+      display: block;
+    }
+  }
+
+  a {
+    @media (max-width: $max-tablet-width) {
+      display: none;
+    }
+  }
 }

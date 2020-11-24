@@ -1,0 +1,75 @@
+.navigation {
+  width: 100%;
+
+  @media (max-width: $max-tablet-width) {
+    order: 4;
+    display: none;
+
+    &--nojs {
+      display: block;
+
+      li {
+        color: $white;
+      }
+    }
+
+    &--show {
+      display: block;
+
+      li {
+        color: $white;
+      }
+    }
+  }
+}
+
+.navigation__jewellery,
+.navigation__links {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+
+  @media (max-width: $max-tablet-width) {
+    justify-content: left;
+  }
+}
+
+.navigation__jewellery {
+  @media (max-width: $max-tablet-width) {
+    display: block;
+  }
+
+  li {
+    margin-right: 35px;
+
+    @media (max-width: $max-tablet-width) {
+      margin-bottom: 40px;
+      font-size: 24px;
+      line-height: 36px;
+      margin-right: 0;
+    }
+  }
+
+  a {
+    font-weight: 500;
+  }
+}
+
+.navigation__links {
+  display: none;
+
+  @media (max-width: $max-tablet-width) {
+    display: block;
+  }
+
+  li {
+    @media (max-width: $max-tablet-width) {
+      font-size: 18px;
+      line-height: 23px;
+      margin-bottom: 40px;
+      font-weight: 500;
+    }
+  }
+}

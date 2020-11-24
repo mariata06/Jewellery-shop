@@ -1,9 +1,13 @@
-//@import "variables";
-//@import "base";
-//@import "typography";
+@import "variables";
+@import "base";
+@import "typography";
 //@import "mixins";
 @import "blocks/page-header";
-
+@import "blocks/container";
+@import "blocks/navigation";
+@import "blocks/search-form";
+@import "blocks/intro";
+@import "blocks/logo";
 /*
 @import "blocks/popup";
 @import "blocks/overlay";
@@ -21,6 +25,5 @@
 @import "blocks/review";
 @import "blocks/contacts";
 @import "blocks/page-footer";
-@import "blocks/container";
 @import "blocks/error-message";
 */
