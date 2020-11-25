@@ -1,0 +1,21 @@
+.accordion__item-content {
+  display: none;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  &--show {
+    display: flex;
+  }
+}
+
+.accordion__item {
+  &--active {
+    .accordion__item-content {
+      display: flex;
+    }
+
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+}

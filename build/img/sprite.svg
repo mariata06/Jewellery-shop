@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-arrow-down" viewBox="0 0 17 10">
-<path d="M1 1L8.5 9L16 1" stroke="#A87B62"/>
+<path d="M1 1L8.5 9L16 1" fill="none" stroke="#A87B62"/>
 </symbol><symbol id="icon-arrow-left-big" viewBox="0 0 37 17">
 <path d="M37 8.5L1 8.5M1 8.5L10.2703 16M1 8.5L10.2703 1" stroke="#A87B62"/>
 </symbol><symbol id="icon-arrow-left" viewBox="0 0 30 11">

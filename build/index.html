@@ -55,11 +55,11 @@
 
       <nav class="page-header__navigation navigation navigation--nojs">
         <ul class="navigation__jewellery">
-          <li><a href="#">What’s new</a></li>
-          <li><a href="#">Chokers</a></li>
-          <li><a href="#">Necklaces</a></li>
-          <li><a href="#">Rings</a></li>
-          <li><a href="#">Earrings</a></li>
+          <li><a href="catalog.html">What’s new</a></li>
+          <li><a href="catalog.html">Chokers</a></li>
+          <li><a href="catalog.html">Necklaces</a></li>
+          <li><a href="catalog.html">Rings</a></li>
+          <li><a href="catalog.html">Earrings</a></li>
         </ul>
         <ul class="navigation__links">
           <li><a href="#">About CH</a></li>
@@ -70,10 +70,12 @@
     </header>
 
     <main class="page-main">
-      <section class="intro container">
-        <div class="intro__overlay">
+      <section class="intro">
+        <div class="intro__content container">
           <h1>PERFECTION</h1>
           <p>made to be yours</p>
+        </div>
+        <div class="intro__overlay">
         </div>
       </section>
       <section class="newin container">
@@ -314,63 +316,67 @@
     </section>
     </main>
 
-    <footer class="page-footer container">
-      <section class="page-footer__form-container">
-        <h2>The good stuff in your inbox </h2>
-        <p>News and updates from CH. No spam, we promise.</p>
-        <form action="https://echo.htmlacademy.ru" method="post" class="page-header__search search__form form">
-          <div>
-            <input tabindex="0" class="form__field" type="email" value="" placeholder="Your E-mail">
-            <button>Sign up
-              <svg width="29" height="9">
-                <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
-              </svg>
-            </button>
+    <footer class="page-footer">
+      <div class="page-footer__content container">
+        <section class="page-footer__form-container">
+          <h2>The good stuff in&nbsp;your inbox </h2>
+          <p>News and updates from CH. No&nbsp;spam, we promise.</p>
+          <form action="https://echo.htmlacademy.ru" method="post" class="page-footer__email email">
+              <input tabindex="0" type="email" value="" placeholder="Your E-mail">
+              <button>Sign Up
+                <svg width="29" height="9">
+                  <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+                </svg>
+              </button>
+          </form>
+        </section>
+          <div class="page-footer__service service">
+            <a href="#">Ordering & Payment</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Returns & Exchanges</a>
+            <a href="#">Delivery</a>
           </div>
-        </form>
-      </section>
-        <div class="page-footer__service service">
-          <a href="#">Ordering & Payment</a>
-          <a href="#">Terms & Conditions</a>
-          <a href="#">Returns & Exchanges</a>
-          <a href="#">Delivery</a>
-        </div>
-        <div class="page-footer__information information">
-          <a href="#">About CH</a>
-          <a href="#">Stores & Hours</a>
-          <a href="#">Jobs</a>
-          <a href="#">Contact Us</a>
-        </div>
-        <ul class="page-footer__social-list social-list">
-          <li>
-            <a href="https://facebook.com/" aria-label="facebook" class="page-footer__social-link">
-              <svg width="8" height="15">
-                <use xlink:href="img/sprite.svg#icon-fb"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="https://instagram.com/" aria-label="instagram" class="page-footer__social-link">
-              <svg width="15" height="15">
-                <use xlink:href="img/sprite.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="https://pinterest.com/" aria-label="pinterest" class="page-footer__social-link">
-              <svg width="15" height="15">
-                <use xlink:href="img/sprite.svg#icon-pinterest"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/" aria-label="twitter" class="page-footer__social-link">
-              <svg width="15" height="13">
-                <use xlink:href="img/sprite.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+          <div class="page-footer__information information">
+            <a href="#">About CH</a>
+            <a href="#">Stores & Hours</a>
+            <a href="#">Jobs</a>
+            <a href="#">Contact Us</a>
+          </div>
+          <ul class="page-footer__social-list social-list">
+            <li>
+              <a href="https://facebook.com/" aria-label="facebook" class="page-footer__social-link">
+                <svg width="8" height="15">
+                  <use xlink:href="img/sprite.svg#icon-fb"></use>
+                </svg>
+                <span>Facebook</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com/" aria-label="instagram" class="page-footer__social-link">
+                <svg width="15" height="15">
+                  <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                </svg>
+                <span>Instagram</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://pinterest.com/" aria-label="pinterest" class="page-footer__social-link">
+                <svg width="15" height="15">
+                  <use xlink:href="img/sprite.svg#icon-pinterest"></use>
+                </svg>
+                <span>Pinterest</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/" aria-label="twitter" class="page-footer__social-link">
+                <svg width="15" height="13">
+                  <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                </svg>
+                <span>Twitter</span>
+              </a>
+            </li>
+          </ul>
+      </div>
     </footer>
   </div>
 

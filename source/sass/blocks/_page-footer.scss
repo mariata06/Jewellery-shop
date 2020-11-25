@@ -1,0 +1,137 @@
+.page-footer {
+  background-color: $trueblack;
+}
+
+.page-footer__content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 100px 98px;
+  align-items: stretch;
+  color: $white;
+
+  @media (max-width: $max-tablet-width) {
+    padding: 60px 45px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    padding: 60px 15px;
+  }
+
+  h2 {
+    margin: 0;
+    font-family: "cormorantgaramond", "Arial", sans-serif;
+    font-size: 34px;
+    line-height: 44px;
+    font-weight: 700;
+    letter-spacing: 3px;
+  }
+
+  p {
+    line-height: 21px;
+    margin: 0;
+    color: $medium-grey;
+
+    @media (max-width: $max-tablet-width) {
+      margin-bottom: 50px;
+    }
+
+    @media (max-width: $max-mobile-width) {
+      line-height: 22px;
+    }
+  }
+}
+
+.page-footer__service,
+.page-footer__information,
+.page-footer__social-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-footer__service a,
+.page-footer__information a,
+.page-footer__social-list a {
+  color: $white;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.page-footer__service a:last-child,
+.page-footer__information a:last-child,
+.page-footer__social-list li:last-child {
+  margin-bottom: 0;
+}
+
+.page-footer__social-list {
+  padding: 0;
+  list-style: none;
+  width: 115px;
+  margin: 0;
+
+  @media (max-width: $max-mobile-width) {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  li {
+    margin-bottom: 30px;
+
+    @media (max-width: $max-mobile-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  svg {
+    margin-right: 15px;
+  }
+
+  a {
+    display: flex;
+    margin-bottom: 0;
+    align-items: center;
+  }
+
+  span {
+    @media (max-width: $max-mobile-width) {
+      display: none;
+    }
+  }
+}
+
+.page-footer__form-container {
+  width: 500px;
+  margin-right: 88px;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: $max-tablet-width) {
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    margin-right: 0;
+  }
+}
+
+.page-footer__service {
+  margin-right: 67px;
+
+  @media (max-width: $max-tablet-width) {
+    margin-right: 87px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    margin-bottom: 50px;
+  }
+}
+
+.page-footer__information {
+  margin-right: 87px;
+
+  @media (max-width: $max-mobile-width) {
+    margin-bottom: 50px;
+  }
+}
