@@ -1,5 +1,5 @@
 .accordion__item-content {
-  display: none;
+  //display: none;
   flex-wrap: wrap;
   flex-direction: column;
 
@@ -18,4 +18,8 @@
       transform: rotate(180deg);
     }
   }
+}
+
+.accordion__item-trigger {
+  padding: 0;
 }

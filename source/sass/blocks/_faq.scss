@@ -1,0 +1,93 @@
+.faq {
+  padding: 130px 198px;
+
+  @media (max-width: $max-tablet-width) {
+    padding: 0 45px;
+    margin-top: 80px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    padding: 0 15px;
+    margin-top: 80px;
+    //padding-top: 80px;
+  }
+
+  h2 {
+    margin: 0;
+    font-family: "cormorantgaramond", "Arial", sans-serif;
+    font-size: 34px;
+    line-height: 44px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 60px;
+    //margin-top: 80px;
+  }
+
+  button {
+    width: 100%;
+    padding: 0;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 500;
+    font-family: "poppins", "Arial", sans-serif;
+
+    @media (max-width: $max-mobile-width) {
+      font-size: 16px;
+      line-height: 22px;
+      text-align: left;
+      align-items: baseline;
+    }
+  }
+}
+
+.faq__accordion-item {
+  padding: 50px 38px;
+
+  @media (max-width: $max-tablet-width) {
+    padding: 50px 50px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    padding: 22px 25px;
+  }
+
+  svg {
+    @media (max-width: $max-tablet-width) {
+      transform: scale(1.5);
+    }
+
+    @media (max-width: $max-mobile-width) {
+      transform: scale(1.4);
+      width: 20px;
+    }
+  }
+}
+
+.faq__accordion {
+  border: 1px solid $beige;
+}
+
+.faq__accordion-item:not(:last-child) {
+  border-bottom: 1px solid $beige;
+}
+
+.faq__accordion-item-content {
+  margin-top: 20px;
+  width: 527px;
+  padding-left: 12px;
+  line-height: 21px;
+
+  @media (max-width: $max-tablet-width) {
+    padding-left: 0;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    width: 100%;
+  }
+}
