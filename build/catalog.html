@@ -80,58 +80,82 @@
       </section>
       <section class="catalog container">
         <h2 class="visually-hidden">Catalog</h2>
-        <div class="catalog__filter">
-          <div id="accordion" class="catalog__accordion accordion">
-            <div class="accordion__item accordion__item--active">
-              <button class="accordion__item-trigger" rel="tab1" aria-label="Product">
-                Product
-                <svg class="accordion__item-svg" width="15" height="8">
-                  <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
-                </svg>
-              </button>
-              <div class="accordion__item-content" id="tab1">
-                <label><input type="checkbox">Necklaces</label>
-                <label><input type="checkbox">Chokers</label>
-                <label><input type="checkbox">Rings</label>
-                <label><input type="checkbox">Earrings</label>
+        <button type="button" class="catalog__filter-btn">
+          Filter
+        </button>
+        <div class="catalog__filter filter">
+          <form action="https://echo.htmlacademy.ru" method="post" class="filter__form">
+            <button type="button" class="filter__form-close">
+              <span class="visually-hidden">Close</span>
+              <svg width="14" height="14">
+                <use xlink:href="img/sprite.svg#icon-cross"></use>
+              </svg>
+            </button>
+            <div class="filter__accordion accordion">
+              <div class="filter__item filter__item--product accordion__item--active">
+                <button class="filter__item-trigger accordion__trigger" rel="tab1" aria-label="Product">
+                  Product
+                  <svg class="filter__item-svg accordion__item-svg" width="15" height="8">
+                    <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+                  </svg>
+                </button>
+                <div class="filter__item-content accordion__item-content" id="tab1">
+                    <input id="Necklaces" type="checkbox" class="visually-hidden" checked="">
+                    <label for="Necklaces">Necklaces</label>
+                    <input id="Chokers" type="checkbox" class="visually-hidden" checked="">
+                    <label for="Chokers">Chokers</label>
+                    <input id="Rings" type="checkbox" class="visually-hidden">
+                    <label for="Rings">Rings</label>
+                    <input id="Earrings" type="checkbox" class="visually-hidden" checked="">
+                    <label for="Earrings">Earrings</label>
+                </div>
+              </div>
+              <div class="filter__item accordion__item">
+                <button class="filter__item-trigger accordion__item-trigger" rel="tab2" aria-label="Material">
+                  Material
+                  <svg class="filter__item-svg accordion__item-svg" width="15" height="8">
+                    <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+                  </svg>
+                </button>
+                <div class="filter__item-content accordion__item-content" id="tab2">
+                  <input id="gold" type="checkbox" class="visually-hidden">
+                  <label for="gold">Gold</label>
+                  <input id="silver" type="checkbox" class="visually-hidden">
+                  <label for="silver">Silver</label>
+                </div>
+              </div>
+              <div class="filter__item accordion__item">
+                <button class="filter__item-trigger accordion__item-trigger" rel="tab3" aria-label="Collection">
+                  Collection
+                  <svg class="filter__item-svg accordion__item-svg" width="15" height="8">
+                    <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+                  </svg>
+                </button>
+                <div class="filter__item-content accordion__item-content" id="tab3">
+                  <input id="pink flamingo" type="checkbox" class="visually-hidden">
+                  <label for="pink flamingo">Pink flamingo</label>
+                  <input id="dreams" type="checkbox" class="visually-hidden">
+                  <label for="dreams">Dreams</label>
+                </div>
+              </div>
+              <div class="filter__item filter__item--price accordion__item accordion__item--active">
+                <button class="filter__item-trigger accordion__item-trigger" rel="tab4" aria-label="Price">
+                  Price
+                  <svg class="filter__item-svg accordion__item-svg" width="15" height="8">
+                    <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+                  </svg>
+                </button>
+                <div class="filter__item-content accordion__item-content" id="tab4">
+                  <div class="filter__price-range accordion__price-range">
+                    <div class="filter__price-bar"></div>
+                    <span>$ 55</span><span>$ 155</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="accordion__item">
-              <button class="accordion__item-trigger" rel="tab2" aria-label="Material">
-                Material
-                <svg class="accordion__item-svg" width="15" height="8">
-                  <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
-                </svg>
-              </button>
-              <div class="accordion__item-content" id="tab2">
-                <label><input type="checkbox">Gold</label>
-                <label><input type="checkbox">Silver</label>
-              </div>
-            </div>
-            <div class="accordion__item">
-              <button class="accordion__item-trigger" rel="tab3" aria-label="Collection">
-                Collection
-                <svg class="accordion__item-svg" width="15" height="8">
-                  <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
-                </svg>
-              </button>
-              <div class="accordion__item-content" id="tab3">
-                <label><input type="checkbox">Pink flamingo</label>
-                <label><input type="checkbox">Dreams</label>
-              </div>
-            </div>
-            <div class="accordion__item accordion__item--active">
-              <button class="accordion__item-trigger" rel="tab4" aria-label="Price">
-                Price
-                <svg class="accordion__item-svg" width="15" height="8">
-                  <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
-                </svg>
-              </button>
-              <div class="accordion__item-content" id="tab4">
-                <div class="accordion__price-range"><span>$ 55</span><span>$ 155</span></div>
-              </div>
-            </div>
-          </div>
+            <button class="filter__btn" type="button">Apply</button>
+            <button class="filter__btn" type="button">Clear All</button>
+          </form>
         </div>
         <div class="catalog__items-container">
           <a href="#">
@@ -222,7 +246,7 @@
                 <!-- 1х: 270px; 2x: 540px -->
                 <img data-src="img/black-leather-choker-necklace-desktop.png" src="img/black-leather-choker-necklace-desktop.png" srcset="img/black-leather-choker-necklace-desktop@2x.png 2x" alt="black-leather-choker-necklace" width="270" height="272" loading="lazy" class="lazyload">
               </picture>
-              <figcaption>Black leather choker necklace<span>$ 85</span></figcaption>
+              <figcaption>Black leather choker<span>$ 85</span></figcaption>
             </figure>
           </a>
           <a href="#">
@@ -235,7 +259,7 @@
                 <!-- 1х: 270px; 2x: 540px -->
                 <img data-src="img/purple-gemstone-necklace-desktop.jpg" src="img/purple-gemstone-necklace-desktop.jpg" srcset="img/purple-gemstone-necklace-desktop@2x.jpg 2x" alt="purple-gemstone-necklace" width="270" height="272" loading="lazy" class="lazyload">
               </picture>
-              <figcaption>Purple gemstone necklace<span>$ 145</span></figcaption>
+              <figcaption>Necklace with amethyst<span>$ 145</span></figcaption>
             </figure>
           </a>
           <a href="#">
@@ -261,7 +285,7 @@
                 <!-- 1х: 270px; 2x: 540px -->
                 <img data-src="img/threader-necklace-closeup-desktop.png" src="img/threader-necklace-closeup-desktop.png" srcset="img/threader-necklace-closeup-desktop@2x.png 2x" alt="threader-necklace-closeup" width="270" height="272" loading="lazy" class="lazyload">
               </picture>
-              <figcaption>Threader necklace closeup<span>$ 115</span></figcaption>
+              <figcaption>Threader necklace<span>$ 115</span></figcaption>
             </figure>
           </a>
           <a href="#">
@@ -361,7 +385,7 @@
   <!-- Swiper JS -->
   <!--<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   <script src="js/vendor.min.js" defer=""></script>-->
-  <!--<script src="js/main.js"></script>-->
+  <script src="js/main.js"></script>
 </body>
 
 </html>

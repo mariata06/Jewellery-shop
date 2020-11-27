@@ -1,0 +1,22 @@
+.newin {
+  padding: 130px 98px;
+
+  h2 {
+    font-family: "cormorantgaramond", "Arial", sans-serif;
+    font-size: 34px;
+    line-height: 44px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  a {
+    line-height: 21px;
+    font-weight: 500;
+    margin: 0 auto;
+    border-bottom: 1px solid $beige;
+    width: 80px;
+    text-align: center;
+    display: block;
+    margin-bottom: 60px;
+  }
+}

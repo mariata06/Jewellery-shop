@@ -2,20 +2,10 @@
   display: flex;
   padding: 80px 98px;
   justify-content: space-between;
-}
 
-.catalog__filter {
-  width: 250px;
-
-  button {
-    width: 100%;
-    outline: none;
-    border: none;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-family: "poppins", "Arial", sans-serif;
+  @media (max-width: $max-tablet-width) {
+    flex-wrap: wrap;
+    padding: 50px 0;
   }
 }
 
@@ -24,13 +14,93 @@
   flex-wrap: wrap;
   //margin-left: auto;
   width: 870px;
+  justify-content: space-between;
+
+  @media (max-width: $max-tablet-width) {
+    width: 100%;
+    margin-top: 50px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: space-evenly;
+  }
 
   a {
-    width: 270px;
-    margin-left: 30px;
+    margin-bottom: 44px;
   }
 
   figure {
+    margin: 0;
+
+    @media (max-width: $max-tablet-width) {
+      width: 206px;
+    }
+
+    @media (max-width: $max-mobile-width) {
+      width: 130px;
+    }
+
+    img {
+      @media (max-width: $max-tablet-width) {
+        width: 100%;
+        height: 208px;
+      }
+
+      @media (max-width: $max-mobile-width) {
+        width: 100%;
+        height: 136px;
+      }
+    }
+  }
+
+  figcaption {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: 21px;
+    font-weight: 500;
+
+    span {
+      width: 100%;
+    }
+  }
+}
+
+.catalog__filter-btn {
+  display: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: $white;
+  background-color: $beige;
+  padding: 20px 0;
+  margin-top: 35px;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 500;
+  font-family: "poppins", "Arial", sans-serif;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $black;
+    border: 1px solid $beige;
+    background-color: transparent;
+  }
+
+  @media (max-width: $max-tablet-width) {
+    display: block;
     width: 100%;
+    margin-top: 0;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    margin-left: 15px;
+    margin-right: 15px;
   }
 }

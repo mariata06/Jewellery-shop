@@ -770,7 +770,8 @@ a {
   @media (max-width: 767px) {
     .blog {
       padding-left: 15px;
-      padding-right: 15px; } }
+      padding-right: 15px;
+      padding-bottom: 200px; } }
   .blog h2 {
     font-family: "cormorantgaramond", "Arial", sans-serif;
     font-size: 34px;
@@ -917,7 +918,8 @@ time {
       margin-top: 80px; } }
   @media (max-width: 767px) {
     .faq {
-      padding: 0 15px; } }
+      padding: 0 15px;
+      margin-top: 80px; } }
   .faq h2 {
     margin: 0;
     font-family: "cormorantgaramond", "Arial", sans-serif;
@@ -997,6 +999,10 @@ time {
     .gallery {
       margin-top: 84px;
       padding: 0 45px; } }
+  @media (max-width: 767px) {
+    .gallery {
+      padding: 0 15px;
+      margin-bottom: 70px; } }
   .gallery h2 {
     font-family: "cormorantgaramond", "Arial", sans-serif;
     font-size: 34px;
@@ -1023,6 +1029,11 @@ time {
       grid-template-columns: 133px 231px 134px 134px;
       grid-template-rows: 133px 126px;
       gap: 18px; } }
+  @media (max-width: 767px) {
+    .gallery__wrapper {
+      grid-template-columns: 130px 145px;
+      grid-template-rows: 130px 87px 121px;
+      gap: 15px; } }
 
 .gallery__picture--first {
   grid-column: 1;
@@ -1049,6 +1060,10 @@ time {
 .gallery__picture--fourth {
   grid-column: 3 / 4;
   grid-row: 1; }
+  @media (max-width: 767px) {
+    .gallery__picture--fourth {
+      grid-column: 2 / 3;
+      grid-row: 3 / 4; } }
   @media (max-width: 1023px) {
     .gallery__picture--fourth img {
       height: 111px; } }
@@ -1056,6 +1071,10 @@ time {
 .gallery__picture--fifth {
   grid-column: 3 / 4;
   grid-row: 2 / 3; }
+  @media (max-width: 767px) {
+    .gallery__picture--fifth {
+      grid-column: 1 / 2;
+      grid-row: 3 / 4; } }
   @media (max-width: 1023px) {
     .gallery__picture--fifth img {
       height: 111px;
