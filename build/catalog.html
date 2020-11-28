@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -14,6 +14,7 @@
   <link rel="preload" href="fonts/poppins-bold.woff2" as="font" type="font/woff2" crossorigin="">
   <link rel="preload" href="css/style.min.css" as="style">
   <!--<link rel="preload" href="js/main.js" as="script" />-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -92,7 +93,7 @@
               </svg>
             </button>
             <div class="filter__accordion accordion">
-              <div class="filter__item filter__item--product accordion__item--active">
+              <div class="filter__item filter__item--product filter__item--active">
                 <button class="filter__item-trigger accordion__trigger" rel="tab1" aria-label="Product">
                   Product
                   <svg class="filter__item-svg accordion__item-svg" width="15" height="8">
@@ -132,13 +133,13 @@
                   </svg>
                 </button>
                 <div class="filter__item-content accordion__item-content" id="tab3">
-                  <input id="pink flamingo" type="checkbox" class="visually-hidden">
-                  <label for="pink flamingo">Pink flamingo</label>
+                  <input id="pink_flamingo" type="checkbox" class="visually-hidden">
+                  <label for="pink_flamingo">Pink flamingo</label>
                   <input id="dreams" type="checkbox" class="visually-hidden">
                   <label for="dreams">Dreams</label>
                 </div>
               </div>
-              <div class="filter__item filter__item--price accordion__item accordion__item--active">
+              <div class="filter__item filter__item--price filter__item--active">
                 <button class="filter__item-trigger accordion__item-trigger" rel="tab4" aria-label="Price">
                   Price
                   <svg class="filter__item-svg accordion__item-svg" width="15" height="8">
@@ -315,6 +316,17 @@
             </figure>
           </a>
         </div>
+        <div class="catalog__pagination">
+          <button>Previous</button>
+          <div class="catalog__pagination-pages">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+          </div>
+          <button>Next</button>
+        </div>
       </section>
     </main>
 
@@ -382,10 +394,12 @@
     </footer>
 
 </div>
+
+  <script src="js/vendor.min.js" defer=""></script>
   <!-- Swiper JS -->
-  <!--<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-  <script src="js/vendor.min.js" defer=""></script>-->
-  <script src="js/main.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <!--<script src="js/main.js"></script>-->
+  <script src="js/slider.js"></script>
 </body>
 
 </html>
