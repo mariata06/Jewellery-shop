@@ -69,75 +69,123 @@
       </nav>
     </header>
 
-    <main class="page-main">
-      <section class="intro container">
-        <div class="intro__overlay">
-          <h1>PERFECTION</h1>
-          <p>made to be yours</p>
+    <main class="page-card">
+      <section class="card container">
+        <div class="card__photo">
+          <picture>
+            <!-- 1х: 290px; 2x: 580px -->
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/necklace-detail-mobile.webp 1x, img/necklace-detail-mobile@2x.webp 2x">
+            <!-- 1х: 319x; 2x: 638px -->
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/necklace-detail-tablet.webp 1x, img/necklace-detail-tablet@2x.webp 2x">
+            <!-- 1х: 470px; 2x: 940px -->
+            <img data-src="img/necklace-detail-desktop.png" src="img/necklace-detail-desktop.png" srcset="img/necklace-detail-desktop@2x.png 2x" alt="necklace-detail" width="470" height="435" loading="lazy" class="lazyload">
+          </picture>
+          <picture>
+            <!-- 1х: 290px; 2x: 580px -->
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/womens-necklace-set-mobile.webp 1x, img/womens-necklace-set-mobile@2x.webp 2x">
+            <!-- 1х: 97x; 2x: 194px -->
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/womens-necklace-set-tablet.webp 1x, img/womens-necklace-set-tablet@2x.webp 2x">
+            <!-- 1х: 100px; 2x: 200px -->
+            <img data-src="img/womens-necklace-set-desktop.png" src="img/womens-necklace-set-desktop.png" srcset="img/womens-necklace-set-desktop@2x.png 2x" alt="womens-necklace-set" width="100" height="125" loading="lazy" class="lazyload">
+          </picture>
+          <picture>
+            <!-- 1х: 290px; 2x: 580px -->
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/pretty-gold-necklace-mobile.webp 1x, img/pretty-gold-necklace-mobile@2x.webp 2x">
+            <!-- 1х: 97x; 2x: 194px -->
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/pretty-gold-necklace-tablet.webp 1x, img/pretty-gold-necklace-tablet@2x.webp 2x">
+            <!-- 1х: 100px; 2x: 200px -->
+            <img data-src="img/pretty-gold-necklace-desktop.png" src="img/pretty-gold-necklace-desktop.png" srcset="img/pretty-gold-necklace-desktop@2x.png 2x" alt="pretty-gold-necklace" width="100" height="125" loading="lazy" class="lazyload">
+          </picture>
+          <picture>
+            <!-- 1х: 290px; 2x: 580px -->
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/gold-necklace-for-women-mobile.webp 1x, img/gold-necklace-for-women-mobile@2x.webp 2x">
+            <!-- 1х: 97x; 2x: 194px -->
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/gold-necklace-for-women-tablet.webp 1x, img/gold-necklace-for-women-tablet@2x.webp 2x">
+            <!-- 1х: 100px; 2x: 200px -->
+            <img data-src="img/gold-necklace-for-women-desktop.png" src="img/gold-necklace-for-women-desktop.png" srcset="img/gold-necklace-for-women-desktop@2x.png 2x" alt="gold-necklace-for-woman" width="100" height="125" loading="lazy" class="lazyload">
+          </picture>
+        </div>
+        <div class="card__description">
+          <h2>Gold Necklace </h2>
+          <span>$ 115</span>
+          <p>Description<a>Additional info</a></p>
+          <table>
+            <tr><td>Metal type</td><td>Gold 585</td></tr>
+            <tr><td>Stone</td><td>Turquoise</td></tr>
+            <tr><td>Size</td><td>18" / 20"</td></tr>
+          </table>
+          <button>Add to cart</button>
+          <div>
+            <a href="#">14 Day Returns</a>
+            <a href="#">2-Year Warranty</a>
+            <a href="#">Free Shipping</a>
+          </div>
         </div>
       </section>
     </main>
 
-<footer class="page-footer container">
-  <section class="page-footer__form-container">
-    <h2>The good stuff in&nbsp;your inbox </h2>
-    <p>News and updates from CH. No spam, we promise.</p>
-    <form action="https://echo.htmlacademy.ru" method="post" class="page-footer__email email">
-        <input tabindex="0" type="email" value="" placeholder="Your E-mail">
-        <button>Sign Up
-          <svg width="29" height="9">
-            <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
-          </svg>
-        </button>
-    </form>
-  </section>
-    <div class="page-footer__service service">
-      <a href="#">Ordering & Payment</a>
-      <a href="#">Terms & Conditions</a>
-      <a href="#">Returns & Exchanges</a>
-      <a href="#">Delivery</a>
-    </div>
-    <div class="page-footer__information information">
-      <a href="#">About CH</a>
-      <a href="#">Stores & Hours</a>
-      <a href="#">Jobs</a>
-      <a href="#">Contact Us</a>
-    </div>
-    <ul class="page-footer__social-list social-list">
-      <li>
-        <a href="https://facebook.com/" aria-label="facebook" class="page-footer__social-link">
-          <svg width="8" height="15">
-            <use xlink:href="img/sprite.svg#icon-fb"></use>
-          </svg>
-          <span>Facebook</span>
-        </a>
-      </li>
-      <li>
-        <a href="https://instagram.com/" aria-label="instagram" class="page-footer__social-link">
-          <svg width="15" height="15">
-            <use xlink:href="img/sprite.svg#icon-instagram"></use>
-          </svg>
-          <span>Instagram</span>
-        </a>
-      </li>
-      <li>
-        <a href="https://pinterest.com/" aria-label="pinterest" class="page-footer__social-link">
-          <svg width="15" height="15">
-            <use xlink:href="img/sprite.svg#icon-pinterest"></use>
-          </svg>
-          <span>Pinterest</span>
-        </a>
-      </li>
-      <li>
-        <a href="https://twitter.com/" aria-label="twitter" class="page-footer__social-link">
-          <svg width="15" height="13">
-            <use xlink:href="img/sprite.svg#icon-twitter"></use>
-          </svg>
-          <span>Twitter</span>
-        </a>
-      </li>
-    </ul>
-</footer>
+    <footer class="page-footer">
+      <div class="page-footer__content container">
+        <section class="page-footer__form-container">
+          <h2>The good stuff in&nbsp;your inbox </h2>
+          <p>News and updates from CH. No&nbsp;spam, we promise.</p>
+          <form action="https://echo.htmlacademy.ru" method="post" class="page-footer__email email">
+              <input tabindex="0" type="email" value="" placeholder="Your E-mail">
+              <button>Sign Up
+                <svg width="29" height="9">
+                  <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+                </svg>
+              </button>
+          </form>
+        </section>
+          <div class="page-footer__service service">
+            <a href="#">Ordering & Payment</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Returns & Exchanges</a>
+            <a href="#">Delivery</a>
+          </div>
+          <div class="page-footer__information information">
+            <a href="#">About CH</a>
+            <a href="#">Stores & Hours</a>
+            <a href="#">Jobs</a>
+            <a href="#">Contact Us</a>
+          </div>
+          <ul class="page-footer__social-list social-list">
+            <li>
+              <a href="https://facebook.com/" aria-label="facebook" class="page-footer__social-link">
+                <svg width="8" height="15">
+                  <use xlink:href="img/sprite.svg#icon-fb"></use>
+                </svg>
+                <span>Facebook</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com/" aria-label="instagram" class="page-footer__social-link">
+                <svg width="15" height="15">
+                  <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                </svg>
+                <span>Instagram</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://pinterest.com/" aria-label="pinterest" class="page-footer__social-link">
+                <svg width="15" height="15">
+                  <use xlink:href="img/sprite.svg#icon-pinterest"></use>
+                </svg>
+                <span>Pinterest</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/" aria-label="twitter" class="page-footer__social-link">
+                <svg width="15" height="13">
+                  <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                </svg>
+                <span>Twitter</span>
+              </a>
+            </li>
+          </ul>
+      </div>
+    </footer>
 
   </div>
 </body>

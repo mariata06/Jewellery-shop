@@ -1,0 +1,27 @@
+.card {
+  display: flex;
+  padding-left: 98px;
+  padding-right: 98px;
+}
+
+.card__photo {
+  display: flex;
+  width: 50%;
+  flex-flow: wrap-reverse;
+  flex-direction: column-reverse;
+  //flex-direction: column;
+  align-content: space-between;
+  justify-content: center;
+  height: 435px;
+}
+
+.card__description {
+  width: 370px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+
+  h2 {
+    margin: 0;
+  }
+}
