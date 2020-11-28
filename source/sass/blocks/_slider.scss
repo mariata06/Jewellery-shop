@@ -1,3 +1,15 @@
 .slider__wrapper {
   display: flex;
+
+  .slider__item {
+    width: 270px;
+
+    @media (max-width: $max-tablet-width) {
+      width: 324px;
+    }
+
+    @media (max-width: $max-mobile-width) {
+      width: 130px;
+    }
+  }
 }

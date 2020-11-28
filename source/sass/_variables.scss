@@ -1,8 +1,4 @@
 //COLOR VARIABLES
-//$black: #484848; // основной темный цвте шрифта
-//$black-2: #000000;
-//$blue: #1fc0fc;
-//$blue-2: #63d3fd;
 $light-grey: #e5e5e5;
 $white: #ffffff;
 $black: #1d1613;  // основной цвет текста
@@ -11,10 +7,7 @@ $medium-grey: #9b9997; //дополнительный цвет текста
 $brown: brown; // замещающий цвет фона
 $beige: #a87b62; // бежевый цвет меню, кнопок
 $light-beige: #f0eae4;
-//$light-grey-2: #f4f4f4;
-//$yellow: #ffc341;
-//$yellow-2: #ffd701;
-//$red: #ff0000;
+$light-grey: #f6f5f4;
 
 $max-tablet-width: 1023px; // максимум для версии пишем когда идем от desktop к mobile (768px - 1023px;)
 $max-mobile-width: 767px; // максимум для версии пишем когда идем от desktop к mobile (320px - 767px;)

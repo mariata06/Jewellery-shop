@@ -1,6 +1,18 @@
 .newin {
   padding: 130px 98px;
 
+  @media (max-width: $max-tablet-width) {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   h2 {
     font-family: "cormorantgaramond", "Arial", sans-serif;
     font-size: 34px;

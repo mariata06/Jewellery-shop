@@ -1352,3 +1352,41 @@ time {
     display: block; }
   .filter__form-close svg {
     fill: #ffffff; }
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 98px;
+  padding-right: 98px; }
+
+/*
+.card__photo {
+  display: flex;
+  width: 50%;
+  flex-flow: wrap-reverse;
+  flex-direction: column-reverse;
+  //flex-direction: column;
+  align-content: space-between;
+  justify-content: center;
+  height: 435px;
+}
+*/
+.card__photo {
+  display: grid;
+  grid-template-columns: 100px 470px;
+  grid-template-rows: 125px 125px 125px;
+  gap: 30px; }
+
+.card__description {
+  width: 370px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 100px; }
+  .card__description h2 {
+    margin: 0; }
