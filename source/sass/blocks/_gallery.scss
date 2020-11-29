@@ -42,12 +42,14 @@
     grid-template-columns: 133px 231px 134px 134px;
     grid-template-rows: 133px 126px;
     gap: 18px;
+    justify-content: center;
   }
 
   @media (max-width: $max-mobile-width) {
     grid-template-columns: 130px 145px;
     grid-template-rows: 130px 87px 121px;
     gap: 15px;
+    justify-content: center;
   }
 }
 

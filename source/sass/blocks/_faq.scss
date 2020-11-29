@@ -49,6 +49,16 @@
 .faq__accordion-item {
   padding: 50px 38px;
 
+  &--active {
+    .faq__accordion-item-content {
+      display: flex;
+    }
+
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+
   @media (max-width: $max-tablet-width) {
     padding: 50px 50px;
   }
@@ -57,14 +67,18 @@
     padding: 22px 25px;
   }
 
-  svg {
+  .faq__accordion-item-svg {
+    width: 15px;
+    height: 8px;
+
     @media (max-width: $max-tablet-width) {
-      transform: scale(1.5);
+      width: 23px;
+      height: 12px;
     }
 
     @media (max-width: $max-mobile-width) {
-      transform: scale(1.4);
-      width: 20px;
+      min-width: 20px;
+      height: 10px;
     }
   }
 }
@@ -82,6 +96,13 @@
   width: 527px;
   padding-left: 12px;
   line-height: 21px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  display: none;
+
+  &--show {
+    display: flex;
+  }
 
   @media (max-width: $max-tablet-width) {
     padding-left: 0;
@@ -90,4 +111,8 @@
   @media (max-width: $max-mobile-width) {
     width: 100%;
   }
+}
+
+.faq__accordion-item-trigger {
+  padding: 0;
 }

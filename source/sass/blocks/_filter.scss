@@ -95,6 +95,12 @@
         padding-top: 0;
       }
     }
+
+    &--active {
+      .filter__item-content {
+        display: flex;
+      }
+    }
   }
 
   .filter__item:not(:first-child) {
@@ -102,14 +108,16 @@
   }
 
   .filter__item-content {
-    display: flex;
+    //display: flex;
     padding-top: 10px;
-    //display: none;
+    flex-wrap: wrap;
+    display: none;
   }
 
   label {
     padding-left: 50px;
     position: relative;
+    width: 100%;
 
     &::before {
       content: "";

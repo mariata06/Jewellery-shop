@@ -14,7 +14,7 @@
   <link rel="preload" href="fonts/poppins-bold.woff2" as="font" type="font/woff2" crossorigin="">
   <link rel="preload" href="css/style.min.css" as="style">
   <!--<link rel="preload" href="js/main.js" as="script" />-->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <!--<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">-->
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -94,13 +94,13 @@
             </button>
             <div class="filter__accordion accordion">
               <div class="filter__item filter__item--product filter__item--active">
-                <button class="filter__item-trigger accordion__trigger" rel="tab1" aria-label="Product">
+                <button class="filter__item-trigger" rel="tab1" aria-label="Product">
                   Product
-                  <svg class="filter__item-svg accordion__item-svg" width="15" height="8">
+                  <svg class="filter__item-svg" width="15" height="8">
                     <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
                   </svg>
                 </button>
-                <div class="filter__item-content accordion__item-content" id="tab1">
+                <div class="filter__item-content" id="tab1">
                     <input id="Necklaces" type="checkbox" class="visually-hidden" checked="">
                     <label for="Necklaces">Necklaces</label>
                     <input id="Chokers" type="checkbox" class="visually-hidden" checked="">
@@ -111,28 +111,28 @@
                     <label for="Earrings">Earrings</label>
                 </div>
               </div>
-              <div class="filter__item accordion__item">
-                <button class="filter__item-trigger accordion__item-trigger" rel="tab2" aria-label="Material">
+              <div class="filter__item">
+                <button class="filter__item-trigger" rel="tab2" aria-label="Material">
                   Material
-                  <svg class="filter__item-svg accordion__item-svg" width="15" height="8">
+                  <svg class="filter__item-svg" width="15" height="8">
                     <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
                   </svg>
                 </button>
-                <div class="filter__item-content accordion__item-content" id="tab2">
+                <div class="filter__item-content" id="tab2">
                   <input id="gold" type="checkbox" class="visually-hidden">
                   <label for="gold">Gold</label>
                   <input id="silver" type="checkbox" class="visually-hidden">
                   <label for="silver">Silver</label>
                 </div>
               </div>
-              <div class="filter__item accordion__item">
-                <button class="filter__item-trigger accordion__item-trigger" rel="tab3" aria-label="Collection">
+              <div class="filter__item">
+                <button class="filter__item-trigger" rel="tab3" aria-label="Collection">
                   Collection
-                  <svg class="filter__item-svg accordion__item-svg" width="15" height="8">
+                  <svg class="filter__item-svg" width="15" height="8">
                     <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
                   </svg>
                 </button>
-                <div class="filter__item-content accordion__item-content" id="tab3">
+                <div class="filter__item-content" id="tab3">
                   <input id="pink_flamingo" type="checkbox" class="visually-hidden">
                   <label for="pink_flamingo">Pink flamingo</label>
                   <input id="dreams" type="checkbox" class="visually-hidden">
@@ -140,22 +140,22 @@
                 </div>
               </div>
               <div class="filter__item filter__item--price filter__item--active">
-                <button class="filter__item-trigger accordion__item-trigger" rel="tab4" aria-label="Price">
+                <button class="filter__item-trigger" rel="tab4" aria-label="Price">
                   Price
-                  <svg class="filter__item-svg accordion__item-svg" width="15" height="8">
+                  <svg class="filter__item-svg" width="15" height="8">
                     <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
                   </svg>
                 </button>
-                <div class="filter__item-content accordion__item-content" id="tab4">
-                  <div class="filter__price-range accordion__price-range">
+                <div class="filter__item-content" id="tab4">
+                  <div class="filter__price-range">
                     <div class="filter__price-bar"></div>
                     <span>$ 55</span><span>$ 155</span>
                   </div>
                 </div>
               </div>
             </div>
-            <button class="filter__btn" type="button">Apply</button>
-            <button class="filter__btn" type="button">Clear All</button>
+            <button class="filter__btn" type="submit">Apply</button>
+            <button class="filter__btn" type="submit">Clear All</button>
           </form>
         </div>
         <div class="catalog__items-container">
@@ -395,11 +395,9 @@
 
 </div>
 
-  <script src="js/vendor.min.js" defer=""></script>
-  <!-- Swiper JS -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="js/vendor.js" defer=""></script>
   <!--<script src="js/main.js"></script>-->
-  <script src="js/slider.js"></script>
+  <script src="js/accordion-main.js"></script>
 </body>
 
 </html>
