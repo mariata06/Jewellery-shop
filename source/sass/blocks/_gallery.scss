@@ -123,6 +123,10 @@
     grid-column: 4 / 5;
     grid-row: 1;
 
+    @media (max-width: $max-mobile-width) {
+      display: none;
+    }
+
     img {
       margin-left: auto;
       display: block;
@@ -137,6 +141,10 @@
   &--seventh {
     grid-column: 4 / 5;
     grid-row: 2 / 3;
+
+    @media (max-width: $max-mobile-width) {
+      display: none;
+    }
 
     img {
       @media (max-width: $max-tablet-width) {

@@ -1,0 +1,145 @@
+.login {
+  width: 430px;
+  background-image: url("../img/bg-login-desktop.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 430px 138px;
+  margin: 100px auto;
+  padding-top: 138px;
+  position: relative;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-login-desktop@2x.png");
+    //background-size: cover;
+    background-size: 442px 138px;
+  }
+
+  @media (max-width: $max-tablet-width) {
+    background-image: url("../img/bg-login-tablet.png");
+    width: 442px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-login-tablet@2x.png");
+    }
+  }
+
+  @media (max-width: $max-mobile-width) {
+    background-image: url("../img/bg-login-mobile.png");
+    width: 270px;
+    background-size: 270px 84px;
+    padding-top: 84px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-login-mobile@2x.png");
+    }
+  }
+
+  .login__close {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .login__content {
+    background-color: $light-beige;
+    padding: 60px 45px;
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (max-width: $max-mobile-width) {
+      padding: 45px 15px;
+    }
+
+    p {
+      //width: 100%;
+      display: flex;
+      color: $medium-grey;
+      justify-content: center;
+      text-align: center;
+      margin: 20px auto 0;
+
+      @media (max-width: $max-mobile-width) {
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 500;
+      }
+    }
+
+    .login__signup-link {
+      color: $black;
+      margin-left: 10px;
+      //display: inline;
+    }
+  }
+
+  h3 {
+    text-align: center;
+    margin: 0 auto;
+    font-family: "cormorantgaramond", "Arial", sans-serif;
+    font-size: 26px;
+    line-height: 34px;
+    font-weight: 700;
+    //margin-bottom: 45px;
+  }
+
+  input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid $black;
+    width: 100%;
+    padding-bottom: 10px;
+    margin-top: 30px;
+
+    @media (max-width: $max-mobile-width) {
+      font-size: 14px;
+      line-height: 21px;
+      font-weight: 500;
+    }
+  }
+
+  a {
+    display: block;
+    text-align: right;
+    margin-left: auto;
+    color: $medium-grey;
+
+    @media (max-width: $max-mobile-width) {
+      font-size: 14px;
+      line-height: 21px;
+      font-weight: 500;
+    }
+  }
+
+  input:placeholder {
+    color: $medium-grey;
+  }
+
+  .login__button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    background-color: $beige;
+    width: 100%;
+    color: $white;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    margin-top: 40px;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 500;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $white;
+      color: $black;
+    }
+  }
+}

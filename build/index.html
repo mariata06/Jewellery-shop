@@ -525,17 +525,25 @@
   </div>
 
   <div class="overlay">
-    <div class="overlay__popup popup popup--login">
-      <div class="popup__content">
-        <button type="button" class="popup__close" aria-label="закрыть"><span class="visually-hidden">Закрыть</span></button>
-        <img src="img/ok.png" alt="заявка принята" width="71" height="64" loading="lazy" class="lazyload">
+    <div class="overlay__popup login">
+      <!--<a href="login.html" target="_blank">Открыть в новом окне</a>-->
+      <button type="button" class="login__close button" aria-label="закрыть">
+        <span class="visually-hidden">Закрыть</span>
+        <svg width="14" height="14">
+          <use xlink:href="img/sprite.svg#icon-cross"></use>
+        </svg>
+      </button>
+      <div class="login__content">
         <h3>
-          Заявка принята
+          Log In
         </h3>
-        <p>
-          Мы приняли ваши данные и вскоре мы перезвоним вам для уточнения деталей!
-        </p>
-        <button type="submit" class="popup__button button" aria-label="понятно, закрыть окно">понятно</button>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <input tabindex="0" type="email" value="" placeholder="Your E-mail" required="">
+          <input tabindex="0" type="password" value="" placeholder="Password">
+          <a href="#">Forgot your password?</a>
+        </form>
+        <button type="submit" class="login__button button" aria-label="login">Log In</button>
+        <p>Don’t have an account?<a href="#"><a href="#" class="login__signup-link">Sign up</a></a></p>
       </div>
     </div>
   </div>
