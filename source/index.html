@@ -48,7 +48,7 @@
       <button class="page-header__login page-header__login--nojs">Login</button>
 
       <div class="page-header__cart">
-        <a href="cart.html">Cart 0</a>
+        <a class="page-header__cart-link" href="cart.html">Cart 0</a>
         <svg width="18" height="16">
           <use xlink:href="img/sprite.svg#icon-v"></use>
         </svg>
@@ -260,10 +260,10 @@
                 <picture>
                   <!-- 1х: 290px; 2x: 580px -->
                   <source type="image/webp" media="(max-width: 767px)"
-                  srcset="img/blog-care-mobile@1x.webp 1x, img/blog-care-mobile@2x.webp 2x">
+                  srcset="img/blog-care-mobile.webp 1x, img/blog-care-mobile@2x.webp 2x">
                   <!-- 1х: 339px; 2x: 678px -->
                   <source type="image/webp" media="(max-width: 1023px)"
-                  srcset="img/blog-care-tablet@1x.webp 1x, img/blog-care-tablet@2x.webp 2x">
+                  srcset="img/blog-care-tablet.webp 1x, img/blog-care-tablet@2x.webp 2x">
                   <!-- 1х: 285px; 2x: 570px -->
                   <source type="image/webp" srcset="img/blog-care-desktop.webp 1x, img/blog-care-desktop.webp 2x">
                   <!-- 1х: 285px; 2x: 570px -->
@@ -485,9 +485,9 @@
         <section class="page-footer__form-container">
           <h2>The good stuff in&nbsp;your inbox </h2>
           <p>News and updates from CH. No&nbsp;spam, we promise.</p>
-          <form action="https://echo.htmlacademy.ru" method="post" class="page-footer__email email">
-              <input tabindex="0" type="email" value="" placeholder="Your E-mail">
-              <button>Sign Up
+          <form action="https://echo.htmlacademy.ru" method="post" class="page-footer__email email-form">
+              <input tabindex="0" type="email" value="" placeholder="Your E-mail" name="user_email">
+              <button type="submit" class="page-footer__email-button">Sign Up
                 <svg width="29" height="9">
                   <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
                 </svg>
@@ -544,10 +544,10 @@
     </footer>
   </div>
 
-  <div class="overlay">
+  <div class="overlay overlay__login">
     <div class="overlay__popup login">
       <!--<a href="login.html" target="_blank">Открыть в новом окне</a>-->
-      <button type="button" class="login__close button" aria-label="закрыть">
+      <button type="button" class="login__close popup__close button" aria-label="закрыть">
         <span class="visually-hidden">Закрыть</span>
         <svg width="14" height="14">
           <use xlink:href="img/sprite.svg#icon-cross"></use>
@@ -557,13 +557,62 @@
         <h3>
           Log In
         </h3>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <input tabindex="0" type="email" value="" placeholder="Your E-mail" required>
-          <input tabindex="0" type="password" value="" placeholder="Password">
+        <form action="https://echo.htmlacademy.ru" method="post" class="login__form">
+          <label>
+            <input tabindex="0" type="email" value="" placeholder="Your E-mail" name="user_email" required>
+          </label>
+          <label>
+            <input tabindex="0" type="password" value="" placeholder="Password" name="user_password" autocomplete="current-password">
+          </label>
           <a href="#">Forgot your password?</a>
+          <button type="submit" class="login__button button" aria-label="login">Log In</button>
         </form>
-        <button type="submit" class="login__button button" aria-label="login">Log In</button>
         <p>Don’t have an account?<a href="#"><a href="#" class="login__signup-link">Sign up</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="overlay overlay__cart">
+    <div class="overlay__popup popup cart popup--cart">
+      <button type="button" class="popup__close cart__close" aria-label="закрыть">
+        <span class="visually-hidden">Закрыть</span>
+        <svg width="14" height="14">
+          <use xlink:href="img/sprite.svg#icon-cross"></use>
+        </svg>
+      </button>
+      <div class="popup__content">
+        <h3>
+          The item was added to your cart
+        </h3>
+        <div class="popup__cart-items">
+          <a href="card.html">
+            <picture>
+              <!-- 1х: 70px; 2x: 140px -->
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/necklace-detail-popup-mobile.webp 1x, img/necklace-detail-popup-mobile@2x.webp 2x">
+              <!-- 1х: 88px; 2x: 176px -->
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/necklace-detail-popup-tablet.webp 1x, img/necklace-detail-popup-tablet@2x.webp 2x">
+              <!-- 1х: 84px; 2x: 168px -->
+              <img data-src="img/necklace-detail-popup-desktop.png" src="img/necklace-detail-popup-desktop.png" srcset="img/necklace-detail-popup-desktop@2x.png 2x" alt="necklace-detail" width="84" height="79" loading="lazy" class="lazyload">
+            </picture>
+          </a>
+          <h4>Gold Necklace<span>$ 155</span></h4>
+          <div class="popup__cart-contents">
+            <span class="popup__cart-quantity-increase">
+              <svg class="popup__cart-plus" width="14" height="14">
+                <use xlink:href="img/sprite.svg#icon-cross"></use>
+              </svg>
+            </span>
+            <span class="popup__cart-quantity">1</span>
+            <span class="popup__cart-quantity-decrease">
+              <svg class="popup__cart-minus" width="14" height="2">
+                <use xlink:href="img/sprite.svg#icon-minus"></use>
+              </svg>
+            </span>
+          </div>
+        </div>
+        <p class="popup__total-cart-price">You have 1 item in the cart<span>Cart subtotal: $ 115</span></p>
+        <button type="button" class="popup__button button" aria-label="Continue shopping">Continue shopping</button>
+        <button type="button" class="popup__button button" aria-label="Checkout">Checkout</button>
       </div>
     </div>
   </div>
