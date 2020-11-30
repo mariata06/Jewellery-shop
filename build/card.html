@@ -45,22 +45,23 @@
         </a>
       </div>
 
-      <button class="page-header__login page-header__login--nojs">Login</button>
+      <!--<button class="page-header__login page-header__login--nojs">Login</button>-->
+      <a class="page-header__login page-header__login--nojs" href="login.html">Login</a>
 
       <div class="page-header__cart">
-        <a href="cart.html">Cart 0</a>
+        <a class="page-header__cart-link" href="cart.html">Cart 0</a>
         <svg width="18" height="16">
-          <use xlink:href="img/sprite.svg#icon-v"></use>
+          <use xlink:href="img/sprite.svg#icon-cart"></use>
         </svg>
       </div>
 
       <nav class="page-header__navigation navigation navigation--nojs">
         <ul class="navigation__jewellery">
-          <li><a href="#">What’s new</a></li>
-          <li><a href="#">Chokers</a></li>
-          <li><a href="#">Necklaces</a></li>
-          <li><a href="#">Rings</a></li>
-          <li><a href="#">Earrings</a></li>
+          <li><a href="catalog.html">What’s new</a></li>
+          <li><a href="catalog.html">Chokers</a></li>
+          <li><a href="catalog.html">Necklaces</a></li>
+          <li><a href="catalog.html">Rings</a></li>
+          <li><a href="catalog.html">Earrings</a></li>
         </ul>
         <ul class="navigation__links">
           <li><a href="#">About CH</a></li>
@@ -134,8 +135,6 @@
         </div>
       </section>
       <section class="newin container">
-        <!--<h2>You May Also Like</h2>
-        <p><a href="catalog.html">Shop now</a></p>-->
         <!-- Swiper -->
         <div class="newin__slider slider swiper-container swiper-container--newin">
           <h2>You May Also Like</h2>
@@ -310,9 +309,9 @@
         <section class="page-footer__form-container">
           <h2>The good stuff in&nbsp;your inbox </h2>
           <p>News and updates from CH. No&nbsp;spam, we promise.</p>
-          <form action="https://echo.htmlacademy.ru" method="post" class="page-footer__email email">
-              <input tabindex="0" type="email" value="" placeholder="Your E-mail">
-              <button>Sign Up
+          <form action="https://echo.htmlacademy.ru" method="post" class="page-footer__email email-form">
+              <input tabindex="0" type="email" value="" placeholder="Your E-mail" name="user_email">
+              <button type="submit" class="page-footer__email-button">Sign Up
                 <svg width="29" height="9">
                   <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
                 </svg>
@@ -367,12 +366,10 @@
           </ul>
       </div>
     </footer>
-  </div>
 
-  <div class="overlay">
-    <div class="overlay__popup login">
-      <!--<a href="login.html" target="_blank">Открыть в новом окне</a>-->
-      <button type="button" class="login__close button" aria-label="закрыть">
+  <div class="overlay overlay__login">
+    <div class="overlay__popup login login--nojs">
+      <button type="button" class="login__close popup__close button" aria-label="закрыть">
         <span class="visually-hidden">Закрыть</span>
         <svg width="14" height="14">
           <use xlink:href="img/sprite.svg#icon-cross"></use>
@@ -382,20 +379,24 @@
         <h3>
           Log In
         </h3>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <input tabindex="0" type="email" value="" placeholder="Your E-mail" required="">
-          <input tabindex="0" type="password" value="" placeholder="Password">
+        <form action="https://echo.htmlacademy.ru" method="post" class="login__form">
+          <label>
+            <input tabindex="0" type="email" value="" placeholder="Your E-mail" name="user_email" required="">
+          </label>
+          <label>
+            <input tabindex="0" type="password" value="" placeholder="Password">
+          </label>
           <a href="#">Forgot your password?</a>
+          <button type="submit" class="login__button button" aria-label="login">Log In</button>
         </form>
-        <button type="submit" class="login__button button" aria-label="login">Log In</button>
         <p>Don’t have an account?<a href="#"><a href="#" class="login__signup-link">Sign up</a></a></p>
       </div>
     </div>
   </div>
 
-  <div class="overlay">
-    <div class="overlay__popup popup popup--cart">
-      <button type="button" class="popup__close" aria-label="закрыть">
+  <div class="overlay overlay__cart">
+    <div class="overlay__popup popup popup--nojs cart popup--cart">
+      <button type="button" class="popup__close cart__close" aria-label="закрыть">
         <span class="visually-hidden">Закрыть</span>
         <svg width="14" height="14">
           <use xlink:href="img/sprite.svg#icon-cross"></use>
@@ -444,8 +445,8 @@
   <!--<script src="js/main.min.js"></script>
   <script src="js/vendor.min.js" defer=""></script>-->
   <!--<script src="js/main.js"></script>-->
-  <script src="js/accordion-main.js"></script>
   <script src="js/slider.js"></script>
-</body>
+  <script src="js/accordion-main.js"></script>
+</div></body>
 
 </html>

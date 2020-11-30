@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Jewellery shop</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="preload" href="fonts/cormorantgaramond-italic.woff2" as="font" type="font/woff2" crossorigin/>
+  <link rel="preload" href="fonts/cormorantgaramond-semibold.woff2" as="font" type="font/woff2" crossorigin/>
+  <link rel="preload" href="fonts/cormorantgaramond-bold.woff2" as="font" type="font/woff2" crossorigin/>
+  <link rel="preload" href="fonts/poppins-regular.woff2" as="font" type="font/woff2" crossorigin/>
+  <link rel="preload" href="fonts/poppins-medium.woff2" as="font" type="font/woff2" crossorigin/>
+  <link rel="preload" href="fonts/poppins-bold.woff2" as="font" type="font/woff2" crossorigin/>
+  <link rel="preload" href="css/style.min.css" as="style" />
+  <!--<link rel="preload" href="js/main.js" as="script" />-->
+  <link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+<body>
+    <main class="page-login">
+      <div class="overlay__popup login">
+        <button type="button" class="login__close popup__close button" aria-label="закрыть">
+          <span class="visually-hidden">Закрыть</span>
+          <svg width="14" height="14">
+            <use xlink:href="img/sprite.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <div class="login__content">
+          <h3>
+            Log In
+          </h3>
+          <form action="https://echo.htmlacademy.ru" method="post" class="login__form">
+            <label>
+              <input tabindex="0" type="email" value="" placeholder="Your E-mail" name="user_email" required>
+            </label>
+            <label>
+              <input tabindex="0" type="password" value="" placeholder="Password" name="user_password" autocomplete="current-password">
+            </label>
+            <a href="#">Forgot your password?</a>
+            <button type="submit" class="login__button button" aria-label="login">Log In</button>
+          </form>
+          <p>Don’t have an account?<a href="#"><a href="#" class="login__signup-link">Sign up</a></p>
+        </div>
+      </div>
+    </main>
+
+  <script src="js/vendor.js" defer=""></script>
+  <script src="js/accordion-main.js"></script>
+</body>
+
+</html>

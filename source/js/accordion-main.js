@@ -54,7 +54,6 @@ accordionItems.forEach(function (item) {
 
 var popupCart = document.querySelector(".popup");
 var popupLogin = document.querySelector(".login");
-//var emailForm = document.querySelector(".page-footer__email");
 var loginButton = document.querySelector(".page-header__login");
 var cartLink = document.querySelector(".page-header__cart-link");
 var overlayLogin = document.querySelector(".overlay__login");
@@ -65,45 +64,37 @@ var closeCart = popupCart.querySelector(".popup__close");
 var acceptCart = popupCart.querySelector(".popup__button");
 var htmlDoc = document.querySelector("html");
 
-//var emailForm = document.forms[0];
-//console.log(emailForm);
-//var acceptEmail = emailForm.querySelector(".page-footer__email-button");
 var emailForm = document.querySelector(".email-form")
 var acceptEmail = document.querySelector(".page-footer__email-button");
 
-//var loginForm = document.forms[1];
 var loginForm = document.querySelector(".login__form")
 var acceptLogin = loginForm.querySelector(".login__button");
 
 var userEmail = "";
-//var userPassword = "";
-//var userEmail = loginForm.querySelector("[name=user_email]");
 
 var isStorageSupport = true;
 var currentEmail = "";
-//var currentPassword = "";
 
 try {
   currentEmail = localStorage.getItem("userEmail");
-  //currentPassword = localStorage.getItem("userPassword");
 } catch (err) {
   isStorageSupport = false;
 }
 
+popupCart.classList.remove("popup--nojs");
+popupLogin.classList.remove("login--nojs");
+
 loginButton.addEventListener("click", function (evt) {
   evt.preventDefault();
   userEmail = loginForm.elements.user_email;
-  //userPassword = loginForm.elements.user_password;
   console.log(userEmail);
   popupLogin.classList.add("login--show");
   overlayLogin.classList.add("overlay__login--show");
   htmlDoc.classList.add("disable-scroll");
   console.log(userEmail);
-  //userEmail.focus();
   if (currentEmail) {
     userEmail.value = currentEmail;
     userEmail.focus();
-    //userPassword.value = currentPassword;
   }
 });
 
@@ -117,10 +108,7 @@ closeLogin.addEventListener("click", function (evt) {
 var checkLocalStorage = function () {
   if (isStorageSupport) {
     localStorage.setItem("userEmail", userEmail.value);
-    //localStorage.setItem("userPassword", userPassword.value);
   }
-  //overlayLogin.classList.add("overlay__login--show");
-  //htmlDoc.classList.toggle("disable-scroll");
 }
 
 loginForm.addEventListener("submit", function (evt) {

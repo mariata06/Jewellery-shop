@@ -4,23 +4,24 @@
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 430px 138px;
-  //margin: 100px auto;
   padding-top: 138px;
-  //position: relative;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 110;
-  display: none;
+  display: block;
 
   &--show {
     display: block;
   }
 
+  &--nojs {
+    display: none;
+  }
+
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-login-desktop@2x.png");
-    //background-size: cover;
     background-size: 442px 138px;
   }
 

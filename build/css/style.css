@@ -599,7 +599,7 @@ a {
     .page-footer__information {
       margin-bottom: 50px; } }
 
-.email {
+.email-form {
   width: 100%;
   border-bottom: 1px solid #ffffff;
   display: -webkit-box;
@@ -611,7 +611,7 @@ a {
   -ms-flex-item-align: end;
       align-self: flex-end;
   padding-bottom: 10px; }
-  .email input {
+  .email-form input {
     background-color: transparent;
     outline: none;
     border: none;
@@ -619,17 +619,17 @@ a {
     font-size: 14px;
     line-height: 21px;
     font-weight: 500; }
-  .email input::-webkit-input-placeholder {
+  .email-form input::-webkit-input-placeholder {
     color: #9b9997; }
-  .email input::-moz-placeholder {
+  .email-form input::-moz-placeholder {
     color: #9b9997; }
-  .email input:-ms-input-placeholder {
+  .email-form input:-ms-input-placeholder {
     color: #9b9997; }
-  .email input::-ms-input-placeholder {
+  .email-form input::-ms-input-placeholder {
     color: #9b9997; }
-  .email input::placeholder {
+  .email-form input::placeholder {
     color: #9b9997; }
-  .email button {
+  .email-form button {
     outline: none;
     border: none;
     padding: 0;
@@ -640,7 +640,7 @@ a {
     font-size: 16px;
     line-height: 21px;
     font-weight: 500; }
-  .email svg {
+  .email-form svg {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg); }
 
@@ -1653,7 +1653,17 @@ time {
           transform: translate(-50%, -50%);
   background-color: #ffffff;
   z-index: 110;
-  display: none; }
+  display: none;
+  /*
+  display: block;
+
+  &--show {
+    display: block;
+  }
+
+  &--nojs {
+    display: none;
+  }*/ }
   .popup--show {
     display: block; }
   @media (max-width: 1023px) {
@@ -1792,7 +1802,17 @@ time {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: 110;
-  display: none; }
+  display: none;
+  /*
+  display: block;
+
+  &--show {
+    display: block;
+  }
+
+  &--nojs {
+    display: none;
+  }*/ }
   .login--show {
     display: block; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
