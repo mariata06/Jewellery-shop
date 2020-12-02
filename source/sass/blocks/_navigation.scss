@@ -70,10 +70,8 @@
 
   li {
     @media (max-width: $max-tablet-width) {
-      font-size: 18px;
-      line-height: 23px;
+      @include text ($font-18, $height-23, $medium);
       margin-bottom: 40px;
-      font-weight: 500;
     }
   }
 

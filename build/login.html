@@ -20,8 +20,8 @@
 <body>
     <main class="page-login">
       <div class="overlay__popup login">
-        <button type="button" class="login__close popup__close button" aria-label="закрыть">
-          <span class="visually-hidden">Закрыть</span>
+        <button type="button" class="login__close popup__close button" aria-label="close">
+          <span class="visually-hidden">close</span>
           <svg width="14" height="14">
             <use xlink:href="img/sprite.svg#icon-cross"></use>
           </svg>
@@ -37,10 +37,10 @@
             <label>
               <input tabindex="0" type="password" value="" placeholder="Password" name="user_password" autocomplete="current-password">
             </label>
-            <a href="#">Forgot your password?</a>
+            <a href="#" aria-label="Forgot your password?">Forgot your password?</a>
             <button type="submit" class="login__button button" aria-label="login">Log In</button>
           </form>
-          <p>Don’t have an account?<a href="#"><a href="#" class="login__signup-link">Sign up</a></a></p>
+          <p>Don’t have an account?<a href="#" class="login__signup-link" aria-label="Sign up">Sign up</a></p>
         </div>
       </div>
     </main>

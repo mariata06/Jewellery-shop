@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="Description" content="Jewellery">
   <title>Jewellery shop</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
@@ -13,7 +14,7 @@
   <link rel="preload" href="fonts/poppins-medium.woff2" as="font" type="font/woff2" crossorigin="">
   <link rel="preload" href="fonts/poppins-bold.woff2" as="font" type="font/woff2" crossorigin="">
   <link rel="preload" href="css/style.min.css" as="style">
-  <!--<link rel="preload" href="js/main.js" as="script" />-->
+  <link rel="preload" href="js/main.js" as="script">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -22,7 +23,7 @@
   <div class="page-wrapper">
     <header class="page-header container">
       <div class="page-header__menu mobile-menu mobile-menu--nojs mobile-menu--hide">
-        <button class="mobile-menu__burger-menu burger-menu burger-menu">
+        <button type="button" class="mobile-menu__burger-menu burger-menu burger-menu" aria-label="burger menu">
           <svg class="burger-menu__svg svg" width="25" height="16">
             <use xlink:href="img/sprite.svg#icon-menu"></use>
           </svg>
@@ -32,21 +33,23 @@
           <svg width="14" height="14">
             <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
           </svg>
-          <input tabindex="0" type="text" value="" placeholder="Type here to search">
+          <label>
+            <input tabindex="0" type="text" value="" placeholder="Type here to search">
+          </label>
         </form>
 
         <div class="mobile-menu__logo logo">
-          <a href="index.html" class="logo__beige logo__beige">
+          <a href="index.html" class="logo__beige logo__beige" aria-label="logo">
             <img src="img/logo-beige.svg" width="66" height="66" alt="Логотип магазина ювелирных украшений">
           </a>
-          <a href="index.html" class="logo__white logo__white">
+          <a href="index.html" class="logo__white logo__white" aria-label="logo">
             <img src="img/logo-white.svg" width="66" height="66" alt="Логотип магазина ювелирных украшений">
           </a>
         </div>
 
-        <a class="mobile-menu__login mobile-menu__login" href="login.html">Login</a>
+        <a class="mobile-menu__login mobile-menu__login" href="login.html" aria-label="login">Login</a>
 
-        <a class="mobile-menu__cart-link cart-link" href="cart.html">
+        <a class="mobile-menu__cart-link cart-link" href="cart.html" aria-label="cart">
           <span>Cart 0</span>
           <svg class="cart-link__svg svg" width="18" height="16">
             <use xlink:href="img/sprite.svg#icon-cart"></use>
@@ -55,16 +58,16 @@
 
         <nav class="mobile-menu__navigation navigation navigation">
           <ul class="navigation__jewellery">
-            <li><a href="catalog.html">What’s new</a></li>
-            <li><a href="catalog.html">Chokers</a></li>
-            <li><a href="catalog.html">Necklaces</a></li>
-            <li><a href="catalog.html">Rings</a></li>
-            <li><a href="catalog.html">Earrings</a></li>
+            <li><a href="catalog.html" aria-label="What’s new">What’s new</a></li>
+            <li><a href="catalog.html" aria-label="Chokers">Chokers</a></li>
+            <li><a href="catalog.html" aria-label="Necklaces">Necklaces</a></li>
+            <li><a href="catalog.html" aria-label="Rings">Rings</a></li>
+            <li><a href="catalog.html" aria-label="Earrings">Earrings</a></li>
           </ul>
           <ul class="navigation__links">
-            <li><a href="#">About CH</a></li>
-            <li><a href="#">Stores & Hours</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="#" aria-label="About CH">About CH</a></li>
+            <li><a href="#" aria-label="Stores & Hours">Stores & Hours</a></li>
+            <li><a href="#" aria-label="Contact Us">Contact Us</a></li>
           </ul>
         </nav>
       </div>
@@ -118,13 +121,13 @@
           <div class="card__description">
             <h2>Gold Necklace </h2>
             <span>$ 115</span>
-            <p>Description<a class="card__description-info">Additional info</a></p>
+            <p>Description<a class="card__description-info" aria-label="Additional info">Additional info</a></p>
             <table>
               <tr><td>Metal type</td><td>Gold 585</td></tr>
               <tr><td>Stone</td><td>Turquoise</td></tr>
               <tr><td>Size</td><td>18" / 20"</td></tr>
             </table>
-            <button>Add to cart</button>
+            <button type="button" aria-label="Add to cart">Add to cart</button>
             <div class="card__description-links">
               <a href="#">14 Day Returns</a>
               <a href="#">2-Year Warranty</a>
@@ -137,7 +140,7 @@
         <!-- Swiper -->
         <div class="newin__slider slider swiper-container swiper-container--newin">
           <h2>You May Also Like</h2>
-          <p><a href="catalog.html">Shop Now</a></p>
+          <p><a href="catalog.html" aria-label="catalog">Shop Now</a></p>
           <div class="slider__wrapper swiper-wrapper">
             <div class="slider__item swiper-slide">
               <a href="card.html">
@@ -176,7 +179,7 @@
               </a>
             </div>
             <div class="slider__item swiper-slide">
-              <a href="card.html">
+              <a href="card.html" aria-label="galaxy-earrings">
                 <picture>
                  <!-- 1х: 130px; 2x: 260px -->
                  <source type="image/webp" media="(max-width: 767px)" srcset="img/layered-choker-necklace-mobile.webp 1x, img/layered-choker-necklace-mobile@2x.webp 2x">
@@ -188,7 +191,7 @@
               </a>
             </div>
             <div class="slider__item swiper-slide">
-              <a href="card.thml">
+              <a href="card.thml" aria-label="purple-gemstone-necklace">
                 <picture>
                   <!-- 1х: 130px; 2x: 260px -->
                   <source type="image/webp" media="(max-width: 767px)" srcset="img/purple-gemstone-necklace-mobile.webp 1x, img/purple-gemstone-necklace-mobile@2x.webp 2x">
@@ -200,7 +203,7 @@
               </a>
             </div>
             <div class="slider__item swiper-slide">
-              <a href="card.html">
+              <a href="card.html" aria-label="layered-choker-necklace">
                 <picture>
                   <!-- 1х: 130px; 2x: 260px -->
                   <source type="image/webp" media="(max-width: 767px)" srcset="img/layered-choker-necklace-mobile.webp 1x, img/layered-choker-necklace-mobile@2x.webp 2x">
@@ -212,7 +215,7 @@
               </a>
             </div>
             <div class="slider__item swiper-slide">
-              <a href="card.html">
+              <a href="card.html" aria-label="dainty-gold-necklace">
                 <picture>
                   <!-- 1х: 130px; 2x: 260px -->
                   <source type="image/webp" media="(max-width: 767px)" srcset="img/purple-gemstone-necklace-mobile.webp 1x, img/purple-gemstone-necklace-mobile@2x.webp 2x">
@@ -224,7 +227,7 @@
               </a>
             </div>
             <div class="slider__item swiper-slide">
-              <a href="card.html">
+              <a href="card.html" aria-label="galaxy-earrings">
                 <picture>
                   <!-- 1х: 130px; 2x: 260px -->
                   <source type="image/webp" media="(max-width: 767px)" srcset="img/layered-choker-necklace-mobile.webp 1x, img/layered-choker-necklace-mobile@2x.webp 2x">
@@ -236,7 +239,7 @@
               </a>
             </div>
             <div class="slider__item swiper-slide">
-              <a href="card.html">
+              <a href="card.html" aria-label="purple-gemstone-necklace">
                 <picture>
                   <!-- 1х: 130px; 2x: 260px -->
                   <source type="image/webp" media="(max-width: 767px)" srcset="img/purple-gemstone-necklace-mobile.webp 1x, img/purple-gemstone-necklace-mobile@2x.webp 2x">
@@ -248,7 +251,7 @@
               </a>
             </div>
             <div class="slider__item swiper-slide">
-              <a href="card.html">
+              <a href="card.html" aria-label="layered-choker-necklace">
                 <picture>
                   <!-- 1х: 130px; 2x: 260px -->
                   <source type="image/webp" media="(max-width: 767px)" srcset="img/layered-choker-necklace-mobile.webp 1x, img/layered-choker-necklace-mobile@2x.webp 2x">
@@ -260,7 +263,7 @@
               </a>
             </div>
             <div class="slider__item swiper-slide">
-              <a href="card.html">
+              <a href="card.html" aria-label="dainty-gold-necklace">
                 <picture>
                   <!-- 1х: 130px; 2x: 260px -->
                   <source type="image/webp" media="(max-width: 767px)" srcset="img/purple-gemstone-necklace-mobile.webp 1x, img/purple-gemstone-necklace-mobile@2x.webp 2x">
@@ -272,7 +275,7 @@
               </a>
             </div>
             <div class="slider__item swiper-slide">
-              <a href="card.html">
+              <a href="card.html" aria-label="galaxy-earrings">
                 <picture>
                   <!-- 1х: 130px; 2x: 260px -->
                   <source type="image/webp" media="(max-width: 767px)" srcset="img/layered-choker-necklace-mobile.webp 1x, img/layered-choker-necklace-mobile@2x.webp 2x">
@@ -288,16 +291,16 @@
           <div class="slider__pagination swiper-pagination"></div>
           <!-- Add Arrows -->
           <div class="slider__buttons">
-            <div class="slider__button-next swiper-button-next">
+            <button type="button" class="slider__button-next swiper-button-next" aria-label="previous">
               <svg width="29" height="9">
                 <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
               </svg>
-            </div>
-            <div class="slider__button-prev swiper-button-prev">
+            </button>
+            <button type="button" class="slider__button-prev swiper-button-prev" aria-label="next">
               <svg width="29" height="9">
                 <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
               </svg>
-            </div>
+            </button>
           </div>
         </div>
       </section>
@@ -309,25 +312,27 @@
           <h2>The good stuff in&nbsp;your inbox </h2>
           <p>News and updates from CH. No&nbsp;spam, we promise.</p>
           <form action="https://echo.htmlacademy.ru" method="post" class="page-footer__email email-form">
+            <label>
               <input tabindex="0" type="email" value="" placeholder="Your E-mail" name="user_email">
-              <button type="submit" class="page-footer__email-button">Sign Up
-                <svg width="29" height="9">
-                  <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
-                </svg>
-              </button>
+            </label>
+            <button type="submit" class="page-footer__email-button" aria-label="Sign up">Sign Up
+              <svg width="29" height="9">
+                <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+              </svg>
+            </button>
           </form>
         </section>
           <div class="page-footer__service service">
-            <a href="#">Ordering & Payment</a>
-            <a href="#">Terms & Conditions</a>
-            <a href="#">Returns & Exchanges</a>
-            <a href="#">Delivery</a>
+            <a href="#" aria-label="Ordering & Payment">Ordering & Payment</a>
+            <a href="#" aria-label="Terms & Conditions">Terms & Conditions</a>
+            <a href="#" aria-label="Returns & Exchanges">Returns & Exchanges</a>
+            <a href="#" aria-label="Delivery">Delivery</a>
           </div>
           <div class="page-footer__information information">
-            <a href="#">About CH</a>
-            <a href="#">Stores & Hours</a>
-            <a href="#">Jobs</a>
-            <a href="#">Contact Us</a>
+            <a href="#" aria-label="About CH">About CH</a>
+            <a href="#" aria-label="Stores & Hours">Stores & Hours</a>
+            <a href="#" aria-label="Jobs">Jobs</a>
+            <a href="#" aria-label="Contact Us">Contact Us</a>
           </div>
           <ul class="page-footer__social-list social-list">
             <li>
@@ -365,10 +370,11 @@
           </ul>
       </div>
     </footer>
+  </div>
 
   <div class="overlay overlay__login">
     <div class="overlay__popup login login--nojs">
-      <button type="button" class="login__close popup__close button" aria-label="закрыть">
+      <button type="button" class="login__close popup__close button" aria-label="close">
         <span class="visually-hidden">Закрыть</span>
         <svg width="14" height="14">
           <use xlink:href="img/sprite.svg#icon-cross"></use>
@@ -385,17 +391,17 @@
           <label>
             <input tabindex="0" type="password" value="" placeholder="Password">
           </label>
-          <a href="#">Forgot your password?</a>
+          <a href="#" aria-label="Forgot your password?">Forgot your password?</a>
           <button type="submit" class="login__button button" aria-label="login">Log In</button>
         </form>
-        <p>Don’t have an account?<a href="#"><a href="#" class="login__signup-link">Sign up</a></a></p>
+        <p>Don’t have an account?<a href="#" class="login__signup-link" aria-label="sign up">Sign up</a></p>
       </div>
     </div>
   </div>
 
   <div class="overlay overlay__cart">
     <div class="overlay__popup popup popup--nojs cart popup--cart">
-      <button type="button" class="popup__close cart__close" aria-label="закрыть">
+      <button type="button" class="popup__close cart__close" aria-label="close">
         <span class="visually-hidden">Закрыть</span>
         <svg width="14" height="14">
           <use xlink:href="img/sprite.svg#icon-cross"></use>
@@ -406,7 +412,7 @@
           The item was added to your cart
         </h3>
         <div class="popup__cart-items">
-          <a href="card.html">
+          <a href="card.html" aria-label="necklace-detail">
             <picture>
               <!-- 1х: 70px; 2x: 140px -->
               <source type="image/webp" media="(max-width: 767px)" srcset="img/necklace-detail-popup-mobile.webp 1x, img/necklace-detail-popup-mobile@2x.webp 2x">
@@ -441,11 +447,7 @@
   <script src="js/vendor.js" defer=""></script>
   <!-- Swiper JS -->
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-  <!--<script src="js/main.min.js"></script>
-  <script src="js/vendor.min.js" defer=""></script>-->
-  <!--<script src="js/main.js"></script>-->
-  <script src="js/slider.js"></script>
-  <script src="js/accordion-main.js"></script>
-</div></body>
+  <script src="js/main.js"></script>
+</body>
 
 </html>

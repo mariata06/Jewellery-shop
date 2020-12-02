@@ -43,4 +43,9 @@ img {
 a {
   text-decoration: none;
   color: $black;
+
+  &:hover,
+  &:active {
+    opacity: 0.5;
+  }
 }

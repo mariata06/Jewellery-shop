@@ -4,8 +4,6 @@
   margin-bottom: 50px;
 
   .slider__item {
-    //width: 270px;
-
     @media (max-width: $max-tablet-width) {
       width: 324px;
     }
@@ -48,12 +46,6 @@
   }
 }
 
-/*
-.swiper-pagination {
-  top: 300px;
-}
-*/
-
 .swiper-pagination-bullet {
   width: 20px;
   height: 20px;
@@ -62,13 +54,11 @@
   font-size: 12px;
   color: $medium-grey;
   opacity: 1;
-  //background: rgba(0, 0, 0, 0.2);
   background-color: transparent;
 }
 
 .swiper-pagination-bullet-active {
   color: $black;
-  //background: #007aff;
   background-color: transparent;
 }
 
@@ -96,4 +86,11 @@
 .slider__button-prev {
   top: 10px;
   right: 0;
+  background-color: transparent;
+
+  &:hover,
+  &:active {
+    border: none;
+    opacity: 0.3;
+  }
 }

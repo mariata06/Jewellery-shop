@@ -23,6 +23,10 @@
   @media (max-width: $max-mobile-width) {
     flex-wrap: wrap;
   }
+
+  button {
+    margin-bottom: 21px;
+  }
 }
 
 .card__photo {
@@ -59,11 +63,9 @@
   }
 
   h2 {
+    @include title ($font-34, $height-44, $bold, $trueblack);
     margin: 0;
     font-family: "cormorantgaramond", "Arial", sans-serif;
-    font-size: 34px;
-    line-height: 44px;
-    font-weight: 700;
   }
 
   span {
@@ -95,20 +97,6 @@
     margin-bottom: 25px;
   }
 
-  button {
-    padding: 0;
-    outline: none;
-    border: none;
-    color: $white;
-    background-color: $beige;
-    padding-top: 28px;
-    padding-bottom: 28px;
-    font-size: 16px;
-    line-height: 21px;
-    font-weight: 500;
-    margin-bottom: 21px;
-  }
-
   .card__description-links {
     display: flex;
     flex-wrap: nowrap;
@@ -116,10 +104,8 @@
   }
 
   a {
+    @include text ($font-14, $height-18, $medium);
     color: $medium-grey;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: 500;
   }
 }
 

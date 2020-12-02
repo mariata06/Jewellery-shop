@@ -1,7 +1,5 @@
 .filter {
   width: 250px;
-  //padding: 28px 25px;
-  //border: 1px solid $beige;
   align-self: baseline;
   background-color: $white;
   z-index: 100;
@@ -20,28 +18,16 @@
 
   @media (max-width: $max-mobile-width) {
     padding: 78px 25px 80px;
+
+    &--show {
+      display: block;
+    }
   }
 
   .filter__btn {
-    border: none;
-    outline: none;
     width: 100%;
-    color: $white;
-    background-color: $beige;
     padding: 20px 0;
     margin-top: 35px;
-    font-size: 16px;
-    line-height: 21px;
-    font-weight: 500;
-    font-family: "poppins", "Arial", sans-serif;
-
-    &:hover,
-    &:focus,
-    &:active {
-      color: $black;
-      border: 1px solid $beige;
-      background-color: transparent;
-    }
 
     @media (max-width: $max-tablet-width) {
       width: 362px;
@@ -55,21 +41,20 @@
 
   .filter__item-trigger {
     padding: 0;
-    font-size: 16px;
-    line-height: 21px;
-    font-weight: 500;
+    color: $black;
     width: 100%;
-    outline: none;
-    border: none;
     background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: "poppins", "Arial", sans-serif;
+
+    &:hover,
+    &:active {
+      border: none;
+    }
 
     svg {
       @media (max-width: $max-tablet-width) {
-        //transform: scale(1.5);
         width: 23px;
         height: 12px;
       }
@@ -108,7 +93,6 @@
   }
 
   .filter__item-content {
-    //display: flex;
     padding-top: 10px;
     flex-wrap: wrap;
     display: none;
@@ -146,6 +130,18 @@
     }
   }
 
+  input:focus + label::after {
+    outline: 5px auto -webkit-focus-ring-color;
+    opacity: 0.7;
+  }
+
+  .input:checked:focus + label::after,
+  .input:checked:hover + label::after {
+    outline: 5px auto -webkit-focus-ring-color;
+    opacity: 0.7;
+    //background-color: rgba(168, 123, 98, 0.7);
+  }
+
   .filter__price-range {
     display: block;
     width: 100%;
@@ -177,7 +173,6 @@
       display: inline-block;
       margin-top: 10px;
       padding-left: 50px;
-      //padding-right: 50px;
     }
   }
 
@@ -189,13 +184,11 @@
     background-color: $beige;
     top: 0;
     left: 65px;
-    //margin-bottom: 10px;
   }
 }
 
 .filter__form {
   @media (max-width: $max-tablet-width) {
-    //display: none;
     display: flex;
     flex-wrap: wrap;
     width: 458px;
@@ -222,9 +215,6 @@
   width: 32px;
   height: 32px;
   border-radius: 100px;
-  border: none;
-  outline: none;
-  //position: absolute;
   margin-top: 5px;
   margin-left: auto;
   display: none;

@@ -1,0 +1,20 @@
+input {
+  @include text ($font-14, $height-21, $medium);
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: $white;
+
+  &::placeholder {
+    color: $medium-grey;
+  }
+
+  &:hover,
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    border: 1px solid $medium-grey;
+  }
+}

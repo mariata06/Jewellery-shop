@@ -13,10 +13,8 @@
   }
 
   h2 {
+    @include title ($font-34, $height-44, $bold, $trueblack);
     font-family: "cormorantgaramond", "Arial", sans-serif;
-    font-size: 34px;
-    line-height: 44px;
-    font-weight: 700;
     text-align: center;
   }
 

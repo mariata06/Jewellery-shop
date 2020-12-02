@@ -9,39 +9,44 @@
   @media (max-width: $max-mobile-width) {
     padding: 0 15px;
     margin-top: 80px;
-    //padding-top: 80px;
   }
 
   h2 {
+    @include title ($font-34, $height-44, $bold, $trueblack);
     margin: 0;
     font-family: "cormorantgaramond", "Arial", sans-serif;
-    font-size: 34px;
-    line-height: 44px;
-    font-weight: 700;
     text-align: center;
     margin-bottom: 60px;
-    //margin-top: 80px;
   }
 
   button {
+    @include text ($font-18, $height-23, $regular);
     width: 100%;
     padding: 0;
-    outline: none;
-    border: none;
     background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 18px;
-    line-height: 23px;
-    font-weight: 500;
-    font-family: "poppins", "Arial", sans-serif;
+    border: none;
+    color: $black;
+
+    &:hover,
+    &:active {
+      border: none;
+    }
 
     @media (max-width: $max-mobile-width) {
       font-size: 16px;
       line-height: 22px;
       text-align: left;
       align-items: baseline;
+    }
+  }
+
+  svg {
+    &:hover,
+    &:active {
+      opacity: 0.3;
     }
   }
 }

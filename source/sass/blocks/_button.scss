@@ -1,0 +1,20 @@
+button {
+  @include text ($font-16, $height-21, $medium);
+  padding: 0;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: $white;
+  background-color: $beige;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  font-family: "poppins", "Arial", sans-serif;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $black;
+    border: 1px solid $beige;
+    background-color: transparent;
+  }
+}

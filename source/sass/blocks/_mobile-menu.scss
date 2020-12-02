@@ -87,8 +87,6 @@
 .mobile-menu__burger-menu {
   display: none;
   background-color: transparent;
-  outline: none;
-  border: none;
   padding: 0;
 
   @media (max-width: $max-tablet-width) {
@@ -97,14 +95,12 @@
 }
 
 .mobile-menu__login {
+  @include text ($font-14, $height-21, $medium);
   margin-left: auto;
   background-color: transparent;
   border: none;
   color: $black;
   padding: 0;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 500;
   font-family: "poppins", "Arial", sans-serif;
   cursor: pointer;
   //display: none;
@@ -119,21 +115,18 @@
   }
 
   @media (max-width: $max-tablet-width) {
+    @include text ($font-18, $height-23, $regular);
     width: 100%;
     order: 5;
     text-align: left;
-    font-size: 18px;
-    line-height: 23px;
     color: $white;
     display: none;
   }
 }
 
 .mobile-menu__cart-link {
+  @include text ($font-14, $height-21, $medium);
   margin-left: 35px;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 500;
 
   @media (max-width: $max-tablet-width) {
     margin-left: 0;

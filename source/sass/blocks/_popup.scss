@@ -43,25 +43,19 @@
   }
 
   h3 {
+    @include title ($font-26, $height-34, $bold, $trueblack);
     margin: 0 auto;
     font-family: "cormorantgaramond", "Arial", sans-serif;
-    font-size: 26px;
-    line-height: 34px;
-    font-weight: 700;
     margin-bottom: 30px;
     text-align: center;
     display: block;
   }
 
   h4 {
+    @include title ($font-18, $height-23, $bold, $trueblack);
     margin: 0;
     font-family: "cormorantgaramond", "Arial", sans-serif;
-    font-size: 18px;
-    line-height: 23px;
-    font-weight: 700;
-    //width: 105px;
     display: flex;
-    //width: 105px;
     flex-wrap: wrap;
     flex-direction: column;
 
@@ -76,38 +70,25 @@
     }
   }
 
-  button {
-    padding: 0;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    background-color: transparent;
-  }
-
   .popup__close {
-    //position: absolute;
-    //top: 20;
-    //right: 20;
     margin-left: auto;
     display: block;
     margin-top: 20px;
     margin-right: 20px;
+    padding: 0;
+    background-color: transparent;
   }
 
   .popup__cart-items {
     display: flex;
     margin-bottom: 50px;
     width: 100%;
-    //justify-content: space-between;
   }
 
   a {
     margin-right: 20px;
 
     @media (max-width: $max-tablet-width) {
-      //width: 88px;
-      //height: 79px;
-
       img {
         width: 88px;
         height: 79px;
@@ -134,15 +115,11 @@
     }
 
     span {
-      font-size: 14px;
-      line-height: 18px;
-      font-weight: 500;
+      @include text ($font-14, $height-18, $medium);
     }
   }
 
   .popup__button {
-    background-color: $beige;
-    color: $white;
     width: 200px;
     padding-top: 28px;
     padding-bottom: 28px;
@@ -150,13 +127,6 @@
     @media (max-width: $max-mobile-width) {
       width: 100%;
       margin-bottom: 20px;
-    }
-
-    &:hover,
-    &:focus,
-    &:active {
-      background-color: $white;
-      color: $black;
     }
 
     &:last-child {
@@ -168,12 +138,11 @@
 .popup__content {
   display: flex;
   flex-wrap: wrap;
-  padding: 55px 35px;
+  padding: 0 35px 55px;
 }
 
 .popup__cart-contents {
   display: flex;
-  //flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   margin-left: auto;
