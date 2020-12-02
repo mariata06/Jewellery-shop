@@ -1,24 +1,81 @@
-.page-header {
+.mobile-menu {
   background-color: $white;
   display: flex;
   flex-wrap: wrap;
   padding: 41px 98px 25px 98px;
   align-items: center;
 
-  a {
-    color: $black;
-  }
-
   @media (max-width: $max-tablet-width) {
     padding: 30px 45px;
     justify-content: space-between;
 
-    &--nojs {
-      background-color: $beige;
+    .svg {
+      stroke: $trueblack;
+      fill: transparent;
     }
 
+    &--hide {
+      background-color: $white;
+
+      .svg {
+        stroke: $trueblack;
+        fill: transparent;
+      }
+
+      .logo__white {
+        display: none;
+      }
+
+      .logo__beige {
+        display: block;
+      }
+
+      .navigation {
+        display: none;
+      }
+
+      .search-form {
+        display: none;
+      }
+
+      .mobile-menu__login {
+        display: none;
+      }
+    }
+
+    &--nojs,
     &--show {
       background-color: $beige;
+
+      .svg {
+        stroke: $white;
+        fill: transparent;
+      }
+
+      .logo__white {
+        display: block;
+      }
+
+      .logo__beige {
+        display: none;
+      }
+
+      a {
+        color: $white;
+      }
+
+      .navigation {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .search-form {
+        display: flex;
+      }
+
+      .mobile-menu__login {
+        display: block;
+      }
     }
   }
 
@@ -27,7 +84,7 @@
   }
 }
 
-.page-header__burger-menu {
+.mobile-menu__burger-menu {
   display: none;
   background-color: transparent;
   outline: none;
@@ -39,7 +96,7 @@
   }
 }
 
-.page-header__login {
+.mobile-menu__login {
   margin-left: auto;
   background-color: transparent;
   border: none;
@@ -50,6 +107,16 @@
   font-weight: 500;
   font-family: "poppins", "Arial", sans-serif;
   cursor: pointer;
+  //display: none;
+  display: block;
+
+  &--nojs {
+    display: block;
+  }
+
+  &--show {
+    display: block;
+  }
 
   @media (max-width: $max-tablet-width) {
     width: 100%;
@@ -57,19 +124,12 @@
     text-align: left;
     font-size: 18px;
     line-height: 23px;
+    color: $white;
     display: none;
-
-    &--nojs {
-      display: block;
-    }
-
-    &--show {
-      display: block;
-    }
   }
 }
 
-.page-header__cart {
+.mobile-menu__cart-link {
   margin-left: 35px;
   font-size: 14px;
   line-height: 21px;
@@ -87,7 +147,7 @@
     }
   }
 
-  a {
+  span {
     @media (max-width: $max-tablet-width) {
       display: none;
     }

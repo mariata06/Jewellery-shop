@@ -11,6 +11,7 @@
 
 .logo__beige {
   display: block;
+  height: 66px;
 
   @media (max-width: $max-tablet-width) {
     display: block;
@@ -31,6 +32,7 @@
 
 .logo__white {
   display: none;
+  height: 66px;
 
   @media (max-width: $max-tablet-width) {
     &--nojs {

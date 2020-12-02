@@ -1,101 +1,131 @@
 /*****************************МОБИЛЬНОЕ МЕНЮ**********************************/
+/*
 "use strict";
-(function () {
-  var header = document.querySelector(".page-header");
-  var buttonBurger = document.querySelector(".page-header__burger-menu");
-  var jewelryNavigation = document.querySelector(".navigation");
-  var logoWhite = document.querySelector(".logo__white");
-  var logoBeige = document.querySelector(".logo__beige");
-  var login = document.querySelector(".page-header__login");
-  var search = document.querySelector(".search-form");
+var header = document.querySelector(".page-header");
+var buttonBurger = document.querySelector(".page-header__burger-menu");
+var jewelleryNavigation = document.querySelector(".navigation");
+var logoWhite = document.querySelector(".logo__white");
+var logoBeige = document.querySelector(".logo__beige");
+var search = document.querySelector(".search-form");
+var loginLink = document.querySelector(".page-header__login");
+*/
 
-  //var mobileMenu = document.querySelector(".site-nav");
-  //var closeButton = document.querySelector(".page-header__mobile-menu-close");
-  //var whiteLogo = document.querySelector(".logo--white");
-  //var blueLogo = document.querySelector(".logo--blue");
-  //var headerMenu = document.querySelector(".page-header__menu");
-
-  jewelryNavigation.classList.remove("navigation--nojs"); // спрятанная навигация при работающем js
-  login.classList.remove("page-header__login--nojs");
-  header.classList.remove("page-header--nojs"); // белый хедер при работающем js
-  //headerMenu.classList.remove("page-header__menu--nojs"); // меню на синем фоне при работающем js
-  logoBeige.classList.remove("logo__beige--nojs"); // бежевый лого при работающем js
-  logoWhite.classList.remove("logo__white--nojs"); // беksq лого без js
-  search.classList.remove("page-header__search--nojs");
-  if (buttonBurger !== null) {
-    buttonBurger.classList.remove("page-header__burger-menu--nojs");
-    header.classList.remove("page-header--nojs")
-    buttonBurger.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      jewelryNavigation.classList.add("navigation--show");
-      login.classList.add("page-header__login--show");
-      logoWhite.classList.add("logo__white--show");
-      logoBeige.classList.add("logo__beige--hide");
-      header.classList.add("page-header--show");
-      search.classList.add("search-form--show");
-    });
-  }
-  //closeButton.classList.remove("page-header__mobile-menu-close--nojs");
-  //whiteLogo.classList.remove("logo--white--nojs");
-  //blueLogo.classList.remove("logo--blue--nojs");
-
-  /*closeButton.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    mobileMenu.classList.remove("site-nav--show");
-    mobileMenu.classList.add("site-nav--hide");
-    headerMenu.classList.remove("page-header__menu--show");
-    buttonBurger.classList.remove("page-header__mobile-menu-burger--hide");
-    whiteLogo.classList.remove("logo--white--hide");
-    blueLogo.classList.remove("logo--blue--show");
-    closeButton.classList.remove("page-header__mobile-menu-close--show");
-  });*/
-
-  /*
-  var formButton = document.querySelector(".form__button");
-  var formCheckbox = document.querySelector(".form__checkbox");
-
-  formCheckbox.addEventListener("change", function () {
-
-    if (formCheckbox.checked) {
-      formButton.removeAttribute("disabled");
-    } else {
-      formButton.toggleAttribute("disabled");
-    }
-  });
-  */
-
-})();
-
-// Переключение меню - аккордеона в блоке Частые вопросы
-var accordionItemTrigger = document.querySelectorAll(".accordion__item-trigger");
-var accordionItem = document.querySelectorAll(".accordion__item");
-var arrowItems = document.querySelectorAll(".accordion__item-svg");
-//var activeitem = document.querySelectorAll(".accordion__item--active");
-
-var activeArrow = document.querySelector(".accordion__item--active").querySelector(".accordion__item-svg");
-activeArrow.style.transform = "rotate(180deg)";
+//var mobileMenu = document.querySelector(".site-nav");
+//var closeButton = document.querySelector(".page-header__mobile-menu-close");
+//var whiteLogo = document.querySelector(".logo--white");
+//var blueLogo = document.querySelector(".logo--blue");
+//var headerMenu = document.querySelector(".page-header__menu");
 
 /*
-activeItem.forEach(function (item) {
-  item.addEventListener("click")
+function svgMod() {
+  var svgArray = document.querySelectorAll(".svg");
+  svgArray.forEach(function (item) {
+    item.setAttribute("stroke","#ffffff");
+    console.log(item);
+  });
+};
+*/
+//var buttonBurgerCloned = document.querySelector
+/*
+var newHeader = document.querySelector(".page-header--cloned");
+document.body.removeChild(newHeader);
+buttonBurger.addEventListener("click", function createClone() {
+  var newHeader = header.cloneNode(true);
+  document.body.appendChild(newHeader);
+  newHeader.style.cssText= "position: absolute; top: 0; left: 0; width: 100%; z-index: 100; background-color: #a87b62";
+  var newLogoWhite = newHeader.querySelector(".logo__white");
+  newLogoWhite.style.display = "block";
+  var newLogoBeige = newHeader.querySelector(".logo__beige");
+  newLogoBeige.style.display = "none";
+  var newNav = newHeader.querySelector(".navigation");
+  newNav.style.display = "block";
+  var newLogin = newHeader.querySelector(".page-header__login");
+  newLogin.style.display = "block";
+  newHeader.classList.add("page-header--cloned")
+  var newBurger = newHeader.querySelector(".burger-menu__svg");
+  newBurger.setAttribute("stroke", "#ffffff");
+  newBurger.addEventListener("click", function deleteClone() {
+    document.body.removeChild(newHeader);
+  });
+});
+*/
+/*
+buttonBurger.addEventListener("click", function deleateClone() {
+  /*
+  if (newHeader) {
+    document.body.removeChild(newHeader);
+  }
+  document.body.removeChild(newHeader);
+})
+/*
+buttonBurger.addEventListener("click", function deleatClone() {
+  header.removeChild(newHeader);
 })
 */
-accordionItemTrigger.forEach(function (item) {
-  item.addEventListener("click", () => {
-    arrowItems.forEach(function (item) {
-      item.style.transform = "none";
-    })
+/*
+jewelleryNavigation.classList.remove("navigation--nojs"); // спрятанная навигация при работающем js
+loginLink.classList.remove("page-header__login--nojs");
+//login.classList.remove("page-header__login--nojs");
+header.classList.remove("page-header--nojs"); // белый хедер при работающем js
+//headerMenu.classList.remove("page-header__menu--nojs"); // меню на синем фоне при работающем js
+logoBeige.classList.remove("logo__beige--nojs"); // бежевый лого при работающем js
+logoWhite.classList.remove("logo__white--nojs"); // белый лого без js
+search.classList.remove("search-form--nojs");
+if (buttonBurger !== null) {
+  buttonBurger.classList.remove("page-header__burger-menu--nojs");
+  header.classList.remove("page-header--nojs")
+  buttonBurger.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    jewelleryNavigation.classList.add("navigation--show");
+    loginLink.classList.add("page-header__login--show");
+    logoWhite.classList.add("logo__white--show");
+    logoBeige.classList.add("logo__beige--hide");
+    header.classList.add("page-header--show");
+    search.classList.add("search-form--show");
+    svgMod();
+  });
+}
+*/
 
-    const parent = item.parentNode;
-    var arrowItem = item.querySelector(".accordion__item-svg");
-    arrowItem.style.transform = "rotate(360deg)";
-    if (parent.classList.contains("accordion__item--active")) {
-      parent.classList.remove("accordion__item--active");
-    } else {
-      accordionItem.forEach((child) => child.classList.remove("accordion__item--active"))
+"use strict";
+var mobileMenu = document.querySelector(".mobile-menu");
+mobileMenu.classList.remove("mobile-menu--nojs");
+var buttonBurger = document.querySelector(".burger-menu");
 
-      parent.classList.add("accordion__item--active");
-      arrowItem.style.transform = "rotate(180deg)";
-    }
+//listener1
+//evt.preventDefault();
+//  mobileMenu.classList.add("mobile-menu--show");
+
+/*
+buttonBurger.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  mobileMenu.classList.add("mobile-menu--show");
+  buttonBurger.addEventListener("click", function(evt2) {
+    evt2.preventDefault();
+    mobileMenu.classList.remove("mobile-menu--show");
+    //buttonBurger.addEventListener("click", listener);
+    //buttonBurger.removeEventListener("click", listenerToHide());
   })
+}
+*/
+buttonBurger.addEventListener("click", function() {
+  mobileMenu.classList.toggle("mobile-menu--hide");
+  mobileMenu.classList.toggle("mobile-menu--show");
 });
+  /*
+  if (mobileMenu.classList.contains("mobile-menu--show")) {
+    mobileMenu.classList.remove("mobile-menu--show");
+  }*/
+
+/*
+var mobileMenu = document.querySelector(".mobile-menu");
+mobileMenu.classList.remove("mobile-menu--nojs");
+var buttonBurger = document.querySelector(".burger-menu");
+buttonBurger.addEventListener('click', function() {
+  this.classList.add("mobile-menu--show");
+  if (mobileMenu.classList.contains("mobile-menu--show")) {
+    mobileMenu.classList.add("mobile-menu--show");
+  } else {
+    mobileMenu.classList.remove("mobile-menu--show");
+  }
+})*/

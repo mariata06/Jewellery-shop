@@ -28,6 +28,15 @@
   @media (max-width: $max-tablet-width) {
     background-image: url("../img/bg-login-tablet.png");
     width: 442px;
+    display: block;
+
+    &--show {
+      display: block;
+    }
+
+    &--nojs {
+      display: none;
+    }
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-login-tablet@2x.png");
@@ -39,6 +48,15 @@
     width: 270px;
     background-size: 270px 84px;
     padding-top: 84px;
+    display: block;
+
+    &--show {
+      display: block;
+    }
+
+    &--nojs {
+      display: none;
+    }
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-login-mobile@2x.png");

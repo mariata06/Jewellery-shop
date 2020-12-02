@@ -18,10 +18,28 @@
 
   @media (max-width: $max-tablet-width) {
     width: 502px;
+    display: block;
+
+    &--show {
+      display: block;
+    }
+
+    &--nojs {
+      display: none;
+    }
   }
 
   @media (max-width: $max-mobile-width) {
     width: 290px;
+    display: block;
+
+    &--show {
+      display: block;
+    }
+
+    &--nojs {
+      display: none;
+    }
   }
 
   h3 {

@@ -92,9 +92,9 @@ loginButton.addEventListener("click", function (evt) {
   overlayLogin.classList.add("overlay__login--show");
   htmlDoc.classList.add("disable-scroll");
   console.log(userEmail);
+  userEmail.focus();
   if (currentEmail) {
     userEmail.value = currentEmail;
-    userEmail.focus();
   }
 });
 

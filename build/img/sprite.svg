@@ -5,7 +5,7 @@
 </symbol><symbol id="icon-arrow-left" viewBox="0 0 30 11">
 <path d="M30 5.5L1 5.5M1 5.5L6.48649 10M1 5.5L6.48649 1" stroke="#A87B62"/>
 </symbol><symbol id="icon-cart" viewBox="0 0 20 18">
-<path d="M14 5C14 6.06087 13.5786 7.07828 12.8284 7.82843C12.0783 8.57857 11.0609 9 10 9C8.93913 9 7.92172 8.57857 7.17157 7.82843C6.42143 7.07828 6 6.06087 6 5M1 1H19V17H1V1Z" fill="none" stroke="#1D1613" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14 5C14 6.06087 13.5786 7.07828 12.8284 7.82843C12.0783 8.57857 11.0609 9 10 9C8.93913 9 7.92172 8.57857 7.17157 7.82843C6.42143 7.07828 6 6.06087 6 5M1 1H19V17H1V1Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol><symbol id="icon-cross" viewBox="0 0 14 14">
 <path d="M7 5.44469L12.4447 0L14 1.55531L8.55531 7L14 12.4447L12.4447 14L7 8.55531L1.55531 14L0 12.4447L5.44469 7L0 1.55531L1.55531 0L7 5.44469Z"/>
 </symbol><symbol id="icon-fb" viewBox="0 0 8 15">
@@ -15,7 +15,7 @@
 </symbol><symbol id="icon-magnifying-glass" viewBox="0 0 14 14">
 <path d="M11.0482 10.0737L14 13.0248L13.0248 14L10.0737 11.0482C8.9757 11.9285 7.60993 12.4072 6.20262 12.4052C2.77877 12.4052 0 9.62646 0 6.20262C0 2.77877 2.77877 0 6.20262 0C9.62646 0 12.4052 2.77877 12.4052 6.20262C12.4072 7.60993 11.9285 8.9757 11.0482 10.0737ZM9.66575 9.56237C10.5404 8.66291 11.0289 7.45722 11.0269 6.20262C11.0269 3.53687 8.86768 1.37836 6.20262 1.37836C3.53687 1.37836 1.37836 3.53687 1.37836 6.20262C1.37836 8.86768 3.53687 11.0269 6.20262 11.0269C7.45722 11.0289 8.66291 10.5404 9.56237 9.66575L9.66575 9.56237Z"/>
 </symbol><symbol id="icon-menu" viewBox="0 0 25 18">
-<path d="M0 1H25M0 9H25M0 17H25" stroke="#1D1613" stroke-width="2"/>
+<path d="M0 1H25M0 9H25M0 17H25" stroke-width="2"/>
 </symbol><symbol id="icon-minus" viewBox="0 0 14 2">
 <path d="M0 0H14V2H0V0Z" fill="#9B9997"/>
 </symbol><symbol id="icon-pinterest" viewBox="0 0 16 15">

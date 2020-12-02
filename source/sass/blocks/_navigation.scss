@@ -54,6 +54,10 @@
 
   a {
     font-weight: 500;
+
+    @media (max-width: $max-tablet-width) {
+      color: $white;
+    }
   }
 }
 
@@ -70,6 +74,12 @@
       line-height: 23px;
       margin-bottom: 40px;
       font-weight: 500;
+    }
+  }
+
+  a {
+    @media (max-width: $max-tablet-width) {
+      color: $white;
     }
   }
 }
