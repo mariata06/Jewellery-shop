@@ -20,54 +20,54 @@
 
 <body>
   <div class="page-wrapper">
-    <header class="page-header page-header--nojs container">
-      <div>
-        <button class="page-header__burger-menu burger-menu burger-menu--nojs">
-          <svg width="25" height="16">
+    <header class="page-header container">
+      <div class="page-header__menu mobile-menu mobile-menu--nojs mobile-menu--hide">
+        <button class="mobile-menu__burger-menu burger-menu burger-menu">
+          <svg class="burger-menu__svg svg" width="25" height="16">
             <use xlink:href="img/sprite.svg#icon-menu"></use>
           </svg>
         </button>
-      </div>
 
-      <form action="https://echo.htmlacademy.ru" method="post" class="page-header__search page-header__search--nojs search-form">
+        <form action="https://echo.htmlacademy.ru" method="post" class="mobile-menu__search search-form search-form">
           <svg width="14" height="14">
             <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
           </svg>
           <input tabindex="0" type="text" value="" placeholder="Type here to search">
-      </form>
+        </form>
 
-      <div class="page-header__logo logo">
-        <a href="index.html" class="logo__beige logo__beige--nojs">
-          <img src="img/logo-beige.svg" width="66" height="66" alt="Логотип магазина ювелирных украшений">
+        <div class="mobile-menu__logo logo">
+          <a href="index.html" class="logo__beige logo__beige">
+            <img src="img/logo-beige.svg" width="66" height="66" alt="Логотип магазина ювелирных украшений">
+          </a>
+          <a href="index.html" class="logo__white logo__white">
+            <img src="img/logo-white.svg" width="66" height="66" alt="Логотип магазина ювелирных украшений">
+          </a>
+        </div>
+
+        <a class="mobile-menu__login mobile-menu__login" href="login.html">Login</a>
+
+        <a class="mobile-menu__cart-link cart-link" href="cart.html">
+          <span>Cart 0</span>
+          <svg class="cart-link__svg svg" width="18" height="16">
+            <use xlink:href="img/sprite.svg#icon-cart"></use>
+          </svg>
         </a>
-        <a href="index.html" class="logo__white logo__white--nojs">
-          <img src="img/logo-white.svg" width="66" height="66" alt="Логотип магазина ювелирных украшений">
-        </a>
+
+        <nav class="mobile-menu__navigation navigation navigation">
+          <ul class="navigation__jewellery">
+            <li><a href="catalog.html">What’s new</a></li>
+            <li><a href="catalog.html">Chokers</a></li>
+            <li><a href="catalog.html">Necklaces</a></li>
+            <li><a href="catalog.html">Rings</a></li>
+            <li><a href="catalog.html">Earrings</a></li>
+          </ul>
+          <ul class="navigation__links">
+            <li><a href="#">About CH</a></li>
+            <li><a href="#">Stores & Hours</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </nav>
       </div>
-
-      <a class="page-header__login page-header__login--nojs" href="login.html">Login</a>
-
-      <a class="page-header__cart-link cart-link" href="cart.html">
-        <span>Cart 0</span>
-        <svg class="cart-link__svg svg" width="18" height="16">
-          <use xlink:href="img/sprite.svg#icon-cart"></use>
-        </svg>
-      </a>
-
-      <nav class="page-header__navigation navigation navigation--nojs">
-        <ul class="navigation__jewellery">
-          <li><a href="catalog.html">What’s new</a></li>
-          <li><a href="catalog.html">Chokers</a></li>
-          <li><a href="catalog.html">Necklaces</a></li>
-          <li><a href="catalog.html">Rings</a></li>
-          <li><a href="catalog.html">Earrings</a></li>
-        </ul>
-        <ul class="navigation__links">
-          <li><a href="#">About CH</a></li>
-          <li><a href="#">Stores & Hours</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </nav>
     </header>
 
     <main class="page-card">
