@@ -37,12 +37,17 @@
 }
 
 .navigation__jewellery {
+  padding-left: 333px;
+  padding-right: 333px;
+  display: flex;
+  justify-content: space-between;
+
   @media (max-width: $max-tablet-width) {
     display: block;
   }
 
   li {
-    margin-right: 35px;
+    //margin-right: 35px;
 
     @media (max-width: $max-tablet-width) {
       margin-bottom: 40px;

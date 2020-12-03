@@ -5,7 +5,7 @@
 .page-footer__content {
   display: flex;
   flex-wrap: wrap;
-  padding: 100px 98px;
+  padding: 90px 95px;
   align-items: stretch;
   color: $white;
 
@@ -21,7 +21,7 @@
     @include title ($font-34, $height-44, $bold, $white);
     margin: 0;
     font-family: "cormorantgaramond", "Arial", sans-serif;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
   }
 
   p {

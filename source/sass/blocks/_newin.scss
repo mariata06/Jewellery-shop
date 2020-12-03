@@ -1,5 +1,9 @@
 .newin {
-  padding: 130px 98px;
+  padding: 120px 72px 140px;
+
+  &--card {
+    padding-bottom: 210px;
+  }
 
   @media (max-width: $max-tablet-width) {
     padding: 130px 45px;
@@ -11,6 +15,7 @@
 
   h2 {
     @include title ($font-34, $height-44, $bold, $trueblack);
+    margin: 0;
     font-family: "cormorantgaramond", "Arial", sans-serif;
     text-align: center;
   }
@@ -24,5 +29,10 @@
     text-align: center;
     display: block;
     margin-bottom: 60px;
+  }
+
+  p {
+    margin: 0;
+    margin-top: 22px;
   }
 }

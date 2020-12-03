@@ -1,5 +1,5 @@
 .card {
-  padding: 80px 98px;
+  padding: 80px 98px 0;
 
   @media (max-width: $max-tablet-width) {
     padding-left: 45px;
@@ -25,7 +25,7 @@
   }
 
   button {
-    margin-bottom: 21px;
+    margin-bottom: 16px;
   }
 }
 
@@ -65,12 +65,15 @@
   h2 {
     @include title ($font-34, $height-44, $bold, $trueblack);
     margin: 0;
+    margin-top: -10px;
+    margin-bottom: 10px;
     font-family: "cormorantgaramond", "Arial", sans-serif;
   }
 
   span {
     font-size: 26px;
     line-height: 34px;
+    margin-bottom: 22px;
   }
 
   p {
@@ -81,12 +84,16 @@
   .card__description-info {
     margin-left: 35px;
     color: $black;
+    font-size: 16px;
+    line-height: 21px;
   }
 
   td {
     border-bottom: 1px solid $light-grey;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 12px;
+    padding-bottom: 8px;
+    font-size: 14px;
+    line-height: 18px;
   }
 
   td:nth-child(2n) {
@@ -94,7 +101,7 @@
   }
 
   table {
-    margin-bottom: 25px;
+    margin-bottom: 50px;
   }
 
   .card__description-links {

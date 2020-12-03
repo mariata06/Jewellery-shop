@@ -1,6 +1,7 @@
 .gallery {
   padding-left: 98px;
   padding-right: 98px;
+  padding-bottom: 50px;
 
   @media (max-width: $max-tablet-width) {
     margin-top: 84px;
@@ -14,6 +15,8 @@
 
   h2 {
     @include title ($font-34, $height-44, $bold, $trueblack);
+    margin: 0;
+    margin-bottom: 16px;
     font-family: "cormorantgaramond", "Arial", sans-serif;
     text-align: center;
   }
@@ -25,7 +28,7 @@
     border-bottom: 1px solid $beige;
     text-align: center;
     display: block;
-    margin-bottom: 60px;
+    margin-bottom: 65px;
     width: 74px;
   }
 }

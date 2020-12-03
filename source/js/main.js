@@ -31,6 +31,7 @@ faqItemTrigger.forEach(function (item) {
 });
 
 // Переключение меню - аккордеона в фильтре
+
 var filterItems = document.querySelectorAll(".filter__item");
 var filterArrows = document.querySelectorAll(".filter__item-svg");
 var filterActiveArrows = document.querySelectorAll(".filter__item--active");
@@ -51,6 +52,30 @@ filterItems.forEach(function (item) {
     }
   });
 });
+
+// Переключение меню - аккордеона в фильтре
+/*
+var filterButtons = document.querySelectorAll(".filter__item-trigger");
+var filterArrows = document.querySelectorAll(".filter__item-svg");
+var filterActiveArrows = document.querySelectorAll(".filter__item--active");
+
+filterActiveArrows.forEach(function (item) {
+  item.querySelector(".filter__item-svg").style.transform = "rotate(180deg)";
+})
+
+filterButtons.forEach(function (item) {
+  item.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    if (item.classList.contains("filter__item-trigger--active")) {
+      item.classList.remove("filter__item-trigger--active");
+      item.querySelector(".filter__item-svg").style.transform = "none";
+    } else {
+      item.classList.add("filter__item-trigger--active");
+      item.querySelector(".filter__item-svg").style.transform = "rotate(180deg)";
+    }
+  });
+});
+*/
 
 // Модальные окна логина и корзины
 var popupCart = document.querySelector(".popup");
@@ -195,7 +220,7 @@ buttonBurger.addEventListener("click", function() {
 var swiper = Swiper;
 swiper = new Swiper('.swiper-container.swiper-container--newin', {
   slidesPerView: 4,
-  spaceBetween: 30,
+  spaceBetween: 25,
   slidesPerGroup: 4,
   loop: true,
   loopFillGroupWithBlank: true,
@@ -218,7 +243,7 @@ swiper = new Swiper('.swiper-container.swiper-container--newin', {
     },
     768: {
       slidesPerView: 2,
-      spaceBetween: 30,
+      spaceBetween: 25,
       slidesPerGroup: 2,
     },
     320: {

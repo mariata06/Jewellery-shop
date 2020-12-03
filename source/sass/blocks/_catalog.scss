@@ -1,6 +1,6 @@
 .catalog {
   display: flex;
-  padding: 80px 98px;
+  padding: 80px 98px 72px;
   justify-content: space-between;
   flex-wrap: wrap;
 
@@ -30,7 +30,7 @@
   }
 
   a {
-    margin-bottom: 44px;
+    margin-bottom: 35px;
   }
 
   figure {
@@ -64,9 +64,11 @@
     justify-content: center;
     line-height: 21px;
     font-weight: 500;
+    margin-top: 12px;
 
     span {
       width: 100%;
+      margin-top: 5px;
     }
   }
 }
@@ -93,7 +95,7 @@
   width: 100%;
   display: flex;
   padding-left: 300px;
-  padding-top: 30px;
+  padding-top: 38px;
   border-top: 1px solid $light-grey;
   justify-content: space-between;
 
@@ -107,8 +109,8 @@
   }
 
   a {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 9px;
+    padding-right: 9px;
     color: $medium-grey;
 
     &:first-child {

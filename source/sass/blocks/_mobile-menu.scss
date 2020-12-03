@@ -2,7 +2,7 @@
   background-color: $white;
   display: flex;
   flex-wrap: wrap;
-  padding: 41px 98px 25px 98px;
+  padding: 41px 98px 20px 98px;
   align-items: center;
 
   @media (max-width: $max-tablet-width) {
@@ -105,6 +105,7 @@
   cursor: pointer;
   //display: none;
   display: block;
+  margin-bottom: 60px;
 
   &--nojs {
     display: block;
@@ -126,7 +127,8 @@
 
 .mobile-menu__cart-link {
   @include text ($font-14, $height-21, $medium);
-  margin-left: 35px;
+  margin-left: 40px;
+  margin-bottom: 60px;
 
   @media (max-width: $max-tablet-width) {
     margin-left: 0;

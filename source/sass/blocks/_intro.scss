@@ -6,6 +6,7 @@
   background-size: 100%;
   height: 463px;
   position: relative;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/intro-desktop@2x.jpg");
@@ -39,8 +40,9 @@
 
   h1 {
     @include title ($font-45, $height-59, $bold, $white);
-    letter-spacing: 3%;
+    letter-spacing: 1.5px;
     margin: 0 auto;
+    margin-top: 180px;
 
     @media (max-width: $max-mobile-width) {
       @include title ($font-38, $height-49, $bold, $white);
@@ -50,6 +52,7 @@
   p {
     @include text ($font-38, $height-49, $regular);
     font-style: italic;
+    //margin-top: 10px;
 
     @media (max-width: $max-mobile-width) {
       @include text ($font-34, $height-44, $regular);
@@ -72,7 +75,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  //justify-content: center;
   max-width: 1366px;
   margin: 0 auto;
 }
