@@ -95,13 +95,13 @@
               </svg>
             </button>
             <div class="filter__accordion accordion">
-              <div class="filter__item filter__item--product filter__item--active">
-                <button type="button" class="filter__item-trigger filter__item-trigger--active" rel="tab1" aria-label="choose product">
+              <fieldset class="filter__item filter__item--product filter__item--active">
+                <legend type="button" class="filter__item-trigger filter__item-trigger--active" rel="tab1" aria-label="choose product">
                   Product
                   <svg class="filter__item-svg" width="15" height="8">
                     <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
                   </svg>
-                </button>
+                </legend>
                 <div class="filter__item-content filter__item-content--active" id="tab1">
                     <input tabindex="0" id="Necklaces" type="checkbox" class="visually-hidden" checked>
                     <label for="Necklaces">Necklaces</label>
@@ -112,49 +112,52 @@
                     <input tabindex="0" id="Earrings" type="checkbox" class="visually-hidden" checked>
                     <label for="Earrings">Earrings</label>
                 </div>
-              </div>
-              <div class="filter__item">
-                <button type="button" class="filter__item-trigger" rel="tab2" aria-label="choose material">
+              </fieldset>
+              <fieldset class="filter__item">
+                <legend class="filter__item-trigger" rel="tab2" aria-label="choose material">
                   Material
                   <svg class="filter__item-svg" width="15" height="8">
                     <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
                   </svg>
-                </button>
+                </legend>
                 <div class="filter__item-content" id="tab2">
                   <input id="gold" type="checkbox" class="visually-hidden">
                   <label for="gold">Gold</label>
                   <input id="silver" type="checkbox" class="visually-hidden">
                   <label for="silver">Silver</label>
                 </div>
-              </div>
-              <div class="filter__item">
-                <button type="button" class="filter__item-trigger" rel="tab3" aria-label="choose collection">
+              </fieldset>
+              <fieldset class="filter__item">
+                <legend type="button" class="filter__item-trigger" rel="tab3" aria-label="choose collection">
                   Collection
                   <svg class="filter__item-svg" width="15" height="8">
                     <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
                   </svg>
-                </button>
+                </legend>
                 <div class="filter__item-content" id="tab3">
                   <input id="pink_flamingo" type="checkbox" class="visually-hidden">
                   <label for="pink_flamingo">Pink flamingo</label>
                   <input id="dreams" type="checkbox" class="visually-hidden">
                   <label for="dreams">Dreams</label>
                 </div>
-              </div>
-              <div class="filter__item filter__item--active filter__item--price">
-                <button type="button" class="filter__item-trigger filter__item-trigger--active" rel="tab4" aria-label="choose price">
+              </fieldset>
+              <fieldset class="filter__item filter__item--active filter__item--price">
+                <legend type="button" class="filter__item-trigger filter__item-trigger--active" rel="tab4" aria-label="choose price">
                   Price
                   <svg class="filter__item-svg" width="15" height="8">
                     <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
                   </svg>
-                </button>
+                </legend>
                 <div class="filter__item-content filter__item-content--active" id="tab4">
                   <div class="filter__price-range">
                     <div class="filter__price-bar"></div>
-                    <span>$ 55</span><span>$ 155</span>
+                  </div>
+                  <div class="filter__price-wrapper">
+                    $<label><input type="text" placeholder="55"></label>
+                    $<label><input type="text" placeholder="155"></label>
                   </div>
                 </div>
-              </div>
+              </fieldset>
             </div>
             <button type="submit" class="filter__btn" aria-label="apply">Apply</button>
             <button type="submit" class="filter__btn" aria-label="clear all">Clear All</button>
