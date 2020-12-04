@@ -5,6 +5,12 @@
   padding: 41px 98px 20px 98px;
   align-items: center;
 
+  .mobile-menu__logo {
+    svg {
+      fill: $beige;
+    }
+  }
+
   @media (max-width: $max-tablet-width) {
     padding: 30px 45px;
     justify-content: space-between;
@@ -22,12 +28,10 @@
         fill: transparent;
       }
 
-      .logo__white {
-        display: none;
-      }
-
-      .logo__beige {
-        display: block;
+      .mobile-menu__logo {
+        svg {
+          fill: $beige;
+        }
       }
 
       .navigation {
@@ -52,12 +56,10 @@
         fill: transparent;
       }
 
-      .logo__white {
-        display: block;
-      }
-
-      .logo__beige {
-        display: none;
+      .mobile-menu__logo {
+        svg {
+          fill: $white;
+        }
       }
 
       a {
