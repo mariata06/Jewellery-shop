@@ -51,12 +51,11 @@
     align-items: center;
     justify-content: space-between;
 
-    /*
     &--active {
       .filter__item-content {
         display: flex;
       }
-    }*/
+    }
 
     &:hover,
     &:active {
@@ -91,11 +90,12 @@
       }
     }
 
+    /*
     &--active {
       .filter__item-content {
         display: flex;
       }
-    }
+    }*/
   }
 
   .filter__item:not(:first-child) {
@@ -106,6 +106,10 @@
     padding-top: 20px;
     flex-wrap: wrap;
     display: none;
+
+    &--active {
+      display: flex;
+    }
   }
 
   label {

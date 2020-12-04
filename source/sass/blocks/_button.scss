@@ -2,12 +2,13 @@ button {
   @include text ($font-16, $height-21, $medium);
   padding: 0;
   outline: none;
-  border: none;
+  //border: none;
   cursor: pointer;
   color: $white;
   background-color: $beige;
   padding-top: 24px;
   padding-bottom: 24px;
+  border: 1px solid $beige;
   font-family: "poppins", "Arial", sans-serif;
 
   &:hover,
