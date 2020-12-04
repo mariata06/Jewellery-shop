@@ -266,7 +266,7 @@ fieldset {
 
 .filter__price-wrapper {
   width: 100%;
-  //padding-left: 30px;
+  padding-left: 30px;
   padding-top: 10px;
   display: flex;
   //justify-content: flex-end;
@@ -284,7 +284,7 @@ fieldset {
     width: 50px;
 
     &:first-child {
-      margin-right: 30px;
+      margin-right: 40px;
     }
 
     &::after,

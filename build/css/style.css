@@ -1463,8 +1463,7 @@ time {
       .filter--show {
         display: block; } }
   .filter .filter__btn {
-    width: 100%;
-    margin-top: 37px; }
+    width: 100%; }
     .filter .filter__btn:last-child {
       margin-top: 24px; }
     @media (max-width: 1023px) {
@@ -1487,7 +1486,9 @@ time {
             align-items: center;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    border: none;
+    padding-top: 20px; }
     .filter .filter__item-trigger--active .filter__item-content {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1499,16 +1500,17 @@ time {
         width: 23px;
         height: 12px; } }
   .filter .filter__item {
-    padding: 24px 25px 22px;
-    border: 1px solid #a87b62;
+    padding: 24px 25px 0;
     /*
     &--active {
       .filter__item-content {
         display: flex;
       }
     }*/ }
+    .filter .filter__item:not(:last-child) {
+      border-bottom: 1px solid #a87b62; }
     .filter .filter__item--price {
-      padding-bottom: 50px; }
+      padding-bottom: 10px; }
     @media (max-width: 1023px) {
       .filter .filter__item {
         border: none;
@@ -1520,10 +1522,11 @@ time {
   .filter .filter__item:not(:first-child) {
     border-top: none; }
   .filter .filter__item-content {
-    padding-top: 20px;
+    padding-top: 0;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    display: none; }
+    display: none;
+    padding-bottom: 18px; }
     .filter .filter__item-content--active {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1612,9 +1615,15 @@ time {
   .filter__form {
     width: 100%; } }
 
-@media (max-width: 1023px) {
-  .filter__accordion {
-    width: 100%; } }
+.filter__accordion {
+  border: 1px solid #a87b62;
+  margin-bottom: 16px; }
+  @media (max-width: 1023px) {
+    .filter__accordion {
+      width: 100%; } }
+
+fieldset {
+  border: none; }
 
 .filter__form-close {
   padding: 0;
@@ -1632,6 +1641,23 @@ time {
     display: block; }
   .filter__form-close svg {
     fill: #ffffff; }
+
+.filter__price-wrapper {
+  width: 100%;
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .filter__price-wrapper input {
+    width: 100%;
+    padding: 0; }
+  .filter__price-wrapper label {
+    padding-left: 5px;
+    width: 50px; }
+    .filter__price-wrapper label:first-child {
+      margin-right: 30px; }
+    .filter__price-wrapper label::after, .filter__price-wrapper label::before {
+      display: none; }
 
 .card {
   padding: 80px 98px 0; }
@@ -2191,7 +2217,7 @@ button {
   color: #ffffff;
   background-color: #a87b62;
   padding-top: 24px;
-  padding-bottom: 24px;
+  padding-bottom: 22px;
   border: 1px solid #a87b62;
   font-family: "poppins", "Arial", sans-serif; }
   button:hover, button:focus, button:active {
