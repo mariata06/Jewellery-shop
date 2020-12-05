@@ -81,4 +81,8 @@
   //justify-content: center;
   width: 1366px;
   margin: 0 auto;
+
+  @media (max-width: $max-mobile-width) {
+    width: 100%;
+  }
 }
