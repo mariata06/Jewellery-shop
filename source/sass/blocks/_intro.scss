@@ -82,7 +82,7 @@
   width: 1366px;
   margin: 0 auto;
 
-  @media (max-width: $max-mobile-width) {
+  @media (max-width: $max-tablet-width) {
     width: 100%;
   }
 }
