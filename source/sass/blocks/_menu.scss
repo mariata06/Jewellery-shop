@@ -1,0 +1,143 @@
+.menu {
+  background-color: $white;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 41px 98px 20px 98px;
+  align-items: center;
+
+  .menu__logo-svg {
+    fill: $beige;
+  }
+
+  @media (max-width: $max-tablet-width) {
+    padding: 30px 45px;
+    justify-content: space-between;
+
+    .menu__cart-svg,
+    .menu__burger-svg {
+      stroke: $trueblack;
+      fill: transparent;
+    }
+  }
+
+  @media (max-width: $max-mobile-width) {
+    padding: 20px 15px;
+  }
+}
+
+.menu--hide {
+  @media (max-width: $max-tablet-width) {
+    background-color: $white;
+
+    .menu__cart-svg,
+    .menu__burger-svg {
+      stroke: $trueblack;
+      fill: transparent;
+    }
+
+    .menu__logo-svg {
+      fill: $beige;
+    }
+
+    .menu__navigation {
+      display: none;
+    }
+
+    .menu__search {
+      display: none;
+    }
+
+    .menu__login {
+      display: none;
+    }
+  }
+}
+
+.menu--nojs,
+.menu--show {
+  @media (max-width: $max-tablet-width) {
+    background-color: $beige;
+
+    .menu__cart-svg,
+    .menu__burger-svg {
+      stroke: $white;
+      fill: transparent;
+    }
+
+    .menu__logo-svg {
+      fill: $white;
+    }
+
+    a {
+      color: $white;
+    }
+
+    .menu__navigation {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .menu__search {
+      display: flex;
+      margin-bottom: 0;
+    }
+
+    .menu__login {
+      display: block;
+    }
+  }
+}
+
+.menu__burger-menu {
+  display: none;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+
+  @media (max-width: $max-tablet-width) {
+    display: block;
+  }
+}
+
+.menu__login {
+  @include text ($font-14, $height-21, $medium);
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+  color: $black;
+  padding: 0;
+  font-family: "poppins", "Arial", sans-serif;
+  cursor: pointer;
+
+  @media (max-width: $max-tablet-width) {
+    @include text ($font-18, $height-23, $regular);
+    width: 100%;
+    order: 5;
+    text-align: left;
+    color: $white;
+    display: none;
+  }
+}
+
+.menu__cart-link {
+  @include text ($font-14, $height-21, $medium);
+  margin-left: 40px;
+
+  @media (max-width: $max-tablet-width) {
+    margin-left: 0;
+  }
+
+  svg {
+    display: none;
+
+    @media (max-width: $max-tablet-width) {
+      display: block;
+    }
+  }
+
+  span {
+    @media (max-width: $max-tablet-width) {
+      display: none;
+    }
+  }
+}

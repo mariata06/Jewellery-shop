@@ -1,48 +1,19 @@
 .logo {
   width: 10%;
-  margin-bottom: 37px;
-  text-align: center;
   height: 66px;
   padding: 0;
 
   @media (max-width: $max-tablet-width) {
     width: 10%;
-    margin: 0 auto;
   }
-}
 
-.logo__beige {
-  display: block;
-  height: 66px;
+  @media (max-width: $max-mobile-width) {
+    width: 52px;
+    height: 52px;
 
-  @media (max-width: $max-tablet-width) {
-    display: block;
-
-    &--nojs {
-      display: none;
-    }
-
-    &--show {
-      display: block;
-    }
-
-    &--hide {
-      display: none;
-    }
-  }
-}
-
-.logo__white {
-  display: none;
-  height: 66px;
-
-  @media (max-width: $max-tablet-width) {
-    &--nojs {
-      display: block;
-    }
-
-    &--show {
-      display: block;
+    svg {
+      height: 52px;
+      width: 52px;
     }
   }
 }

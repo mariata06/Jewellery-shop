@@ -62,8 +62,8 @@ filterButtons.forEach(function (item) {
 // Модальные окна логина и корзины
 var popupCart = document.querySelector(".popup");
 var popupLogin = document.querySelector(".login");
-var loginButton = document.querySelector(".mobile-menu__login");
-var cartLink = document.querySelector(".mobile-menu__cart-link");
+var loginButton = document.querySelector(".menu__login");
+var cartLink = document.querySelector(".menu__cart-link");
 var overlayLogin = document.querySelector(".overlay__login");
 var overlayCart = document.querySelector(".overlay__cart");
 var closeLogin = popupLogin.querySelector(".login__close");
@@ -189,13 +189,13 @@ if (filterClose) {
 }
 
 //Мобильное меню
-var mobileMenu = document.querySelector(".mobile-menu");
-mobileMenu.classList.remove("mobile-menu--nojs");
+var mobileMenu = document.querySelector(".menu");
+mobileMenu.classList.remove("menu--nojs");
 var buttonBurger = document.querySelector(".burger-menu");
 
 buttonBurger.addEventListener("click", function() {
-  mobileMenu.classList.toggle("mobile-menu--hide");
-  mobileMenu.classList.toggle("mobile-menu--show");
+  mobileMenu.classList.toggle("menu--hide");
+  mobileMenu.classList.toggle("menu--show");
 });
 
 // Initialize Swiper

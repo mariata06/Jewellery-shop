@@ -1,0 +1,13 @@
+.page-header {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: $light-grey;
+    top: 140px;
+  }
+}

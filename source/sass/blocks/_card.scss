@@ -1,27 +1,19 @@
 .card {
-  padding: 80px 98px 60px;
-
-  @media (max-width: $max-tablet-width) {
-    padding-left: 45px;
-    padding-right: 45px;
-  }
-
-  @media (max-width: $max-mobile-width) {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+  border-top: 1px solid $light-grey;
 }
 
 .card__content {
   display: flex;
-  //justify-content: center;
+  padding: 80px 98px 60px;
 
   @media (max-width: $max-tablet-width) {
     justify-content: space-between;
+    padding: 80px 45px 60px;
   }
 
   @media (max-width: $max-mobile-width) {
     flex-wrap: wrap;
+    padding: 15px 15px 60px;
   }
 
   button {
@@ -114,6 +106,7 @@
   a {
     @include text ($font-14, $height-18, $medium);
     color: $medium-grey;
+    position: relative;
 
     @media (max-width: $max-tablet-width) {
       @include text ($font-12, $height-16, $medium);
@@ -121,10 +114,26 @@
   }
 }
 
+.card__description-links {
+  a {
+    &:not(:last-child) {
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 20px;
+        width: 1px;
+        background-color: $light-grey;
+        top: 0;
+        right: -15px;
+      }
+    }
+  }
+}
+
 .card__photo-box {
   &--main {
     height: 435px;
-    //margin-left: 30px;
 
     @media (max-width: $max-tablet-width) {
       margin-left: 0;

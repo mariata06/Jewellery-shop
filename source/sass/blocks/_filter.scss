@@ -7,7 +7,7 @@
   @media (max-width: $max-tablet-width) {
     width: 100%;
     position: absolute;
-    top: 0;
+    top: -390px;
     padding-bottom: 120px;
     display: none;
 
@@ -234,6 +234,7 @@
 
   @media (max-width: $max-tablet-width) {
     width: 100%;
+    border: none;
   }
 }
 
