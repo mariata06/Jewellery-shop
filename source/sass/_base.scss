@@ -1,7 +1,8 @@
 html {
   box-sizing: border-box;
-  background-color: $light-grey;
+  //background-color: $light-grey;
   overflow-x: hidden;
+  height: 100%;
 }
 
 .disable-scroll {
@@ -34,6 +35,7 @@ body {
   font-weight: 400;
   color: $black;
   background-color: $white;
+  height: 100%;
 }
 
 img {
@@ -48,4 +50,19 @@ a {
   &:active {
     opacity: 0.5;
   }
+}
+
+.page-wrapper {
+  //position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.page-main {
+  flex: 1 0 auto;
+}
+
+.page-header {
+  flex: 1 0 auto;
 }

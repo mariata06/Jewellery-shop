@@ -1,5 +1,5 @@
 .card {
-  padding: 80px 98px 0;
+  padding: 80px 98px 60px;
 
   @media (max-width: $max-tablet-width) {
     padding-left: 45px;
@@ -14,7 +14,7 @@
 
 .card__content {
   display: flex;
-  justify-content: center;
+  //justify-content: center;
 
   @media (max-width: $max-tablet-width) {
     justify-content: space-between;
@@ -35,6 +35,7 @@
   flex-direction: column-reverse;
   align-content: space-between;
   height: 435px;
+  width: 600px;
   justify-content: space-between;
 
   @media (max-width: $max-tablet-width) {
@@ -113,13 +114,17 @@
   a {
     @include text ($font-14, $height-18, $medium);
     color: $medium-grey;
+
+    @media (max-width: $max-tablet-width) {
+      @include text ($font-12, $height-16, $medium);
+    }
   }
 }
 
 .card__photo-box {
   &--main {
     height: 435px;
-    margin-left: 30px;
+    //margin-left: 30px;
 
     @media (max-width: $max-tablet-width) {
       margin-left: 0;
@@ -138,9 +143,7 @@
     }
   }
 
-  &--second,
-  &--third,
-  &--fourth {
+  &--extra {
     height: 125px;
 
     @media (max-width: $max-tablet-width) {

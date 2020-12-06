@@ -1,4 +1,18 @@
 .catalog {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: $light-grey;
+    bottom: 120px;
+  }
+}
+
+.catalog__content {
   display: flex;
   padding: 80px 98px 72px;
   justify-content: space-between;
@@ -96,7 +110,7 @@
   display: flex;
   padding-left: 300px;
   padding-top: 38px;
-  border-top: 1px solid $light-grey;
+  //border-top: 1px solid $light-grey;
   justify-content: space-between;
 
   @media (max-width: $max-tablet-width) {
