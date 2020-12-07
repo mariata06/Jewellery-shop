@@ -2,13 +2,13 @@
   padding: 60px 198px 65px;
 
   @media (max-width: $max-tablet-width) {
-    padding: 0 45px;
-    margin-top: 80px;
+    padding: 35px 45px 36px;
   }
 
   @media (max-width: $max-mobile-width) {
     padding: 0 15px;
-    margin-top: 80px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   h2 {
@@ -18,6 +18,14 @@
     text-align: center;
     margin-bottom: 50px;
     letter-spacing: 1.2px;
+
+    @media (max-width: $max-tablet-width) {
+      margin-bottom: 48px;
+    }
+
+    @media (max-width: $max-mobile-width) {
+      margin-bottom: 28px;
+    }
   }
 
   button {
@@ -66,11 +74,11 @@
   }
 
   @media (max-width: $max-tablet-width) {
-    padding: 50px 50px;
+    padding: 43px 50px 44px;
   }
 
   @media (max-width: $max-mobile-width) {
-    padding: 22px 25px;
+    padding: 16px 25px 19px;
   }
 
   .faq__accordion-item-svg {
@@ -85,6 +93,12 @@
     @media (max-width: $max-mobile-width) {
       min-width: 20px;
       height: 10px;
+    }
+  }
+
+  &:not(:first-child) {
+    @media (max-width: $max-mobile-width) {
+      padding: 19px 25px 18px;
     }
   }
 }
@@ -112,10 +126,14 @@
 
   @media (max-width: $max-tablet-width) {
     padding-left: 0;
+    margin-top: 27px;
   }
 
   @media (max-width: $max-mobile-width) {
+    font-size: 14px;
+    line-height: 20px;
     width: 100%;
+    margin-top: 14px;
   }
 }
 

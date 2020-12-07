@@ -4,12 +4,25 @@
   display: flex;
   justify-content: space-between;
   align-self: flex-end;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
+
+  @media (max-width: $max-tablet-width) {
+    padding-bottom: 6px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    padding-bottom: 8px;
+  }
 
   button {
     background-color: transparent;
     padding: 0;
     border: none;
+
+    @media (max-width: $max-tablet-width) {
+      font-size: 16px;
+      line-height: 21px;
+    }
 
     &:hover,
     &:active,
@@ -22,5 +35,9 @@
 
   svg {
     transform: rotate(180deg);
+
+    @media (max-width: $max-tablet-width) {
+      margin-left: 10px;
+    }
   }
 }

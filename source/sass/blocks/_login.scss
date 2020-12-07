@@ -70,6 +70,10 @@
     top: 20px;
     right: 20px;
     border: none;
+
+    &:hover {
+      opacity: 0.3;
+    }
   }
 
   .login__content {

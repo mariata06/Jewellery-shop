@@ -2,7 +2,7 @@
   background-color: $white;
   display: flex;
   flex-wrap: wrap;
-  padding: 41px 98px 20px 98px;
+  padding: 32px 98px 20px 98px;
   align-items: center;
 
   .menu__logo-svg {
@@ -10,8 +10,9 @@
   }
 
   @media (max-width: $max-tablet-width) {
-    padding: 30px 45px;
+    padding: 30px 45px 30px;
     justify-content: space-between;
+    align-items: center;
 
     .menu__cart-svg,
     .menu__burger-svg {
@@ -22,6 +23,14 @@
 
   @media (max-width: $max-mobile-width) {
     padding: 20px 15px;
+  }
+
+  &--catalog {
+    padding-top: 31px;
+
+    @media (max-width: $max-mobile-width) {
+      padding-top: 20px;
+    }
   }
 }
 

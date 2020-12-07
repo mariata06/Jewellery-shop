@@ -1,5 +1,9 @@
 .card {
   border-top: 1px solid $light-grey;
+
+  @media (max-width: $max-mobile-width) {
+    border-top: none;
+  }
 }
 
 .card__content {
@@ -8,16 +12,24 @@
 
   @media (max-width: $max-tablet-width) {
     justify-content: space-between;
-    padding: 80px 45px 60px;
+    padding: 29px 45px 60px;
   }
 
   @media (max-width: $max-mobile-width) {
     flex-wrap: wrap;
-    padding: 15px 15px 60px;
+    padding: 0 15px 27px;
   }
 
   button {
     margin-bottom: 16px;
+
+    @media (max-width: $max-tablet-width) {
+      margin-bottom: 14px;
+    }
+
+    @media (max-width: $max-mobile-width) {
+      margin-bottom: 11px;
+    }
   }
 }
 
@@ -67,6 +79,10 @@
     font-size: 26px;
     line-height: 34px;
     margin-bottom: 22px;
+
+    @media (max-width: $max-mobile-width) {
+      margin-bottom: 13px;
+    }
   }
 
   p {
@@ -79,6 +95,10 @@
     color: $black;
     font-size: 16px;
     line-height: 21px;
+
+    @media (max-width: $max-mobile-width) {
+      margin-left: 40px;
+    }
   }
 
   td {
@@ -95,12 +115,21 @@
 
   table {
     margin-bottom: 50px;
+
+    @media (max-width: $max-mobile-width) {
+      margin-bottom: 39px;
+    }
   }
 
   .card__description-links {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+
+    @media (max-width: $max-mobile-width) {
+      padding-left: 7px;
+      padding-right: 8px;
+    }
   }
 
   a {
@@ -128,6 +157,11 @@
         right: -15px;
       }
     }
+
+    @media (max-width: $max-mobile-width) {
+      width: 58px;
+      text-align: center;
+    }
   }
 }
 
@@ -149,6 +183,11 @@
         height: 286px;
         width: 319px;
       }
+
+      @media (max-width: $max-mobile-width) {
+        height: 260px;
+        width: 290px;
+      }
     }
   }
 
@@ -157,6 +196,7 @@
 
     @media (max-width: $max-tablet-width) {
       height: 129px;
+      width: 97px;
     }
 
     @media (max-width: $max-mobile-width) {

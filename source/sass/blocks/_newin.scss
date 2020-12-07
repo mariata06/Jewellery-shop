@@ -1,17 +1,21 @@
 .newin {
-  padding: 120px 98px 70px;
+  padding: 60px 98px 70px;
 
   &--card {
-    padding-bottom: 210px;
+    padding-bottom: 212px;
     padding-top: 60px;
+
+    @media (max-width: $max-tablet-width) {
+      padding-bottom: 100px;
+    }
   }
 
   @media (max-width: $max-tablet-width) {
-    padding: 130px 45px;
+    padding: 10px 45px 37px;
   }
 
   @media (max-width: $max-mobile-width) {
-    padding: 80px 15px;
+    padding: 30px 15px;
   }
 
   h2 {
@@ -20,6 +24,14 @@
     font-family: "cormorantgaramond", "Arial", sans-serif;
     text-align: center;
     margin-bottom: 22px;
+
+    @media (max-width: $max-tablet-width) {
+      margin-bottom: 18px;
+    }
+
+    @media (max-width: $max-mobile-width) {
+      margin-bottom: 9px;
+    }
   }
 
   a {
@@ -31,6 +43,17 @@
     text-align: center;
     display: block;
     margin-bottom: 60px;
+
+    @media (max-width: $max-tablet-width) {
+      margin-bottom: 87px;
+    }
+
+    @media (max-width: $max-mobile-width) {
+      width: 80px;
+      padding-left: 5px;
+      padding-right: 5px;
+      margin-bottom: 10px;
+    }
   }
 
   p {

@@ -9,6 +9,7 @@
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   display: flex;
   justify-content: center;
+  margin-bottom: 60px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/intro-desktop@2x.jpg");
@@ -26,6 +27,7 @@
 
   @media (max-width: $max-mobile-width) {
     background-image: url("../img/intro-mobile.png");
+    margin-bottom: 30px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/intro-mobile@2x.png");
@@ -36,28 +38,42 @@
   p {
     margin: 0;
     color: $white;
-    text-align: center;
+    //text-align: center;
     font-family: "cormorantgaramond", "Arial", sans-serif;
   }
 
   h1 {
-    @include title ($font-45, $height-59, $bold, $white);
+    @include title ($font-45, $height-49, $bold, $white);
     letter-spacing: 1.5px;
     margin: 0 auto;
-    margin-top: 180px;
+    margin-top: 187px;
+
+    @media (max-width: $max-tablet-width) {
+      margin-top: 185px;
+      margin-left: 232px;
+    }
 
     @media (max-width: $max-mobile-width) {
-      @include title ($font-38, $height-49, $bold, $white);
+      @include title ($font-38, $height-44, $bold, $white);
+      margin: 190px auto 0;
+      text-align: center;
     }
   }
 
   p {
     @include text ($font-38, $height-49, $regular);
     font-style: italic;
-    //margin-top: 10px;
+    text-align: center;
+
+    @media (max-width: $max-tablet-width) {
+      margin-left: 260px;
+      text-align: left;
+    }
 
     @media (max-width: $max-mobile-width) {
       @include text ($font-34, $height-44, $regular);
+      margin-left: 0;
+      text-align: center;
     }
   }
 }

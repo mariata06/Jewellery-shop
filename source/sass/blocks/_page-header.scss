@@ -10,4 +10,10 @@
     background-color: $light-grey;
     top: 140px;
   }
+
+  @media (max-width: $max-mobile-width) {
+    &::after {
+      display: none;
+    }
+  }
 }

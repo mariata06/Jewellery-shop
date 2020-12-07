@@ -17,6 +17,7 @@
 
   @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
     background-image: url("../img/intro-catalog-tablet.png");
+    margin-bottom: 25px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/intro-catalog-tablet@2x.png");

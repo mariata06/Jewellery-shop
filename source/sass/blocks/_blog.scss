@@ -7,12 +7,15 @@
   @media (max-width: $max-tablet-width) {
     padding-left: 45px;
     padding-right: 45px;
+    padding-top: 37px;
+    padding-bottom: 35px;
   }
 
   @media (max-width: $max-mobile-width) {
+    padding-top: 60px;
     padding-left: 15px;
     padding-right: 15px;
-    padding-bottom: 200px;
+    padding-bottom: 30px;
   }
 
   h2 {
@@ -33,8 +36,15 @@
     margin-bottom: 55px;
     margin-top: 5px;
 
+    @media (max-width: $max-tablet-width) {
+      width: 70px;
+      margin-top: 20px;
+      margin-bottom: 63px;
+    }
+
     @media (max-width: $max-mobile-width) {
-      width: 98px;
+      width: 72px;
+      margin-bottom: 53px;
     }
   }
 
@@ -53,11 +63,13 @@
 
   @media (max-width: $max-tablet-width) {
     width: 100%;
+    margin-bottom: 50px;
   }
 
   @media (max-width: $max-mobile-width) {
     flex-wrap: wrap;
     height: unset;
+    margin-bottom: 40px;
   }
 }
 
@@ -76,6 +88,7 @@
 
   @media (max-width: $max-tablet-width) {
     background-image: url("../img/blog-care-tablet.jpg");
+    margin-bottom: 50px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/blog-care-tablet@2x.jpg");
@@ -86,6 +99,7 @@
     background-image: url("../img/blog-care-mobile.jpg");
     background-position: center top;
     background-size: 100%;
+    margin-bottom: 40px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/blog-care-mobile@2x.jpg");
@@ -115,6 +129,7 @@
 
   @media (max-width: $max-tablet-width) {
     background-image: url("../img/blog-power-tablet.png");
+    margin-bottom: 50px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/blog-power-tablet@2x.png");
@@ -125,6 +140,7 @@
     background-image: url("../img/blog-power-mobile.png");
     background-position: center top;
     background-size: 100%;
+    margin-bottom: 40px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/blog-power-mobile@2x.png");
@@ -173,6 +189,7 @@
     background-position: center left;
     background-size: 50%;
     height: 300px;
+    margin-bottom: 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/blog-trends-tablet@2x.png");
@@ -202,10 +219,11 @@
 
     @media (max-width: $max-tablet-width) {
       height: 300px;
+      padding: 81px 61px 65px;
     }
 
     @media (max-width: $max-mobile-width) {
-      padding-top: 66px;
+      padding-top: 59px;
       position: unset;
       margin-top: 256px;
       height: 256px;
@@ -228,12 +246,12 @@
     width: 100%;
     order: 2;
     height: 256px;
-    padding-top: 49px;
+    padding-top: 42px;
   }
 
   h3 {
-    margin-top: 13px;
     margin-bottom: 33px;
+    margin-top: 10px;
   }
 
   a {
@@ -256,7 +274,7 @@
   justify-content: space-between;
 
   @media (max-width: $max-tablet-width) {
-    margin-bottom: 30px;
+    //margin-bottom: 30px;
     width: 100%;
   }
 }

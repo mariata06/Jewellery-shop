@@ -53,13 +53,14 @@ a {
 }
 
 .page-wrapper {
-  //position: relative;
   display: flex;
   flex-direction: column;
   min-height: 100%;
 }
 
-.page-main {
+.page-main,
+.page-catalog,
+.page-card {
   flex: 1 0 auto;
 }
 

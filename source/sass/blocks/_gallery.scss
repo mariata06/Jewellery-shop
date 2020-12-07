@@ -1,14 +1,14 @@
 .gallery {
-  padding: 65px 98px 120px;
+  padding: 60px 98px 120px;
 
   @media (max-width: $max-tablet-width) {
-    margin-top: 84px;
-    padding: 0 45px 80px;
+    padding: 36px 45px 80px;
   }
 
   @media (max-width: $max-mobile-width) {
     padding: 0 15px;
-    margin-bottom: 70px;
+    padding-bottom: 70px;
+    padding-top: 30px;
   }
 
   h2 {
@@ -17,6 +17,11 @@
     margin-bottom: 16px;
     font-family: "cormorantgaramond", "Arial", sans-serif;
     text-align: center;
+    letter-spacing: 1px;
+
+    @media (max-width: $max-tablet-width) {
+      margin-bottom: 20px;
+    }
   }
 
   .gallery__link {
@@ -28,6 +33,10 @@
     display: block;
     margin-bottom: 65px;
     width: 74px;
+
+    @media (max-width: $max-mobile-width) {
+      margin-bottom: 49px;
+    }
   }
 }
 
@@ -57,9 +66,13 @@
 
     .gallery__picture {
       &:first-child {
+        @media (max-width: $max-tablet-width) {
+          height: 133px;
+        }
+
         @media (max-width: $max-mobile-width) {
           height: 130px;
-          margin-bottom: 15px;
+          //margin-bottom: 15px;
         }
 
         img {
@@ -77,9 +90,16 @@
       &:nth-child(2n) {
         margin-top: auto;
 
+        @media (max-width: $max-tablet-width) {
+          height: 89px;
+        }
+
         @media (max-width: $max-mobile-width) {
           height: 87px;
-          margin-bottom: 15px;
+          //margin-top: 0;
+          //margin-bottom: 0;
+          margin-top: unset;
+          margin-bottom: auto;
         }
 
         img {
@@ -108,7 +128,7 @@
       width: 50%;
     }
 
-    .gallery__picture {
+    .gallery__picture:first-child {
       @media (max-width: $max-tablet-width) {
         height: 240px;
       }
@@ -146,49 +166,21 @@
       width: 100%;
     }
 
+    //рука с кольцом
     .gallery__picture {
       &:nth-child(1n) {
-        @media (max-width: $max-mobile-width) {
-          order: 1;
-          height: 115px;
-          margin-top: auto;
+        @media (max-width: $max-tablet-width) {
+          height: 111px;
+          width: 134px;
         }
-
-        img {
-          @media (max-width: $max-tablet-width) {
-            width: 126px;
-            height: 111px;
-          }
-
-          @media (max-width: $max-mobile-width) {
-            width: 130px;
-            height: 115px;
-          }
-        }
-      }
-
-      &:nth-child(2n) {
-        order: 2;
-
-        img {
-          @media (max-width: $max-tablet-width) {
-            width: 126px;
-            height: 126px;
-          }
-        }
-
-        @media (max-width: $max-mobile-width) {
-          display: none;
-        }
-      }
-
-      &:nth-child(3n) {
-        margin-left: auto;
 
         @media (max-width: $max-mobile-width) {
           order: 2;
-          margin-left: auto;
+          width: 145px;
           height: 121px;
+          margin-top: auto;
+          margin-left: auto;
+          margin-bottom: 0;
         }
 
         img {
@@ -204,20 +196,89 @@
         }
       }
 
+      // серьги-кольца
+      &:nth-child(2n) {
+        order: 2;
+
+        @media (max-width: $max-tablet-width) {
+          height: 111px;
+        }
+
+        @media (max-width: $max-mobile-width) {
+          width: 130px;
+          height: 115px;
+          order: 1;
+          margin-right: auto;
+          margin-left: 0;
+        }
+
+        img {
+          @media (max-width: $max-tablet-width) {
+            width: 126px;
+            height: 111px;
+          }
+
+          @media (max-width: $max-tablet-width) {
+            width: 130px;
+            height: 115px;
+          }
+        }
+      }
+
+      &:nth-child(3n) {
+        margin-left: auto;
+
+        @media (max-width: $max-tablet-width) {
+          width: 126px;
+          height: 126px;
+        }
+
+        /*
+        @media (max-width: $max-mobile-width) {
+          order: 2;
+          margin-left: auto;
+          height: 121px;
+        }*/
+
+        @media (max-width: $max-mobile-width) {
+          width: 130px;
+          height: 115px;
+          order: 1;
+          margin-left: 0;
+          display: none;
+        }
+
+        img {
+          @media (max-width: $max-tablet-width) {
+            width: 126px;
+            height: 126px;
+          }
+
+          @media (max-width: $max-mobile-width) {
+            width: 130px;
+            height: 115px;
+          }
+        }
+      }
+
       &:nth-child(4n) {
         order: 4;
         margin-left: auto;
         margin-top: auto;
+
+        @media (max-width: $max-tablet-width) {
+          height: 96px;
+        }
+
+        @media (max-width: $max-mobile-width) {
+          display: none;
+        }
 
         img {
           @media (max-width: $max-tablet-width) {
             width: 134px;
             height: 96px;
           }
-        }
-
-        @media (max-width: $max-mobile-width) {
-          display: none;
         }
       }
     }
