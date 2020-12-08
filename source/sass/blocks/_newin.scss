@@ -1,21 +1,12 @@
 .newin {
-  padding: 60px 98px 70px;
-
-  &--card {
-    padding-bottom: 212px;
-    padding-top: 60px;
-
-    @media (max-width: $max-tablet-width) {
-      padding-bottom: 100px;
-    }
-  }
+  padding: 60px 98px 33px;
 
   @media (max-width: $max-tablet-width) {
-    padding: 10px 45px 37px;
+    padding: 10px 45px 15px;
   }
 
   @media (max-width: $max-mobile-width) {
-    padding: 30px 15px;
+    padding: 30px 15px 25px;
   }
 
   h2 {
@@ -58,5 +49,32 @@
 
   p {
     margin: 0;
+  }
+}
+
+.newin--card {
+  padding-bottom: 112px;
+  padding-top: 60px;
+
+  @media (max-width: $max-tablet-width) {
+    padding-bottom: 62px;
+    padding-top: 40px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    padding-bottom: 53px;
+  }
+
+  a {
+    @media (max-width: $max-mobile-width) {
+      width: 90px;
+      margin-bottom: 43px;
+    }
+  }
+
+  h2 {
+    @media (max-width: $max-mobile-width) {
+      margin-bottom: 19px;
+    }
   }
 }

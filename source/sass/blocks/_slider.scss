@@ -1,25 +1,29 @@
 .slider__wrapper {
   display: flex;
   margin-top: 50px;
-  margin-bottom: 50px;
+  padding-bottom: 88px;
   //padding-left: 28px;
   //padding-right: 28px;
   //margin-left: 28px;
   //margin-right: 28px;
   //width: 1170px;
 
+  @media (max-width: $max-tablet-width) {
+    padding-bottom: 110px;
+  }
+
   @media (max-width: $max-mobile-width) {
     margin-top: 33px;
-    padding-bottom: 50px;
+    padding-bottom: 147px;
   }
 
   &--card {
     @media (max-width: $max-tablet-width) {
-      padding-bottom: 85px;
+      padding-bottom: 110px;
     }
 
     @media (max-width: $max-mobile-width) {
-      padding-bottom: 119px;
+      padding-bottom: 147px;
     }
   }
 }
@@ -28,6 +32,7 @@
   width: 100%;
   //height: 100%;
   //height: 582px;
+  position: relative;
 }
 
 .slider__item {
@@ -149,7 +154,16 @@
   position: absolute;
   width: 100%;
   height: 9px;
-  top: 28px;
+  top: 52px;
+  z-index: 120;
+
+  @media (max-width: $max-tablet-width) {
+    top: 57px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    display: none;
+  }
 }
 
 .slider__button-next,
@@ -164,6 +178,10 @@
 
   svg {
     transform: scale(1.2);
+
+    @media (max-width: $max-tablet-width) {
+      transform: scale(1.5);
+    }
   }
 
   &:hover,
@@ -174,8 +192,14 @@
 }
 
 .swiper-button-next {
+  right: 5px;
+
   svg {
     transform: rotate(180deg);
+
+    @media (max-width: $max-tablet-width) {
+      transform: rotate(180deg) scale(1.5);
+    }
   }
 }
 

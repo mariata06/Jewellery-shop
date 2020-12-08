@@ -12,12 +12,12 @@
 
   @media (max-width: $max-tablet-width) {
     justify-content: space-between;
-    padding: 29px 45px 60px;
+    padding: 29px 45px 30px;
   }
 
   @media (max-width: $max-mobile-width) {
     flex-wrap: wrap;
-    padding: 0 15px 27px;
+    padding: 0 15px 17px;
   }
 
   button {

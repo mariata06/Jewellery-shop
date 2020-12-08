@@ -4,6 +4,7 @@
   flex-wrap: wrap;
   padding: 32px 98px 20px 98px;
   align-items: center;
+  z-index: 130;
 
   .menu__logo-svg {
     fill: $beige;
@@ -66,6 +67,7 @@
 .menu--show {
   @media (max-width: $max-tablet-width) {
     background-color: $beige;
+    padding-bottom: 75px;
 
     .menu__cart-svg,
     .menu__burger-svg {

@@ -8,7 +8,13 @@
     height: 1px;
     width: 100%;
     background-color: $light-grey;
-    top: 140px;
+    top: 125px;
+  }
+
+  @media (max-width: $max-tablet-width) {
+    &::after {
+      display: none;
+    }
   }
 
   @media (max-width: $max-mobile-width) {

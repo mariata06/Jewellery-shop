@@ -6,6 +6,11 @@
     order: 4;
     display: none;
   }
+
+  @media (max-width: $max-mobile-width) {
+    margin-top: 35px;
+    margin-bottom: 15px;
+  }
 }
 
 .navigation__jewellery,
@@ -31,11 +36,16 @@
     display: block;
     padding-left: 0;
     padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    margin-bottom: 10px;
   }
 
   li {
     @media (max-width: $max-tablet-width) {
-      margin-bottom: 40px;
+      margin-bottom: 21px;
       font-size: 24px;
       line-height: 36px;
       margin-right: 0;
@@ -61,7 +71,11 @@
   li {
     @media (max-width: $max-tablet-width) {
       @include text ($font-18, $height-23, $medium);
-      margin-bottom: 40px;
+      margin-bottom: 28px;
+    }
+
+    @media (max-width: $max-mobile-width) {
+      margin-bottom: 20px;
     }
   }
 
