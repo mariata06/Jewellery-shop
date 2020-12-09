@@ -27,11 +27,17 @@
     }
   }
 }
-
+/*
 .swiper-container {
   width: 100%;
   //height: 100%;
   //height: 582px;
+  position: relative;
+}
+*/
+
+.slider__container {
+  width: 100%;
   position: relative;
 }
 

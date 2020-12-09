@@ -2,7 +2,7 @@
   background-color: $white;
   display: flex;
   flex-wrap: wrap;
-  padding: 32px 98px 20px 98px;
+  padding: 32px 98px 19px 98px;
   align-items: center;
   z-index: 130;
 
@@ -27,7 +27,7 @@
   }
 
   &--catalog {
-    padding-top: 31px;
+    padding-top: 30px;
 
     @media (max-width: $max-mobile-width) {
       padding-top: 20px;

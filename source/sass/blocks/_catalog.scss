@@ -1,26 +1,12 @@
-.catalog {
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    display: block;
-    height: 1px;
-    width: 100%;
-    background-color: $light-grey;
-    bottom: 120px;
-  }
-}
-
 .catalog__content {
   display: flex;
-  padding: 80px 98px 72px;
+  padding: 79px 98px 15px;
   justify-content: space-between;
   flex-wrap: wrap;
 
   @media (max-width: $max-tablet-width) {
     flex-wrap: wrap;
-    padding: 24px 0 73px;
+    padding: 49px 0 73px;
   }
 
   @media (max-width: $max-mobile-width) {
@@ -50,7 +36,7 @@
   }
 
   a {
-    margin-bottom: 35px;
+    margin-bottom: 33px;
 
     @media (max-width: $max-tablet-width) {
       margin-bottom: 33px;
@@ -92,7 +78,7 @@
     justify-content: center;
     line-height: 21px;
     font-weight: 500;
-    margin-top: 12px;
+    margin-top: 15px;
 
     @media (max-width: $max-tablet-width) {
       margin-top: 15px;
@@ -132,9 +118,11 @@
 .catalog__pagination {
   width: 100%;
   display: flex;
-  padding-left: 300px;
-  padding-top: 38px;
-  //border-top: 1px solid $light-grey;
+  padding-left: 398px;
+  padding-right: 98px;
+  padding-top: 18px;
+  padding-bottom: 74px;
+  border-top: 1px solid $light-grey;
   justify-content: space-between;
 
   @media (max-width: $max-tablet-width) {
@@ -149,8 +137,8 @@
   }
 
   a {
-    padding-left: 9px;
-    padding-right: 9px;
+    padding-left: 5px;
+    padding-right: 5px;
     color: $medium-grey;
 
     @media (max-width: $max-tablet-width) {
@@ -186,7 +174,10 @@
 }
 
 .catalog__pagination-pages {
-  padding-right: 28px;
+  width: 100%;
+  padding-left: 100px;
+  padding-right: 128px;
+  text-align: center;
 
   @media (max-width: $max-mobile-width) {
     padding-right: 0;

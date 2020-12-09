@@ -53,6 +53,7 @@
   },
   "dependencies": {
     "pump": "^3.0.0",
-    "svgxuse": "^1.2.6"
+    "svgxuse": "^1.2.6",
+    "swiper": "^6.4.0"
   }
 }

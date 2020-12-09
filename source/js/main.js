@@ -198,18 +198,17 @@ buttonBurger.addEventListener("click", function() {
   mobileMenu.classList.toggle("menu--show");
 });
 
-// Initialize Swiper Рабочий вариант с пролистыванием но пагинация на мобиле другая
-/*
+// Initialize Swiper
 var swiper = Swiper;
-swiper = new Swiper('.swiper-container.swiper-container--newin', {
+swiper = new Swiper(".swiper-container.swiper-container--newin", {
   slidesPerView: 4,
   spaceBetween: 25,
   slidesPerGroup: 4,
   loop: true,
   loopFillGroupWithBlank: true,
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
   breakpoints: {
     1024: {
@@ -217,61 +216,7 @@ swiper = new Swiper('.swiper-container.swiper-container--newin', {
       spaceBetween: 30,
       slidesPerGroup: 4,
       pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        renderBullet: function (index, className) {
-          return '<span class="' + className + '">' + (index + 1) + '</span>';
-        },
-      },
-    },
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 25,
-      slidesPerGroup: 2,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        renderBullet: function (index, className) {
-          return '<span class="' + className + '">' + (index + 1) + '</span>';
-        },
-      },
-    },
-    320: {
-      slidesPerView: 2,
-      spaceBetween: 30,
-      slidesPerGroup: 2,
-      pagination: {
-        el: '.swiper-pagination',
-        type: 'fraction',
-        renderFraction: function (currentClass, totalClass) {
-          return '<span class="' + currentClass + '"></span>' +
-                 ' of ' +
-                 '<span class="' + totalClass + '"></span>';
-        },
-      },
-    },
-  }
-});
-*/
-
-var swiper = Swiper;
-swiper = new Swiper('.swiper-container.swiper-container--newin', {
-  slidesPerView: 4,
-  spaceBetween: 25,
-  slidesPerGroup: 4,
-  loop: true,
-  loopFillGroupWithBlank: true,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  breakpoints: {
-    1024: {
-      slidesPerView: 4,
-      spaceBetween: 30,
-      slidesPerGroup: 4,
-      pagination: {
-        el: '.swiper-pagination',
+        el: ".swiper-pagination",
         clickable: true,
         renderBullet: function (index, className) {
           return '<span class="' + className + '">' + (index + 1) + '</span>';
@@ -283,7 +228,7 @@ swiper = new Swiper('.swiper-container.swiper-container--newin', {
       spaceBetween: 30,
       slidesPerGroup: 2,
       pagination: {
-        el: '.swiper-pagination',
+        el: ".swiper-pagination",
         clickable: true,
         renderBullet: function (index, className) {
           return '<span class="' + className + '">' + (index + 1) + '</span>';
@@ -295,103 +240,12 @@ swiper = new Swiper('.swiper-container.swiper-container--newin', {
       spaceBetween: 30,
       slidesPerGroup: 2,
       pagination: {
-        el: '.swiper-pagination',
-        type: 'fraction',
+        el: ".swiper-pagination",
+        type: "fraction",
         renderFraction: function (currentClass, totalClass) {
-          return '<span class="' + currentClass + '"></span>' +
-                 ' of ' +
-                 '<span class="' + totalClass + '"></span>';
+          return '<span class="' + currentClass + '"></span>' + ' of ' + '<span class="' + totalClass + '"></span>';
         },
       },
     },
   }
 });
-
-/*
-var swiper = Swiper;
-swiper = new Swiper('.swiper-container.swiper-container--newin', {
-  //slidesPerView: 4,
-  //spaceBetween: 25,
-  //slidesPerGroup: 4,
-  loop: true,
-  loopFillGroupWithBlank: true,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    type: "fraction",
-  },
-  //initialSlide: 1
-});
-
-function swiperMode() {
-  let mobile = window.matchMedia("(min-width: 0px) and (max-width: 767px)");
-  let tablet = window.matchMedia("(min-width: 768px) and (max-width: 1023px)");
-  let desktop = window.matchMedia("(min-width: 1024px) and (max-width: 1920px)");
-
-  // Enable (for mobile)
-  if(mobile.matches) {
-    swiper = new Swiper(".swiper-container.swiper-container--newin", {
-      slidesPerView: 2,
-      spaceBetween: 30,
-      slidesPerGroup: 2,
-      pagination: {
-        el: '.swiper-pagination',
-        type: 'fraction',
-        renderFraction: function (currentClass, totalClass) {
-          return '<span class="' + currentClass + '"></span>' +
-                 ' of ' +
-                 '<span class="' + totalClass + '"></span>';
-        },
-      },
-    });
-  }
-
-  // Enable (for tablet)
-  else if(tablet.matches) {
-    swiper = new Swiper(".swiper-container.swiper-container--newin", {
-      slidesPerView: 2,
-      spaceBetween: 30,
-      slidesPerGroup: 2,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        renderBullet: function (index, className) {
-          return '<span class="' + className + '">' + (index + 1) + '</span>';
-        },
-      },
-    });
-  }
-
-  // Enable (for desktop)
-  else if(desktop.matches) {
-    swiper = new Swiper(".swiper-container.swiper-container--newin", {
-      slidesPerView: 4,
-      spaceBetween: 30,
-      slidesPerGroup: 4,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        renderBullet: function (index, className) {
-          return '<span class="' + className + '">' + (index + 1) + '</span>';
-        },
-      },
-    });
-  }
-};
-
- On Load
-//**************************************************************
-window.addEventListener("load", function() {
-  swiperMode();
-});
-
- On Resize
-//**************************************************************
-window.addEventListener("resize", function() {
-  swiperMode();
-});
-
-*/

@@ -1,12 +1,12 @@
 .newin {
-  padding: 60px 98px 33px;
+  padding: 120px 98px 33px;
 
   @media (max-width: $max-tablet-width) {
     padding: 10px 45px 15px;
   }
 
   @media (max-width: $max-mobile-width) {
-    padding: 30px 15px 25px;
+    padding: 60px 15px 25px;
   }
 
   h2 {

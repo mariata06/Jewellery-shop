@@ -4,12 +4,9 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100%;
-  height: 463px;
-  position: relative;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
-  display: flex;
-  justify-content: center;
-  margin-bottom: 60px;
+  padding-top: 186px;
+  padding-bottom: 180px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/intro-desktop@2x.jpg");
@@ -17,20 +14,21 @@
   }
 
   @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
-    background-image: url("../img/intro-tablet.png");
+    background-image: url("../img/intro-tablet.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/intro-tablet@2x.png");
+      background-image: url("../img/intro-tablet@2x.jpg");
       background-size: cover;
     }
   }
 
   @media (max-width: $max-mobile-width) {
-    background-image: url("../img/intro-mobile.png");
-    margin-bottom: 30px;
+    background-image: url("../img/intro-mobile.jpg");
+    padding-top: 197px;
+    padding-bottom: 188px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/intro-mobile@2x.png");
+      background-image: url("../img/intro-mobile@2x.jpg");
     }
   }
 
@@ -38,67 +36,35 @@
   p {
     margin: 0;
     color: $white;
-    //text-align: center;
     font-family: "cormorantgaramond", "Arial", sans-serif;
+    text-align: center;
   }
 
   h1 {
     @include title ($font-45, $height-49, $bold, $white);
     letter-spacing: 1.5px;
-    margin: 0 auto;
-    margin-top: 187px;
 
     @media (max-width: $max-tablet-width) {
-      margin-top: 185px;
-      margin-left: 232px;
+      padding-right: 25px;
     }
 
     @media (max-width: $max-mobile-width) {
-      @include title ($font-38, $height-44, $bold, $white);
-      margin: 190px auto 0;
-      text-align: center;
+      @include title ($font-38, $height-34, $bold, $white);
+      padding-right: 5px;
     }
   }
 
   p {
     @include text ($font-38, $height-49, $regular);
     font-style: italic;
-    text-align: center;
 
     @media (max-width: $max-tablet-width) {
-      margin-left: 260px;
-      text-align: left;
+      padding-right: 40px;
     }
 
     @media (max-width: $max-mobile-width) {
       @include text ($font-34, $height-44, $regular);
-      margin-left: 0;
-      text-align: center;
+      padding-right: 24px;
     }
-  }
-}
-
-.intro__overlay {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(86, 64, 52, 0.7);
-}
-
-.intro__content {
-  position: absolute;
-  z-index: 100;
-  //width: 100%;
-  //max-width: 1366px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  //justify-content: center;
-  width: 1366px;
-  margin: 0 auto;
-
-  @media (max-width: $max-tablet-width) {
-    width: 100%;
   }
 }

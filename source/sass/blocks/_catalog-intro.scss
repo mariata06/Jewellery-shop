@@ -1,35 +1,36 @@
 .catalog-intro {
   background-color: $beige;
-  background-image: url("../img/intro-catalog-desktop.png");
+  background-image: url("../img/intro-catalog-desktop.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100%;
-  height: 261px;
-  position: relative;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
-  display: flex;
-  justify-content: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/intro-catalog-desktop@2x.png");
+    background-image: url("../img/intro-catalog-desktop@2x.jpg");
     background-size: cover;
   }
 
   @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
-    background-image: url("../img/intro-catalog-tablet.png");
-    margin-bottom: 25px;
+    background-image: url("../img/intro-catalog-tablet.jpg");
+    padding-top: 91px;
+    padding-bottom: 96px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/intro-catalog-tablet@2x.png");
+      background-image: url("../img/intro-catalog-tablet@2x.jpg");
       background-size: cover;
     }
   }
 
   @media (max-width: $max-mobile-width) {
-    background-image: url("../img/intro-catalog-mobile.png");
+    background-image: url("../img/intro-catalog-mobile.jpg");
+    padding-top: 80px;
+    padding-bottom: 85px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/intro-catalog-mobile@2x.png");
+      background-image: url("../img/intro-catalog-mobile@2x.jpg");
     }
   }
 
@@ -43,8 +44,7 @@
 
   h1 {
     @include title ($font-34, $height-44, $bold, $white);
-    letter-spacing: 3%;
-    margin: 0 auto;
+    padding-right: 5px;
   }
 
   p {
@@ -55,24 +55,4 @@
       line-height: 26px;
     }
   }
-}
-
-.catalog-intro__overlay {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(86, 64, 52, 0.7);
-}
-
-.catalog-intro__content {
-  position: absolute;
-  z-index: 100;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 1366px;
-  margin: 0 auto;
 }
