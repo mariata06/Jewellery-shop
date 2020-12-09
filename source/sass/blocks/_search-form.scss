@@ -1,7 +1,7 @@
 .search-form {
   display: flex;
   align-items: center;
-  width: 47%;
+  //width: 47%;
 
   @media (max-width: $max-tablet-width) {
     width: 100%;
@@ -20,6 +20,7 @@
 
   input {
     color: $black;
+    width: 140px;
 
     @media (max-width: $max-tablet-width) {
       width: 100%;

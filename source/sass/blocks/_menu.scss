@@ -2,9 +2,10 @@
   background-color: $white;
   display: flex;
   flex-wrap: wrap;
-  padding: 32px 98px 19px 98px;
+  padding: 32px 0 19px;
   align-items: center;
   z-index: 130;
+  justify-content: center;
 
   .menu__logo-svg {
     fill: $beige;
@@ -112,7 +113,7 @@
 
 .menu__login {
   @include text ($font-14, $height-21, $medium);
-  margin-left: auto;
+  //margin-left: auto;
   background-color: transparent;
   border: none;
   color: $black;
