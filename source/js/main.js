@@ -199,10 +199,14 @@ buttonBurger.addEventListener("click", function() {
 });
 
 // Initialize Swiper
+//import Swiper, { Navigation, Pagination } from "swiper";
+//Swiper.use([Navigation, Pagination]);
+
 var swiper = Swiper;
+//const swiper = require("../../node_modules/swiper/swiper-bundle.js");
 swiper = new Swiper(".swiper-container.swiper-container--newin", {
   slidesPerView: 4,
-  spaceBetween: 25,
+  spaceBetween: 30,
   slidesPerGroup: 4,
   loop: true,
   loopFillGroupWithBlank: true,

@@ -202,7 +202,7 @@ buttonBurger.addEventListener("click", function() {
 //import Swiper, { Navigation, Pagination } from "swiper";
 //Swiper.use([Navigation, Pagination]);
 
-var swiper = Swiper;
+var swiper = window.vendor.Swiper;
 //const swiper = require("../../node_modules/swiper/swiper-bundle.js");
 swiper = new Swiper(".swiper-container.swiper-container--newin", {
   slidesPerView: 4,
