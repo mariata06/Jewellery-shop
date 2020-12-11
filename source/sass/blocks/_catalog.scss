@@ -11,7 +11,7 @@
 
   @media (max-width: $max-mobile-width) {
     padding-top: 40px;
-    padding-bottom: 63px;
+    padding-bottom: 10px;
   }
 }
 
@@ -57,17 +57,17 @@
     @media (max-width: $max-mobile-width) {
       width: 130px;
     }
+  }
 
-    img {
-      @media (max-width: $max-tablet-width) {
-        width: 100%;
-        height: 208px;
-      }
+  img {
+    @media (max-width: $max-tablet-width) {
+      width: 100%;
+      height: 208px;
+    }
 
-      @media (max-width: $max-mobile-width) {
-        width: 100%;
-        height: 136px;
-      }
+    @media (max-width: $max-mobile-width) {
+      width: 100%;
+      height: 136px;
     }
   }
 
@@ -118,22 +118,18 @@
 .catalog__pagination {
   width: 100%;
   display: flex;
-  padding-left: 398px;
-  padding-right: 98px;
-  padding-top: 18px;
-  padding-bottom: 74px;
+  padding: 18px 98px 74px 398px;
   border-top: 1px solid $light-grey;
   justify-content: space-between;
 
   @media (max-width: $max-tablet-width) {
-    padding-left: 45px;
-    padding-right: 45px;
-    padding-top: 35px;
+    padding: 35px 45px 74px;
   }
 
   @media (max-width: $max-mobile-width) {
     justify-content: center;
-    padding-top: 15px;
+    padding-top: 4px;
+    padding-bottom: 63px;
   }
 
   a {
@@ -181,5 +177,6 @@
 
   @media (max-width: $max-mobile-width) {
     padding-right: 0;
+    padding-left: 0;
   }
 }

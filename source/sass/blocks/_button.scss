@@ -2,7 +2,6 @@ button {
   @include text ($font-16, $height-21, $medium);
   padding: 0;
   outline: none;
-  //border: none;
   cursor: pointer;
   color: $white;
   background-color: $beige;

@@ -1,9 +1,5 @@
 .page-footer {
   background-color: $trueblack;
-  //margin-top: auto;
-  //margin-bottom: 0;
-  //position: absolute;
-  //bottom: 0;
   width: 100%;
   flex: 0 0 auto;
 }
@@ -15,8 +11,6 @@
   padding: 90px 95px 90px;
   align-items: stretch;
   color: $white;
-  //position: absolute;
-  //bottom: 0;
 
   @media (max-width: $max-tablet-width) {
     padding: 50px 45px;

@@ -113,7 +113,6 @@
 
 .menu__login {
   @include text ($font-14, $height-21, $medium);
-  //margin-left: auto;
   background-color: transparent;
   border: none;
   color: $black;
