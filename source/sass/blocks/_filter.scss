@@ -204,6 +204,10 @@
   border: none;
   padding-top: 20px;
 
+  &:hover {
+    opacity: 0.7;
+  }
+
   @media (max-width: $max-tablet-width) {
     font-size: 18px;
     line-height: 23px;
@@ -230,6 +234,10 @@
       width: 23px;
       height: 12px;
     }
+
+    &:hover {
+      opacity: 0.7;
+    }
   }
 }
 
@@ -240,46 +248,49 @@
   background-color: $light-beige;
   position: relative;
 
-  &::before,
-  &::after {
-    content: "";
-    display: block;
+  .filter__price-range-handle {
     width: 15px;
     height: 15px;
     border-radius: 50px;
     background-color: $beige;
     position: absolute;
     top: -5px;
+    padding: 0;
+
+    &:hover {
+      transform: scale(1.1);
+      opacity: 0.7;
+    }
 
     @media (max-width: $max-tablet-width) {
       width: 18px;
       height: 18px;
     }
-  }
 
-  &::before {
-    left: 45px;
+    &--min {
+      left: 45px;
 
-    @media (max-width: $max-tablet-width) {
-      top: -7px;
-      left: 55px;
+      @media (max-width: $max-tablet-width) {
+        top: -7px;
+        left: 55px;
+      }
+
+      @media (max-width: $max-mobile-width) {
+        left: 27px;
+      }
     }
 
-    @media (max-width: $max-mobile-width) {
-      left: 27px;
-    }
-  }
+    &--max {
+      left: 150px;
 
-  &::after {
-    left: 150px;
+      @media (max-width: $max-tablet-width) {
+        top: -7px;
+        left: 230px;
+      }
 
-    @media (max-width: $max-tablet-width) {
-      top: -7px;
-      left: 230px;
-    }
-
-    @media (max-width: $max-mobile-width) {
-      left: 165px;
+      @media (max-width: $max-mobile-width) {
+        left: 165px;
+      }
     }
   }
 
