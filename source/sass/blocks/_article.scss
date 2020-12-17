@@ -101,6 +101,10 @@
     background-size: 50%;
   }
 
+  @media (min-width: 769px) and (max-width: 1365px) {
+    margin-bottom: 30px;
+  }
+
   @media (max-width: $max-tablet-width) {
     background-image: url("../img/blog-power-tablet.png");
     margin-bottom: 50px;

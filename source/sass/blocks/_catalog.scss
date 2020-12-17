@@ -4,6 +4,11 @@
   justify-content: space-between;
   flex-wrap: wrap;
 
+  @media (min-width: 769px) and (max-width: 1365px) {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+
   @media (max-width: $max-tablet-width) {
     flex-wrap: wrap;
     padding: 49px 0 73px;
@@ -20,6 +25,10 @@
   flex-wrap: wrap;
   width: 870px;
   justify-content: space-between;
+
+  @media (min-width: 769px) and (max-width: 1365px) {
+    width: 64%;
+  }
 
   @media (max-width: $max-tablet-width) {
     width: 100%;
@@ -38,29 +47,43 @@
   a {
     margin-bottom: 33px;
 
-    @media (max-width: $max-tablet-width) {
+    @media (min-width: 769px) and (max-width: 1365px) {
+      width: 31%;
+    }
+
+    @media (max-width: $min-tablet-width) {
       margin-bottom: 33px;
     }
 
     @media (max-width: $max-mobile-width) {
       margin-bottom: 25px;
+      width: 50%;
     }
   }
 
   figure {
     margin: 0;
 
-    @media (max-width: $max-tablet-width) {
+    @media (min-width: 769px) and (max-width: 1365px) {
+      width: 100%;
+    }
+
+    @media (max-width: $min-tablet-width) {
       width: 206px;
     }
 
     @media (max-width: $max-mobile-width) {
       width: 130px;
+      margin: 0 auto;
     }
   }
 
   img {
-    @media (max-width: $max-tablet-width) {
+    @media (min-width: 769px) and (max-width: 1365px) {
+      width: 100%;
+    }
+
+    @media (max-width: $min-tablet-width) {
       width: 100%;
       height: 208px;
     }
@@ -121,6 +144,11 @@
   padding: 18px 98px 74px 398px;
   border-top: 1px solid $light-grey;
   justify-content: space-between;
+
+  @media (min-width: 769px) and (max-width: 1365px) {
+    padding-left: 29%;
+    padding-right: 7%;
+  }
 
   @media (max-width: $max-tablet-width) {
     padding: 35px 45px 74px;

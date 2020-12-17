@@ -1,6 +1,11 @@
 .gallery {
   padding: 60px 98px 120px;
 
+  @media (min-width: 769px) and (max-width: 1365px) {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+
   @media (max-width: $max-tablet-width) {
     padding: 36px 45px 80px;
   }
@@ -42,7 +47,24 @@
   display: flex;
   justify-content: space-between;
 
+  @media (min-width: 769px) and (max-width: 1365px) {
+    width: 86%;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+  }
+
+  @media (max-width: $min-tablet-width) {
+    justify-content: space-between;
+  }
+
+  /*
+  @media (min-width: 321px) and (max-width: $min-tablet-width) {
+    //justify-content: space-around;
+    //flex-wrap: nowrap;
+  }*/
+
   @media (max-width: $max-mobile-width) {
+    justify-content: space-between;
     flex-wrap: wrap;
   }
 }
@@ -51,25 +73,46 @@
   display: flex;
   flex-wrap: wrap;
 
+  /*
+  @media (max-width: $min-tablet-width) {
+    margin-right: 18px;
+  }*/
+
+  @media (max-width: $min-tablet-width) {
+    margin-right: 0;
+  }
+
   &:nth-child(1n) {
     width: 230px;
 
-    @media (max-width: $max-tablet-width) {
+    @media (min-width: 769px) and (max-width: 1365px) {
+      width: 20%;
+    }
+
+    @media (max-width: $min-tablet-width) {
       width: 133px;
     }
 
     @media (max-width: $max-mobile-width) {
       width: 50%;
+      flex-wrap: wrap;
     }
 
     .gallery__picture {
       &:first-child {
+
+        // ширина первой фотки на резине квадратные серьги
+        @media (min-width: 769px) and (max-width: 1365px) {
+          width: 100%;
+        }
+
         @media (max-width: $max-tablet-width) {
-          height: 133px;
+          //height: 133px;
         }
 
         @media (max-width: $max-mobile-width) {
           height: 130px;
+          margin-left: auto;
         }
 
         img {
@@ -80,6 +123,7 @@
           @media (max-width: $max-mobile-width) {
             width: 130px;
             height: 130px;
+            margin-right: 15px;
           }
         }
       }
@@ -87,14 +131,23 @@
       &:nth-child(2n) {
         margin-top: auto;
 
+        // ширина второй фотки на резине серьги с камнями
+        @media (min-width: 769px) and (max-width: 1365px) {
+          width: 100%;
+        }
+
         @media (max-width: $max-tablet-width) {
           height: 89px;
         }
 
         @media (max-width: $max-mobile-width) {
+          width: 100%;
           height: 87px;
-          margin-top: unset;
-          margin-bottom: auto;
+          display: flex;
+          justify-content: flex-end;
+          //margin-top: unset;
+          //margin-bottom: auto;
+          margin-left: auto;
         }
 
         img {
@@ -105,6 +158,7 @@
           @media (max-width: $max-mobile-width) {
             width: 130px;
             height: 87px;
+            margin-right: 15px;
           }
         }
       }
@@ -114,7 +168,11 @@
   &:nth-child(2n) {
     width: 400px;
 
-    @media (max-width: $max-tablet-width) {
+    @media (min-width: 769px) and (max-width: 1365px) {
+      width: 34%;
+    }
+
+    @media (max-width: $min-tablet-width) {
       width: 231px;
       height: 240px;
     }
@@ -124,8 +182,19 @@
     }
 
     .gallery__picture:first-child {
+
+      // ширина 3 самой крупной фотки на резине
+      @media (min-width: 769px) and (max-width: 1365px) {
+        width: 100%;
+      }
+
       @media (max-width: $max-tablet-width) {
         height: 240px;
+      }
+
+      @media (max-width: $max-mobile-width) {
+        margin-right: auto;
+        margin-left: 0;
       }
 
       img {
@@ -153,20 +222,30 @@
     width: 480px;
     display: flex;
 
-    @media (max-width: $max-tablet-width) {
+    @media (min-width: 769px) and (max-width: 1365px) {
+      width: 41%;
+    }
+
+    @media (max-width: $min-tablet-width) {
       width: 278px;
     }
 
     @media (max-width: $max-mobile-width) {
       width: 100%;
+      justify-content: center;
     }
 
     //рука с кольцом
     .gallery__picture {
       &:nth-child(1n) {
+        @media (min-width: 769px) and (max-width: 1365px) {
+          width: 48%;
+          //height: 111px;
+        }
+
         @media (max-width: $max-tablet-width) {
+          //width: 134px;
           height: 111px;
-          width: 134px;
         }
 
         @media (max-width: $max-mobile-width) {
@@ -174,12 +253,17 @@
           width: 145px;
           height: 121px;
           margin-top: auto;
-          margin-left: auto;
+          margin-left: 0;
           margin-bottom: 0;
         }
 
         img {
-          @media (max-width: $max-tablet-width) {
+          @media (min-width: 769px) and (max-width: 1365px) {
+            width: 100%;
+            height: 100%;
+          }
+
+          @media (max-width: $min-tablet-width) {
             width: 134px;
             height: 111px;
           }
@@ -193,10 +277,18 @@
 
       // серьги-кольца
       &:nth-child(2n) {
-        order: 2;
+        margin-left: auto;
+        margin-bottom: auto;
+        margin-top: 0;
 
-        @media (max-width: $max-tablet-width) {
-          height: 111px;
+        @media (min-width: 769px) and (max-width: 1365px) {
+          width: 45%;
+          //height: 126px;
+        }
+
+        @media (max-width: $min-tablet-width) {
+          height: 126px;
+          width: 126px;
         }
 
         @media (max-width: $max-mobile-width) {
@@ -205,27 +297,37 @@
           order: 1;
           margin-right: auto;
           margin-left: 0;
+          display: none;
         }
 
         img {
-          @media (max-width: $max-tablet-width) {
-            width: 126px;
-            height: 111px;
+          @media (min-width: 769px) and (max-width: 1365px) {
+            width: 100%;
+            height: 100%;
           }
 
-          @media (max-width: $max-tablet-width) {
-            width: 130px;
-            height: 115px;
+          @media (max-width: $min-tablet-width) {
+            width: 126px;
+            height: 126px;
           }
         }
       }
 
+      // цепочка с браслетом
       &:nth-child(3n) {
-        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        order: 3;
+
+        @media (min-width: 769px) and (max-width: 1365px) {
+          width: 45%;
+          //height: 111px;
+        }
 
         @media (max-width: $max-tablet-width) {
-          width: 126px;
-          height: 126px;
+          //width: 134px;
+          //height: 96px;
+          height: 111px;
         }
 
         @media (max-width: $max-mobile-width) {
@@ -233,13 +335,18 @@
           height: 115px;
           order: 1;
           margin-left: 0;
-          display: none;
+          margin-right: 15px;
+          //display: none;
         }
 
         img {
-          @media (max-width: $max-tablet-width) {
+          @media (min-width: 769px) and (max-width: 1365px) {
+            width: 100%;
+          }
+
+          @media (max-width: $min-tablet-width) {
             width: 126px;
-            height: 126px;
+            height: 111px;
           }
 
           @media (max-width: $max-mobile-width) {
@@ -249,12 +356,20 @@
         }
       }
 
-      &:nth-child(4n) {
-        order: 4;
+      &:nth-child(4n+4) {
         margin-left: auto;
         margin-top: auto;
+        margin-bottom: 0;
+        order: 4;
 
-        @media (max-width: $max-tablet-width) {
+        // скрещенные руки
+        @media (min-width: 769px) and (max-width: 1365px) {
+          width: 48%;
+          //height: 96px;
+        }
+
+        @media (max-width: $min-tablet-width) {
+          width: 134px;
           height: 96px;
         }
 
@@ -263,7 +378,12 @@
         }
 
         img {
-          @media (max-width: $max-tablet-width) {
+          @media (min-width: 769px) and (max-width: 1365px) {
+            width: 100%;
+            height: 100%;
+          }
+
+          @media (max-width: $min-tablet-width) {
             width: 134px;
             height: 96px;
           }

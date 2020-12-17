@@ -126,6 +126,12 @@
         height: 18px;
       }
     }
+
+    &:hover {
+      &::after {
+        opacity: 0.7;
+      }
+    }
   }
 
   input:focus + label::after {

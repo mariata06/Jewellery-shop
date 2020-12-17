@@ -32,6 +32,9 @@
 .navigation__jewellery {
   display: flex;
   justify-content: center;
+  width: 500px;
+  margin: 0 auto;
+  flex-wrap: wrap;
 
   @media (max-width: $max-tablet-width) {
     display: block;

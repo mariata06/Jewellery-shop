@@ -10,7 +10,12 @@
   display: flex;
   padding: 80px 98px 60px;
 
-  @media (max-width: $max-tablet-width) {
+  @media (min-width: 769px) and (max-width: 1365px) {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+
+  @media (max-width: $min-tablet-width) {
     justify-content: space-between;
     padding: 29px 45px 30px;
   }
@@ -20,8 +25,15 @@
     padding: 0 15px 17px;
   }
 
-  button {
+  .card__cart-button {
+    cursor: pointer;
+    background-color: $beige;
+    color: $white;
+    text-align: center;
     margin-bottom: 16px;
+    padding-top: 24px;
+    padding-bottom: 22px;
+    border: 1px solid $beige;
 
     @media (max-width: $max-tablet-width) {
       margin-bottom: 14px;
@@ -29,6 +41,13 @@
 
     @media (max-width: $max-mobile-width) {
       margin-bottom: 11px;
+    }
+
+    &:hover,
+    &:focus {
+      color: $black;
+      border: 1px solid $beige;
+      background-color: transparent;
     }
   }
 }
@@ -62,9 +81,18 @@
   flex-direction: column;
   margin-left: 100px;
 
-  @media (max-width: $max-tablet-width) {
+  @media (min-width: 769px) and (max-width: 1365px) {
+    margin-left: 7%;
+  }
+
+  @media (max-width: $min-tablet-width) {
     margin-left: 0;
     width: 319px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    width: 290px;
+    margin: 0 auto;
   }
 
   h2 {
@@ -169,10 +197,20 @@
   &--main {
     height: 435px;
 
+    @media (min-width: 769px) and (max-width: 1365px) {
+      width: 78%;
+    }
+
     @media (max-width: $max-tablet-width) {
       margin-left: 0;
       height: 286px;
       width: 319px;
+    }
+
+    @media (max-width: $max-mobile-width) {
+      width: 290px;
+      height: 260px;
+      margin: 0 auto;
     }
 
     img {

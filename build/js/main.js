@@ -31,7 +31,6 @@ faqItemTrigger.forEach(function (item) {
 });
 
 // Переключение меню - аккордеона в фильтре
-
 var filterButtons = document.querySelectorAll(".filter__item-trigger");
 var filterArrows = document.querySelectorAll(".filter__item-svg");
 var filterActiveArrows = document.querySelectorAll(".filter__item--active");
@@ -63,7 +62,8 @@ filterButtons.forEach(function (item) {
 var popupCart = document.querySelector(".popup");
 var popupLogin = document.querySelector(".login");
 var loginButton = document.querySelector(".menu__login");
-var cartLink = document.querySelector(".menu__cart-link");
+//var cartLink = document.querySelector(".menu__cart-link");
+var cartButton = document.querySelector(".card__cart-button");
 var overlayLogin = document.querySelector(".overlay__login");
 var overlayCart = document.querySelector(".overlay__cart");
 var closeLogin = popupLogin.querySelector(".login__close");
@@ -148,13 +148,16 @@ document.onclick = function (evt) {
   };
 };
 
+// отправка формы подписки из футера
+/*
 emailForm.addEventListener("submit", function (evt) {
   evt.preventDefault();
   userEmail = emailForm.elements.user_email;
   checkLocalStorage();
 });
+*/
 
-cartLink.addEventListener("click", function (evt) {
+cartButton.addEventListener("click", function (evt) {
   evt.preventDefault();
   popupCart.classList.add("popup--show");
   overlayCart.classList.add("overlay__cart--show");
@@ -215,7 +218,7 @@ swiper = new Swiper(".swiper-container.swiper-container--newin", {
     prevEl: ".swiper-button-prev",
   },
   breakpoints: {
-    1024: {
+    1366: {
       slidesPerView: 4,
       spaceBetween: 30,
       slidesPerGroup: 4,
@@ -227,7 +230,7 @@ swiper = new Swiper(".swiper-container.swiper-container--newin", {
         },
       },
     },
-    768: {
+    1023: {
       slidesPerView: 2,
       spaceBetween: 30,
       slidesPerGroup: 2,

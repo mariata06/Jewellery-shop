@@ -8,10 +8,12 @@
 
   @media (max-width: $max-tablet-width) {
     padding-bottom: 6px;
+    width: 560px;
   }
 
   @media (max-width: $max-mobile-width) {
     padding-bottom: 8px;
+    width: 100%;
   }
 
   button {

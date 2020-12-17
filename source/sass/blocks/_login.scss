@@ -74,6 +74,10 @@
     &:hover {
       opacity: 0.3;
     }
+
+    &:focus {
+      outline: 5px auto -webkit-focus-ring-color;
+    }
   }
 
   h3 {
@@ -88,16 +92,19 @@
     width: 100%;
     padding-bottom: 10px;
     margin-top: 29px;
+    color: $trueblack;
 
     @media (max-width: $max-mobile-width) {
       @include text ($font-14, $height-21, $medium);
     }
   }
 
+  label {
+    width: 100%;
+  }
+
   a {
     @include text ($font-12, $height-18, $medium);
-    display: block;
-    text-align: right;
     margin-left: auto;
     color: $medium-grey;
     padding-top: 10px;
@@ -137,4 +144,9 @@
     margin-left: 5px;
     padding-top: 0;
   }
+}
+
+.login__form {
+  display: flex;
+  flex-wrap: wrap;
 }

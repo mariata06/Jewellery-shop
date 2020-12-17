@@ -15,7 +15,6 @@
   <link rel="preload" href="fonts/poppins-bold.woff2" as="font" type="font/woff2" crossorigin="">
   <link rel="preload" href="css/style.min.css" as="style">
   <link rel="preload" href="js/main.js" as="script">
-  <!--<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">-->
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -47,7 +46,7 @@
 
           <a class="menu__login" href="login.html" aria-label="login">Login</a>
 
-          <a class="menu__cart-link cart-link" href="cart.html" aria-label="cart">
+          <a href="#" class="menu__cart-link cart-link" aria-label="cart">
             <span>Cart 0</span>
             <svg class="menu__cart-svg svg" width="18" height="16">
               <use xlink:href="img/sprite.svg#icon-cart"></use>
@@ -77,6 +76,7 @@
         <div class="catalog-intro__content container">
           <h1>ALL JEWELLERY</h1>
           <p>Discover picks of fashion's finest trends&nbsp;in&nbsp;our jewellery catalog</p>
+          <p>made to be yours</p>
         </div>
       </section>
       <section class="catalog">
@@ -102,14 +102,21 @@
                   </svg>
                 </legend>
                 <div class="filter__item-content filter__item-content--active">
-                    <input tabindex="0" id="Necklaces" type="checkbox" class="visually-hidden" checked="">
-                    <label for="Necklaces">Necklaces</label>
+                  <label for="Necklaces">
+                    <input tabindex="0" id="Necklaces" type="checkbox" class="visually-hidden" checked="">Necklaces
+                  </label>
+                  <label for="Chokers">
                     <input tabindex="0" id="Chokers" type="checkbox" class="visually-hidden" checked="">
-                    <label for="Chokers">Chokers</label>
+                    Chokers
+                  </label>
+                  <label for="Rings">
                     <input tabindex="0" id="Rings" type="checkbox" class="visually-hidden">
-                    <label for="Rings">Rings</label>
+                    Rings
+                  </label>
+                  <label for="Earrings">
                     <input tabindex="0" id="Earrings" type="checkbox" class="visually-hidden" checked="">
-                    <label for="Earrings">Earrings</label>
+                    Earrings
+                  </label>
                 </div>
               </fieldset>
               <fieldset class="filter__item filter__item--material">
@@ -120,10 +127,14 @@
                   </svg>
                 </legend>
                 <div class="filter__item-content">
-                  <input id="gold" type="checkbox" class="visually-hidden">
-                  <label for="gold">Gold</label>
-                  <input id="silver" type="checkbox" class="visually-hidden">
-                  <label for="silver">Silver</label>
+                  <label for="gold">
+                    <input id="gold" type="checkbox" class="visually-hidden">
+                    Gold
+                  </label>
+                  <label for="silver">
+                    <input id="silver" type="checkbox" class="visually-hidden">
+                    Silver
+                  </label>
                 </div>
               </fieldset>
               <fieldset class="filter__item filter__item--collection">
@@ -134,10 +145,14 @@
                   </svg>
                 </legend>
                 <div class="filter__item-content">
-                  <input id="pink_flamingo" type="checkbox" class="visually-hidden">
-                  <label for="pink_flamingo">Pink flamingo</label>
-                  <input id="dreams" type="checkbox" class="visually-hidden">
-                  <label for="dreams">Dreams</label>
+                  <label for="pink_flamingo">
+                    <input id="pink_flamingo" type="checkbox" class="visually-hidden">
+                    Pink flamingo
+                  </label>
+                  <label for="dreams">
+                    <input id="dreams" type="checkbox" class="visually-hidden">
+                    Dreams
+                  </label>
                 </div>
               </fieldset>
               <fieldset class="filter__item filter__item--active filter__item--price">
@@ -343,8 +358,8 @@
           <h2>The good stuff in&nbsp;your inbox </h2>
           <p>News and updates from CH. No&nbsp;spam, we promise.</p>
           <form action="https://echo.htmlacademy.ru" method="post" class="page-footer__email email-form">
-            <label>
-              <input tabindex="0" type="email" value="" placeholder="Your E-mail" name="user_email">
+            <label for="email">
+              <input id="email" tabindex="0" type="email" value="" placeholder="Your E-mail" name="user_email" required="">
             </label>
             <button type="submit" class="page-footer__email-button" aria-label="sign up">Sign Up
               <svg width="29" height="9">
@@ -416,11 +431,11 @@
             Log In
           </h3>
           <form action="https://echo.htmlacademy.ru" method="post" class="login__form">
-            <label>
-              <input tabindex="0" type="email" value="" placeholder="Your E-mail" name="user_email" required="">
+            <label for="user-email">
+              <input id="user-email" tabindex="0" type="email" value="" placeholder="Your E-mail" name="user_email" required="">
             </label>
-            <label>
-              <input tabindex="0" type="password" value="" placeholder="Password">
+            <label for="user-password">
+              <input id="user-password" tabindex="0" type="password" value="" placeholder="Password" name="user_password" autocomplete="current-password" required="">
             </label>
             <a href="#" aria-label="Forgot your password?">Forgot your password?</a>
             <button type="submit" class="login__button button" aria-label="login">Log In</button>

@@ -13,7 +13,7 @@
 
   @media (max-width: $max-tablet-width) {
     padding: 30px 45px 30px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
     .menu__cart-svg,
@@ -105,9 +105,11 @@
   background-color: transparent;
   padding: 0;
   border: none;
+  margin: 0;
 
   @media (max-width: $max-tablet-width) {
     display: block;
+    margin-right: auto;
   }
 }
 
@@ -133,10 +135,20 @@
 .menu__cart-link {
   @include text ($font-14, $height-21, $medium);
   margin-left: 40px;
+  //margin-left: auto;
+  /*
+  &:not(:last-child) {
+    margin-right: 40px;
+  }*/
 
   @media (max-width: $max-tablet-width) {
-    margin-left: 0;
+    margin-left: auto;
   }
+
+  /*
+  @media (max-width: $max-mobile-width) {
+    //margin-left: 0;
+  }*/
 
   svg {
     display: none;

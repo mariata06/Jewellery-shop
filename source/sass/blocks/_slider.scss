@@ -49,6 +49,11 @@
     @media (max-width: $max-tablet-width) {
       width: 324px;
     }
+
+    @media (max-width: $max-mobile-width) {
+      width: 130px;
+      height: 136px;
+    }
   }
 
   img {

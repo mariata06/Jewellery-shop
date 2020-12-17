@@ -51,6 +51,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @media (min-width: 769px) and (max-width: 1365px) {
+    justify-content: center;
+  }
 }
 
 .blog__article-wrapper {
