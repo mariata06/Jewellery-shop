@@ -69,6 +69,7 @@
   @media (max-width: $max-tablet-width) {
     background-color: $beige;
     padding-bottom: 75px;
+    height: 100vh;
 
     .menu__cart-svg,
     .menu__burger-svg {

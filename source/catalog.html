@@ -33,8 +33,8 @@
             <svg width="14" height="14">
               <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
             </svg>
-            <label>
-              <input tabindex="0" type="text" value="" placeholder="Type here to search">
+            <label for="search">
+              <input id="search" tabindex="0" type="text" value="" placeholder="Type here to search">
             </label>
           </form>
 
@@ -95,68 +95,53 @@
             </button>
             <div class="filter__accordion accordion">
               <fieldset class="filter__item filter__item--product filter__item--active">
-                <legend class="filter__item-trigger filter__item-trigger--active">
+                <legend tabindex="0" class="filter__item-trigger filter__item-trigger--active">
                   Product
                   <svg class="filter__item-svg" width="15" height="8">
                     <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
                   </svg>
                 </legend>
                 <div class="filter__item-content filter__item-content--active">
-                  <label for="Necklaces">
-                    <input tabindex="0" id="Necklaces" type="checkbox" class="visually-hidden" checked>Necklaces
-                  </label>
-                  <label for="Chokers">
-                    <input tabindex="0" id="Chokers" type="checkbox" class="visually-hidden" checked>
-                    Chokers
-                  </label>
-                  <label for="Rings">
-                    <input tabindex="0" id="Rings" type="checkbox" class="visually-hidden">
-                    Rings
-                  </label>
-                  <label for="Earrings">
-                    <input tabindex="0" id="Earrings" type="checkbox" class="visually-hidden" checked>
-                    Earrings
-                  </label>
+                  <input id="Necklaces" type="checkbox" class="visually-hidden" checked>
+                  <label for="Necklaces">Necklaces</label>
+                  <input id="Chokers" type="checkbox" class="visually-hidden" checked>
+                  <label for="Chokers">Chokers</label>
+                  <input id="Rings" type="checkbox" class="visually-hidden">
+                  <label for="Rings">Rings</label>
+                  <input id="Earrings" type="checkbox" class="visually-hidden" checked>
+                  <label for="Earrings">Earrings</label>
                 </div>
               </fieldset>
               <fieldset class="filter__item filter__item--material">
-                <legend class="filter__item-trigger">
+                <legend tabindex="0" class="filter__item-trigger">
                   Material
                   <svg class="filter__item-svg" width="15" height="8">
                     <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
                   </svg>
                 </legend>
                 <div class="filter__item-content">
-                  <label for="gold">
-                    <input id="gold" type="checkbox" class="visually-hidden">
-                    Gold
-                  </label>
-                  <label for="silver">
-                    <input id="silver" type="checkbox" class="visually-hidden">
-                    Silver
-                  </label>
+                  <input id="gold" type="checkbox" class="visually-hidden">
+                  <label for="gold">Gold</label>
+                  <input id="silver" type="checkbox" class="visually-hidden">
+                  <label for="silver">Silver</label>
                 </div>
               </fieldset>
               <fieldset class="filter__item filter__item--collection">
-                <legend class="filter__item-trigger">
+                <legend tabindex="0" class="filter__item-trigger">
                   Collection
                   <svg class="filter__item-svg" width="15" height="8">
                     <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
                   </svg>
                 </legend>
                 <div class="filter__item-content">
-                  <label for="pink_flamingo">
-                    <input id="pink_flamingo" type="checkbox" class="visually-hidden">
-                    Pink flamingo
-                  </label>
-                  <label for="dreams">
-                    <input id="dreams" type="checkbox" class="visually-hidden">
-                    Dreams
-                  </label>
+                  <input id="pink_flamingo" type="checkbox" class="visually-hidden">
+                  <label for="pink_flamingo">Pink flamingo</label>
+                  <input id="dreams" type="checkbox" class="visually-hidden">
+                  <label for="dreams">Dreams</label>
                 </div>
               </fieldset>
               <fieldset class="filter__item filter__item--active filter__item--price">
-                <legend class="filter__item-trigger filter__item-trigger--active">
+                <legend tabindex="0" class="filter__item-trigger filter__item-trigger--active">
                   Price
                   <svg class="filter__item-svg" width="15" height="8">
                     <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
@@ -169,8 +154,10 @@
                     <button class="filter__price-range-handle filter__price-range-handle--max" type="button" aria-label="maximum price"></button>
                   </div>
                   <div class="filter__price-wrapper">
-                    $<label><input type="text" placeholder="55"></label>
-                    $<label><input type="text" placeholder="155"></label>
+                    <label for="min-price">$</label>
+                    <input id="min-price" type="text" placeholder="55">
+                    <label for="max-price">$</label>
+                    <input id="max-price" type="text" placeholder="155">
                   </div>
                 </div>
               </fieldset>

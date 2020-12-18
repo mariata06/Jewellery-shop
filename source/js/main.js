@@ -2,14 +2,28 @@
 var faqItemTrigger = document.querySelectorAll(".faq__accordion-item-trigger");
 var faqAccordionItem = document.querySelectorAll(".faq__accordion-item");
 var faqArrowItems = document.querySelectorAll(".faq__accordion-item-svg");
-var faqActiveItem = document.querySelector(".faq__accordion-item--active");
+//var faqActiveItem = document.querySelector(".faq__accordion-item--active");
+var faqActiveItem = document.querySelectorAll(".faq__accordion-item--active");
 
+/*
 if (faqActiveItem) {
-  var faqActiveArrow = faqActiveItem.querySelector(".faq__accordion-item-svg");
+  var faqActiveArrow = faqActiveItem.querySelectorAll(".faq__accordion-item-svg");
   faqActiveArrow.style.transform = "rotate(180deg)";
 } else  {
   var faqActiveArrow = null;
-}
+}*/
+
+/*
+faqActiveItem.forEach(function (item) {
+  item.classList.remove(".faq__accordion-item--active");
+})*/
+flag = false;
+faqActiveItem.forEach(function (item) {
+  if(flag){
+    item.classList.remove("faq__accordion-item--active");
+  }
+  flag = true;
+})
 
 faqItemTrigger.forEach(function (item) {
   item.addEventListener("click", () => {
@@ -62,7 +76,6 @@ filterButtons.forEach(function (item) {
 var popupCart = document.querySelector(".popup");
 var popupLogin = document.querySelector(".login");
 var loginButton = document.querySelector(".menu__login");
-//var cartLink = document.querySelector(".menu__cart-link");
 var cartButton = document.querySelector(".card__cart-button");
 var overlayLogin = document.querySelector(".overlay__login");
 var overlayCart = document.querySelector(".overlay__cart");
@@ -148,21 +161,16 @@ document.onclick = function (evt) {
   };
 };
 
-// отправка формы подписки из футера
-/*
-emailForm.addEventListener("submit", function (evt) {
-  evt.preventDefault();
-  userEmail = emailForm.elements.user_email;
-  checkLocalStorage();
-});
-*/
-
-cartButton.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popupCart.classList.add("popup--show");
-  overlayCart.classList.add("overlay__cart--show");
-  htmlDoc.classList.add("disable-scroll");
-});
+if (cartButton) {
+  cartButton.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popupCart.classList.add("popup--show");
+    overlayCart.classList.add("overlay__cart--show");
+    htmlDoc.classList.add("disable-scroll");
+  });
+} else  {
+  cartButton = null;
+}
 
 closeCart.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -183,7 +191,6 @@ if (catalogFilterButton) {
 } else  {
   catalogFilterButton = null;
 }
-//console.log(filterClose);
 if (filterClose) {
   filterClose.addEventListener("click", function(evt) {
     evt.preventDefault();
@@ -199,14 +206,15 @@ var buttonBurger = document.querySelector(".burger-menu");
 buttonBurger.addEventListener("click", function() {
   mobileMenu.classList.toggle("menu--hide");
   mobileMenu.classList.toggle("menu--show");
+  if (mobileMenu.classList.contains("menu--show")) {
+    htmlDoc.classList.add("disable-scroll");
+  } else {
+    htmlDoc.classList.remove("disable-scroll");
+  }
 });
 
 // Initialize Swiper
-//import Swiper, { Navigation, Pagination } from "swiper";
-//Swiper.use([Navigation, Pagination]);
-
 var swiper = Swiper;
-//const swiper = require("../../node_modules/swiper/swiper-bundle.js");
 swiper = new Swiper(".swiper-container.swiper-container--newin", {
   slidesPerView: 4,
   spaceBetween: 30,

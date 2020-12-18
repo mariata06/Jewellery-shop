@@ -59,7 +59,7 @@
 }
 
 .faq__accordion-item {
-  padding: 42px 41px 43px;
+  padding: 42px 39px 43px 41px;
 
   &--active {
     .faq__accordion-item-content {
@@ -80,8 +80,8 @@
   }
 
   .faq__accordion-item-svg {
-    width: 15px;
-    height: 8px;
+    width: 17px;
+    height: 10px;
 
     @media (max-width: $max-tablet-width) {
       width: 23px;

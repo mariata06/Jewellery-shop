@@ -83,13 +83,19 @@
   label {
     padding-left: 35px;
     position: relative;
-    width: 100%;
+    //width: 100%;
     margin-bottom: 5px;
+    //cursor: pointer;
 
     @media (max-width: $max-tablet-width) {
       padding-left: 40px;
       margin-bottom: 15px;
     }
+  }
+
+  input[type="checkbox"] + label {
+    position: relative;
+    //cursor: pointer;
 
     &::before {
       content: "";
@@ -108,8 +114,9 @@
     }
   }
 
-  input:checked + label {
+  input[type="checkbox"]:checked + label {
     position: relative;
+    //cursor: pointer;
 
     &::after {
       content: "";
@@ -137,6 +144,7 @@
   input:focus + label::after {
     outline: 5px auto -webkit-focus-ring-color;
     opacity: 0.7;
+    cursor: pointer;
   }
 
   .input:checked:focus + label::after,
@@ -207,11 +215,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: none;
+  //border: none;
   padding-top: 20px;
+  //border: 1px solid transparent;
+  cursor: pointer;
 
   &:hover {
     opacity: 0.7;
+    //border: 1px solid $beige;
   }
 
   @media (max-width: $max-tablet-width) {
@@ -230,9 +241,14 @@
     }
   }
 
+  /*
   &:hover,
   &:active {
-    border: none;
+    //border: none;
+  }*/
+
+  &:focus {
+    border: 1px solid $beige;
   }
 
   svg {
@@ -362,6 +378,13 @@ fieldset {
   border: none;
 }
 
+/*
+legend {
+  &:focus {
+    border: 1px solid $beige;
+  }
+}*/
+
 .filter__form-close {
   padding: 0;
   background-color: $trueblack;
@@ -409,7 +432,7 @@ fieldset {
   }
 
   input {
-    width: 100%;
+    width: 50px;
     padding: 0;
 
     @media (max-width: $max-tablet-width) {
@@ -419,7 +442,7 @@ fieldset {
 
   label {
     padding-left: 5px;
-    width: 50px;
+    width: 20px;
 
     @media (max-width: $max-tablet-width) {
       width: 100px;
@@ -429,11 +452,11 @@ fieldset {
       width: 50px;
     }
 
-    &:first-child {
-      margin-right: 40px;
+    &:nth-child(2n) {
+      margin-left: 40px;
 
       @media (max-width: $max-tablet-width) {
-        margin-right: 60px;
+        //margin-right: 60px;
       }
 
       @media (max-width: $max-mobile-width) {
