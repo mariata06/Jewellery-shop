@@ -2,35 +2,35 @@
   width: 66px;
   height: 66px;
   padding: 0;
-  margin-top: 10px;
-  margin-left: 383px;
-  margin-right: 433px;
+  //margin-top: 10px;
+  //margin-left: 383px;
+  //margin-right: 433px;
+  position: absolute;
+  top: 41px;
+  left: 50%;
+  transform: translateX(-50%);
 
   @media (min-width: 769px) and (max-width: 1365px) {
-    margin-top: 0;
-    margin-left: 28%;
-    margin-right: 32%;
+    //top: 30px;
+    //margin-top: 0;
+    //margin-left: 28%;
+    //margin-right: 32%;
   }
 
-  @media (max-width: $min-tablet-width) {
-    margin-top: 0;
-    margin-left: 281px;
-    margin-right: 288px;
+  @media (max-width: $max-tablet-width) {
+    top: 30px;
   }
 
   @media (min-width: 321px) and (max-width: $max-mobile-width) {
-    margin-top: 0;
-    margin-left: 28%;
-    margin-right: 32%;
+    //margin-top: 0;
+    //margin-left: 28%;
+    //margin-right: 32%;
   }
 
-  @media (max-width: $min-mobile-width) {
+  @media (max-width: $max-mobile-width) {
     width: 52px;
     height: 52px;
-    //margin-left: 94px;
-    //margin-right: 101px;
-    margin-left: 28%;
-    margin-right: 32%;
+    top: 20px;
 
     svg {
       height: 52px;
@@ -40,7 +40,8 @@
 
   &--catalog,
   &--card {
-    padding-top: 0;
-    margin-top: 0;
+    //padding-top: 0;
+    //margin-top: 0;
+    top: 30px;
   }
 }

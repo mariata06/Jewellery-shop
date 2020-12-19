@@ -1,6 +1,8 @@
 .search-form {
   display: flex;
   align-items: center;
+  margin-left: 98px;
+  margin-right: auto;
 
   @media (max-width: $max-tablet-width) {
     width: 100%;
@@ -9,11 +11,12 @@
     background: rgba(255, 255, 255, 0.15);
     margin-bottom: 55px;
     display: none;
-    margin-top: 40px;
+    margin-top: 65px;
+    margin-left: 0;
   }
 
   @media (max-width: $max-mobile-width) {
-    margin-top: 30px;
+    margin-top: 48px;
     display: none;
   }
 

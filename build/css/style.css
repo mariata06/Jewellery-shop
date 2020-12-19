@@ -1788,7 +1788,7 @@ button.swiper-pagination-bullet {
     opacity: 0.3; }
 
 .faq__accordion-item {
-  padding: 42px 41px 43px; }
+  padding: 42px 39px 43px 41px; }
   .faq__accordion-item--active .faq__accordion-item-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1803,8 +1803,8 @@ button.swiper-pagination-bullet {
     .faq__accordion-item {
       padding: 16px 25px 19px; } }
   .faq__accordion-item .faq__accordion-item-svg {
-    width: 15px;
-    height: 8px; }
+    width: 17px;
+    height: 10px; }
     @media (max-width: 1023px) {
       .faq__accordion-item .faq__accordion-item-svg {
         width: 23px;
