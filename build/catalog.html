@@ -101,43 +101,59 @@
                     <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
                   </svg>
                 </legend>
-                <div class="filter__item-content filter__item-content--active">
-                  <input id="Necklaces" type="checkbox" class="visually-hidden" checked="">
-                  <label for="Necklaces">Necklaces</label>
-                  <input id="Chokers" type="checkbox" class="visually-hidden" checked="">
-                  <label for="Chokers">Chokers</label>
-                  <input id="Rings" type="checkbox" class="visually-hidden">
-                  <label for="Rings">Rings</label>
-                  <input id="Earrings" type="checkbox" class="visually-hidden" checked="">
-                  <label for="Earrings">Earrings</label>
+                <div class="filter__item-content">
+                  <div class="filter__item-input-wrapper">
+                    <input type="checkbox" checked="">
+                    <label>Necklaces</label>
+                  </div>
+                  <div class="filter__item-input-wrapper">
+                    <input type="checkbox" checked="">
+                    <label>Chokers</label>
+                  </div>
+                  <div class="filter__item-input-wrapper">
+                    <input type="checkbox">
+                    <label>Rings</label>
+                  </div>
+                  <div class="filter__item-input-wrapper">
+                    <input type="checkbox" checked="">
+                    <label>Earrings</label>
+                  </div>
                 </div>
               </fieldset>
-              <fieldset class="filter__item filter__item--material">
-                <legend tabindex="0" class="filter__item-trigger">
+              <fieldset class="filter__item filter__item--active filter__item--material">
+                <legend tabindex="0" class="filter__item-trigger filter__item-trigger--active">
                   Material
                   <svg class="filter__item-svg" width="15" height="8">
                     <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
                   </svg>
                 </legend>
                 <div class="filter__item-content">
-                  <input id="gold" type="checkbox" class="visually-hidden">
-                  <label for="gold">Gold</label>
-                  <input id="silver" type="checkbox" class="visually-hidden">
-                  <label for="silver">Silver</label>
+                  <div class="filter__item-input-wrapper">
+                    <input type="checkbox">
+                    <label>Gold</label>
+                  </div>
+                  <div class="filter__item-input-wrapper">
+                    <input type="checkbox">
+                    <label>Silver</label>
+                  </div>
                 </div>
               </fieldset>
-              <fieldset class="filter__item filter__item--collection">
-                <legend tabindex="0" class="filter__item-trigger">
+              <fieldset class="filter__item filter__item--active filter__item--collection">
+                <legend tabindex="0" class="filter__item-trigger filter__item-trigger--active">
                   Collection
                   <svg class="filter__item-svg" width="15" height="8">
                     <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
                   </svg>
                 </legend>
                 <div class="filter__item-content">
-                  <input id="pink_flamingo" type="checkbox" class="visually-hidden">
-                  <label for="pink_flamingo">Pink flamingo</label>
-                  <input id="dreams" type="checkbox" class="visually-hidden">
-                  <label for="dreams">Dreams</label>
+                  <div class="filter__item-input-wrapper">
+                    <input type="checkbox">
+                    <label>Pink flamingo</label>
+                  </div>
+                  <div class="filter__item-input-wrapper">
+                    <input type="checkbox">
+                    <label>Dreams</label>
+                  </div>
                 </div>
               </fieldset>
               <fieldset class="filter__item filter__item--active filter__item--price">
@@ -147,23 +163,27 @@
                     <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
                   </svg>
                 </legend>
-                <div class="filter__item-content filter__item-content--price filter__item-content--active">
+                <div class="filter__item-content filter__item-content--price">
                   <div class="filter__price-range">
                     <div class="filter__price-bar"></div>
                     <button class="filter__price-range-handle filter__price-range-handle--min" type="button" aria-label="minimum price"></button>
                     <button class="filter__price-range-handle filter__price-range-handle--max" type="button" aria-label="maximum price"></button>
                   </div>
                   <div class="filter__price-wrapper">
-                    <label for="min-price">$</label>
-                    <input id="min-price" type="text" placeholder="55">
-                    <label for="max-price">$</label>
-                    <input id="max-price" type="text" placeholder="155">
+                    <div>
+                      <label for="min-price">$</label>
+                      <input id="min-price" type="text" placeholder="55">
+                    </div>
+                    <div>
+                      <label for="max-price">$</label>
+                      <input id="max-price" type="text" placeholder="155">
+                    </div>
                   </div>
                 </div>
               </fieldset>
             </div>
             <button type="submit" class="filter__btn" aria-label="apply">Apply</button>
-            <button type="submit" class="filter__btn" aria-label="clear all">Clear All</button>
+            <button type="submit" class="filter__btn filter__reset" aria-label="clear all">Clear All</button>
           </form>
         </div>
         <div class="catalog__items-container">

@@ -2,17 +2,21 @@
   width: 250px;
   align-self: baseline;
   background-color: $white;
-  z-index: 100;
+  z-index: 200;
 
   @media (max-width: $max-tablet-width) {
     width: 100%;
     position: absolute;
     top: 0;
     padding-bottom: 120px;
-    display: none;
+    display: block;
 
     &--show {
       display: block;
+    }
+
+    &--hide {
+      display: none;
     }
   }
 
@@ -68,10 +72,6 @@
       padding-bottom: 8px;
     }
 
-    &--active {
-      display: flex;
-    }
-
     &--price {
       @media (max-width: $max-tablet-width) {
         padding-top: 7px;
@@ -81,11 +81,9 @@
   }
 
   label {
-    padding-left: 35px;
-    position: relative;
-    //width: 100%;
+    padding-left: 12px;
+    //position: relative;
     margin-bottom: 5px;
-    //cursor: pointer;
 
     @media (max-width: $max-tablet-width) {
       padding-left: 40px;
@@ -93,64 +91,35 @@
     }
   }
 
-  input[type="checkbox"] + label {
-    position: relative;
-    //cursor: pointer;
-
-    &::before {
-      content: "";
-      display: block;
-      width: 15px;
-      height: 15px;
-      border: 1px solid $beige;
-      position: absolute;
-      top: 5px;
-      left: 10px;
-
-      @media (max-width: $max-tablet-width) {
-        width: 18px;
-        height: 18px;
-      }
-    }
-  }
-
-  input[type="checkbox"]:checked + label {
-    position: relative;
-    //cursor: pointer;
-
-    &::after {
-      content: "";
-      display: block;
-      width: 15px;
-      height: 15px;
-      background-color: $beige;
-      position: absolute;
-      top: 5px;
-      left: 10px;
-
-      @media (max-width: $max-tablet-width) {
-        width: 18px;
-        height: 18px;
-      }
-    }
-
-    &:hover {
-      &::after {
-        opacity: 0.7;
-      }
-    }
-  }
-
-  input:focus + label::after {
-    outline: 5px auto -webkit-focus-ring-color;
-    opacity: 0.7;
+  input[type="checkbox"]::after {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-top: -4px;
+    margin-left: -2px;
+    border: 1px solid $beige;
+    background: $white;
     cursor: pointer;
   }
 
-  .input:checked:focus + label::after,
-  .input:checked:hover + label::after {
+  input[type="checkbox"]:checked::after {
+    width: 15px;
+    height: 15px;
+    border: 1px solid $beige;
+    background: $beige;
+    cursor: pointer;
+  }
+
+  input:focus::after {
     outline: 5px auto -webkit-focus-ring-color;
-    opacity: 0.7;
+    cursor: pointer;
+  }
+
+  .input:checked:focus::after,
+  .input:checked:hover::after {
+    outline: 5px auto -webkit-focus-ring-color;
+    cursor: pointer;
   }
 }
 
@@ -205,6 +174,16 @@
       }
     }
   }
+
+  &--active {
+    .filter__item-content {
+      display: flex;
+    }
+
+    svg {
+      transform: rotate(180deg);
+    }
+  }
 }
 
 .filter__item-trigger {
@@ -215,14 +194,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  //border: none;
   padding-top: 20px;
-  //border: 1px solid transparent;
   cursor: pointer;
 
   &:hover {
     opacity: 0.7;
-    //border: 1px solid $beige;
   }
 
   @media (max-width: $max-tablet-width) {
@@ -241,17 +217,14 @@
     }
   }
 
-  /*
-  &:hover,
-  &:active {
-    //border: none;
-  }*/
-
   &:focus {
     border: 1px solid $beige;
   }
 
   svg {
+    width: 17px;
+    height: 10px;
+
     @media (max-width: $max-tablet-width) {
       width: 23px;
       height: 12px;
@@ -378,13 +351,6 @@ fieldset {
   border: none;
 }
 
-/*
-legend {
-  &:focus {
-    border: 1px solid $beige;
-  }
-}*/
-
 .filter__form-close {
   padding: 0;
   background-color: $trueblack;
@@ -455,10 +421,6 @@ legend {
     &:nth-child(2n) {
       margin-left: 40px;
 
-      @media (max-width: $max-tablet-width) {
-        //margin-right: 60px;
-      }
-
       @media (max-width: $max-mobile-width) {
         margin-right: 75px;
       }
@@ -469,4 +431,8 @@ legend {
       display: none;
     }
   }
+}
+
+.filter__item-input-wrapper {
+  width: 100%;
 }

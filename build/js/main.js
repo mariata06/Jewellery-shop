@@ -2,21 +2,8 @@
 var faqItemTrigger = document.querySelectorAll(".faq__accordion-item-trigger");
 var faqAccordionItem = document.querySelectorAll(".faq__accordion-item");
 var faqArrowItems = document.querySelectorAll(".faq__accordion-item-svg");
-//var faqActiveItem = document.querySelector(".faq__accordion-item--active");
 var faqActiveItem = document.querySelectorAll(".faq__accordion-item--active");
 
-/*
-if (faqActiveItem) {
-  var faqActiveArrow = faqActiveItem.querySelectorAll(".faq__accordion-item-svg");
-  faqActiveArrow.style.transform = "rotate(180deg)";
-} else  {
-  var faqActiveArrow = null;
-}*/
-
-/*
-faqActiveItem.forEach(function (item) {
-  item.classList.remove(".faq__accordion-item--active");
-})*/
 flag = false;
 faqActiveItem.forEach(function (item) {
   if(flag){
@@ -30,7 +17,6 @@ faqItemTrigger.forEach(function (item) {
     faqArrowItems.forEach(function (item) {
       item.style.transform = "none";
     })
-
     const parent = item.parentNode;
     var faqArrowItem = item.querySelector(".faq__accordion-item-svg");
     faqArrowItem.style.transform = "rotate(360deg)";
@@ -45,32 +31,71 @@ faqItemTrigger.forEach(function (item) {
 });
 
 // Переключение меню - аккордеона в фильтре
+var filter = document.querySelector(".filter");
 var filterButtons = document.querySelectorAll(".filter__item-trigger");
+var filterActiveItem = document.querySelectorAll(".filter__item--active");
 var filterArrows = document.querySelectorAll(".filter__item-svg");
-var filterActiveArrows = document.querySelectorAll(".filter__item--active");
+var filterButton = document.querySelector(".catalog__filter-btn");
+var filterClose = document.querySelector(".filter__form-close");
+var resetFilterBtn = document.querySelector(".filter__reset");
 
-filterActiveArrows.forEach(function (item) {
-  item.querySelector(".filter__item-svg").style.transform = "rotate(180deg)";
-})
+
+if (filter) {
+  filter.classList.add("filter--hide");
+} else {
+  filter = null;
+}
+
+if (filterButton) {
+  filterButton.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    filter.classList.remove("filter--hide");
+    filter.classList.add("filter--show");
+  })
+} else {
+  filterButton = null;
+}
+
+if (filterClose) {
+  filterClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    filter.classList.remove("filter-show");
+    filter.classList.add("filter--hide");
+  })
+} else {
+  filterClose = null;
+}
+
+for (var i = 0; i < filterActiveItem.length; ++i) {
+  filterActiveItem[1].classList.remove("filter__item--active");
+  filterActiveItem[2].classList.remove("filter__item--active");
+}
 
 filterButtons.forEach(function (item) {
   item.addEventListener("click", function (evt) {
     evt.preventDefault();
-    var filterItemContent = item.nextElementSibling;
-    if (filterItemContent.classList.contains("filter__item-content--active")) {
-      filterItemContent.classList.remove("filter__item-content--active");
-    } else {
-      filterItemContent.classList.add("filter__item-content--active");
-    }
-    if (item.classList.contains("filter__item-trigger--active")) {
-      item.classList.remove("filter__item-trigger--active");
+    const parent = item.parentNode;
+    if (parent.classList.contains("filter__item--active")) {
+      parent.classList.remove("filter__item--active");
       item.querySelector(".filter__item-svg").style.transform = "none";
     } else {
-      item.classList.add("filter__item-trigger--active");
+      parent.classList.add("filter__item--active");
       item.querySelector(".filter__item-svg").style.transform = "rotate(180deg)";
     }
   });
 });
+
+if (resetFilterBtn) {
+  resetFilterBtn.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    var checkboxItems = filter.querySelectorAll("input");
+    checkboxItems.forEach(function (item) {
+      item.checked = false;
+    });
+  });
+} else {
+  resetFilterBtn = null;
+}
 
 // Модальные окна логина и корзины
 var popupCart = document.querySelector(".popup");
