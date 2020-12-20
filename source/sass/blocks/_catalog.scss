@@ -1,6 +1,6 @@
 .catalog__content {
   display: flex;
-  padding: 79px 98px 15px;
+  padding: 80px 98px 15px;
   justify-content: space-between;
   flex-wrap: wrap;
 
@@ -11,7 +11,7 @@
 
   @media (max-width: $max-tablet-width) {
     flex-wrap: wrap;
-    padding: 49px 0 73px;
+    padding: 50px 0 20px;
   }
 
   @media (max-width: $max-mobile-width) {
@@ -57,7 +57,7 @@
 
     @media (max-width: $max-mobile-width) {
       margin-bottom: 25px;
-      width: 50%;
+      width: 130px;
     }
   }
 
@@ -151,7 +151,7 @@
   }
 
   @media (max-width: $max-tablet-width) {
-    padding: 35px 45px 74px;
+    padding: 13px 45px 74px;
   }
 
   @media (max-width: $max-mobile-width) {

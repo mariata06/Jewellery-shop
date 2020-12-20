@@ -17,7 +17,7 @@
 .article__description {
   width: 50%;
   background-color: $light-beige;
-  padding: 70px 61px 71px;
+  padding: 64px 61px 76px;
   text-align: center;
 
   @media (max-width: $max-tablet-width) {
@@ -192,8 +192,9 @@
   }
 
   .article__description {
-    padding-top: 119px;
+    padding-top: 90px;
     align-self: flex-end;
+    padding-bottom: 100px;
 
     @media (max-width: $max-tablet-width) {
       padding: 85px 61px 90px;

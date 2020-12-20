@@ -263,7 +263,7 @@ swiper = new Swiper(".swiper-container.swiper-container--newin", {
         },
       },
     },
-    1023: {
+    768: {
       slidesPerView: 2,
       spaceBetween: 30,
       slidesPerGroup: 2,

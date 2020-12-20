@@ -37,6 +37,8 @@
 
     @media (max-width: $max-tablet-width) {
       margin-bottom: 14px;
+      font-size: 16px;
+      line-height: 21px;
     }
 
     @media (max-width: $max-mobile-width) {
@@ -235,6 +237,10 @@
     @media (max-width: $max-tablet-width) {
       height: 129px;
       width: 97px;
+
+      img {
+        height: 129px;
+      }
     }
 
     @media (max-width: $max-mobile-width) {

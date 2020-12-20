@@ -6,7 +6,7 @@
   background-size: cover;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 64px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/intro-catalog-desktop@2x.jpg");
@@ -15,8 +15,8 @@
 
   @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
     background-image: url("../img/intro-catalog-tablet.jpg");
-    padding-top: 91px;
-    padding-bottom: 96px;
+    padding-top: 93px;
+    padding-bottom: 66px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/intro-catalog-tablet@2x.jpg");
@@ -26,7 +26,7 @@
   @media (max-width: $max-mobile-width) {
     background-image: url("../img/intro-catalog-mobile.jpg");
     padding-top: 80px;
-    padding-bottom: 85px;
+    padding-bottom: 59px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/intro-catalog-mobile@2x.jpg");

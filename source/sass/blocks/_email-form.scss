@@ -3,8 +3,8 @@
   border-bottom: 1px solid $white;
   display: flex;
   justify-content: space-between;
-  align-self: flex-end;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
+  align-self: baseline;
 
   @media (max-width: $max-tablet-width) {
     padding-bottom: 6px;

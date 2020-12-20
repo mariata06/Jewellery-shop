@@ -1,5 +1,5 @@
 .gallery {
-  padding: 60px 98px 120px;
+  padding: 58px 98px 121px;
 
   @media (min-width: 769px) and (max-width: 1365px) {
     padding-left: 7%;
@@ -57,12 +57,6 @@
     justify-content: space-between;
   }
 
-  /*
-  @media (min-width: 321px) and (max-width: $min-tablet-width) {
-    //justify-content: space-around;
-    //flex-wrap: nowrap;
-  }*/
-
   @media (max-width: $max-mobile-width) {
     justify-content: space-between;
     flex-wrap: wrap;
@@ -72,11 +66,6 @@
 .gallery__wrapper-box {
   display: flex;
   flex-wrap: wrap;
-
-  /*
-  @media (max-width: $min-tablet-width) {
-    margin-right: 18px;
-  }*/
 
   @media (max-width: $min-tablet-width) {
     margin-right: 0;
@@ -106,13 +95,10 @@
           width: 100%;
         }
 
-        @media (max-width: $max-tablet-width) {
-          //height: 133px;
-        }
-
         @media (max-width: $max-mobile-width) {
           height: 130px;
           margin-left: auto;
+          margin-bottom: 7px;
         }
 
         img {
@@ -145,9 +131,8 @@
           height: 87px;
           display: flex;
           justify-content: flex-end;
-          //margin-top: unset;
-          //margin-bottom: auto;
           margin-left: auto;
+          margin-top: 0;
         }
 
         img {
@@ -240,11 +225,9 @@
       &:nth-child(1n) {
         @media (min-width: 769px) and (max-width: 1365px) {
           width: 48%;
-          //height: 111px;
         }
 
         @media (max-width: $max-tablet-width) {
-          //width: 134px;
           height: 111px;
         }
 
@@ -283,7 +266,6 @@
 
         @media (min-width: 769px) and (max-width: 1365px) {
           width: 45%;
-          //height: 126px;
         }
 
         @media (max-width: $min-tablet-width) {
@@ -321,12 +303,9 @@
 
         @media (min-width: 769px) and (max-width: 1365px) {
           width: 45%;
-          //height: 111px;
         }
 
         @media (max-width: $max-tablet-width) {
-          //width: 134px;
-          //height: 96px;
           height: 111px;
         }
 
@@ -336,7 +315,6 @@
           order: 1;
           margin-left: 0;
           margin-right: 15px;
-          //display: none;
         }
 
         img {
@@ -365,7 +343,6 @@
         // скрещенные руки
         @media (min-width: 769px) and (max-width: 1365px) {
           width: 48%;
-          //height: 96px;
         }
 
         @media (max-width: $min-tablet-width) {

@@ -62,7 +62,7 @@
     padding-top: 0;
     flex-wrap: wrap;
     display: none;
-    padding-bottom: 18px;
+    padding-bottom: 19px;
 
     @media (max-width: $max-tablet-width) {
       padding-top: 22px;
@@ -81,14 +81,20 @@
   }
 
   label {
-    padding-left: 12px;
-    //position: relative;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+    padding-left: 6px;
     margin-bottom: 5px;
 
     @media (max-width: $max-tablet-width) {
       padding-left: 40px;
       margin-bottom: 15px;
     }
+  }
+
+  input {
+    margin: 0;
   }
 
   input[type="checkbox"]::after {
@@ -131,8 +137,6 @@
   }
 
   &--price {
-    padding-bottom: 10px;
-
     @media (max-width: $max-tablet-width) {
       padding-bottom: 10px;
     }
@@ -194,7 +198,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 20px;
+  padding-top: 22px;
   cursor: pointer;
 
   &:hover {
@@ -339,7 +343,7 @@
 
 .filter__accordion {
   border: 1px solid $beige;
-  margin-bottom: 16px;
+  margin-bottom: 22px;
 
   @media (max-width: $max-tablet-width) {
     width: 100%;
@@ -387,6 +391,7 @@ fieldset {
   padding-left: 30px;
   padding-top: 10px;
   display: flex;
+  justify-content: space-between;
 
   @media (max-width: $max-tablet-width) {
     padding-top: 15px;
@@ -435,4 +440,6 @@ fieldset {
 
 .filter__item-input-wrapper {
   width: 100%;
+  padding-left: 10px;
+  margin-bottom: 5px;
 }

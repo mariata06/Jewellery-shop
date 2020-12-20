@@ -2,7 +2,7 @@
   padding: 120px 98px 33px;
 
   @media (max-width: $max-tablet-width) {
-    padding: 10px 45px 15px;
+    padding: 70px 45px 15px;
   }
 
   @media (max-width: $max-mobile-width) {
@@ -41,8 +41,8 @@
 
     @media (max-width: $max-mobile-width) {
       width: 80px;
-      //padding-left: 5px;
-      //padding-right: 5px;
+      padding-left: 5px;
+      padding-right: 5px;
       margin-bottom: 10px;
     }
   }
@@ -65,7 +65,7 @@
     padding-bottom: 53px;
   }
 
-  a {
+  .newin__link {
     @media (max-width: $max-mobile-width) {
       width: 90px;
       margin-bottom: 43px;

@@ -1,6 +1,6 @@
 .navigation {
   width: 100%;
-  margin-top: 58px;
+  margin-top: 45px;
   border-top: 1px solid $light-grey;
   padding-top: 25px;
 
@@ -8,11 +8,11 @@
     order: 4;
     display: none;
     border-top: none;
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
   @media (max-width: $max-mobile-width) {
-    margin-top: 35px;
+    margin-top: 12px;
     margin-bottom: 15px;
   }
 }
@@ -81,7 +81,7 @@
   li {
     @media (max-width: $max-tablet-width) {
       @include text ($font-18, $height-23, $medium);
-      margin-bottom: 28px;
+      margin-bottom: 20px;
     }
 
     @media (max-width: $max-mobile-width) {

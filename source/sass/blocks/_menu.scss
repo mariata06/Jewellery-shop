@@ -2,7 +2,7 @@
   background-color: $white;
   display: flex;
   flex-wrap: wrap;
-  padding: 58px 0 19px;
+  padding: 50px 0 19px;
   align-items: center;
   z-index: 130;
   justify-content: center;
@@ -13,7 +13,7 @@
   }
 
   @media (max-width: $max-tablet-width) {
-    padding: 55px 45px;
+    padding: 55px 45px 50px;
     justify-content: center;
     align-items: center;
 
@@ -25,7 +25,7 @@
   }
 
   @media (max-width: $max-mobile-width) {
-    padding: 38px 15px;
+    padding: 38px 15px 50px;
   }
 }
 
@@ -61,7 +61,6 @@
 .menu--show {
   @media (max-width: $max-tablet-width) {
     background-color: $beige;
-    padding-bottom: 75px;
     height: 100vh;
 
     .menu__cart-svg,
@@ -124,18 +123,17 @@
     text-align: left;
     color: $white;
     display: none;
-    //margin-left: 45px;
+    margin-top: 25px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    margin-top: 0;
   }
 }
 
 .menu__cart-link {
   @include text ($font-14, $height-21, $medium);
   margin-left: 40px;
-  //margin-left: auto;
-  /*
-  &:not(:last-child) {
-    margin-right: 40px;
-  }*/
 
   &:last-of-type {
     margin-right: 98px;
@@ -148,11 +146,6 @@
   @media (max-width: $max-tablet-width) {
     margin-left: auto;
   }
-
-  /*
-  @media (max-width: $max-mobile-width) {
-    //margin-left: 0;
-  }*/
 
   svg {
     display: none;
