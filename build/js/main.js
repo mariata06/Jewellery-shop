@@ -133,11 +133,9 @@ popupLogin.classList.remove("login--nojs");
 loginButton.addEventListener("click", function (evt) {
   evt.preventDefault();
   userEmail = loginForm.elements.user_email;
-  console.log(userEmail);
   popupLogin.classList.add("login--show");
   overlayLogin.classList.add("overlay__login--show");
   htmlDoc.classList.add("disable-scroll");
-  console.log(userEmail);
   userEmail.focus();
   if (currentEmail) {
     userEmail.value = currentEmail;

@@ -9,7 +9,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 110;
+  z-index: 400;
   display: block;
 
   &--show {
@@ -65,16 +65,22 @@
   .login__close {
     padding: 0;
     background-color: transparent;
-    position: absolute;
-    top: 20px;
-    right: 20px;
+    //position: absolute;
+    //top: 20px;
+    //right: 20px;
     border: none;
+    cursor: pointer;
+    z-index: 450;
+    overflow: visible;
+    margin-left: auto;
 
-    &:hover {
-      opacity: 0.3;
+    &::after {
+      content: url("../img/icon-cross.svg");
     }
 
+    &:hover,
     &:focus {
+      opacity: 0.3;
       outline: 5px auto -webkit-focus-ring-color;
     }
   }
@@ -84,6 +90,9 @@
     text-align: center;
     margin: 0 auto;
     font-family: "cormorantgaramond", "Arial", sans-serif;
+    width: 100%;
+    margin-top: 168px;
+    margin-right: 25px;
   }
 
   input {
@@ -123,6 +132,8 @@
   padding: 188px 45px 63px;
   display: flex;
   flex-wrap: wrap;
+  padding-top: 20px;
+  padding-right: 20px;
 
   @media (max-width: $max-mobile-width) {
     padding: 109px 15px 45px;
@@ -135,6 +146,7 @@
     justify-content: center;
     text-align: center;
     margin: 20px auto 0;
+    //margin-right: 25px;
   }
 
   .login__signup-link {
@@ -148,4 +160,5 @@
 .login__form {
   display: flex;
   flex-wrap: wrap;
+  margin-right: 25px;
 }

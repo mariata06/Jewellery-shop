@@ -88,6 +88,9 @@
     }
 
     .gallery__picture {
+      pointer-events: none;
+      cursor: default;
+
       &:first-child {
 
         // ширина первой фотки на резине квадратные серьги

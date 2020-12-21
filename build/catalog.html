@@ -345,18 +345,20 @@
           </a>
         </div>
       </div>
-      <div class="catalog__pagination">
-        <button type="button" aria-label="previous">Previous</button>
-        <div class="catalog__pagination-pages">
-          <a href="#">1</a>
-          <a href="#">2</a>
-          <a href="#">3</a>
-          <a href="#">4</a>
-          <a href="#">5</a>
-        </div>
-        <button type="button" aria-label="next">Next</button>
-      </div>
       </section>
+      <div class="catalog__pagination">
+        <div class="catalog__pagination-wrapper container">
+          <button type="button" aria-label="previous">Previous</button>
+          <div class="catalog__pagination-pages">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+          </div>
+          <button type="button" aria-label="next">Next</button>
+        </div>
+      </div>
     </main>
 
     <footer class="page-footer">
@@ -427,13 +429,13 @@
 
     <div class="overlay overlay__login">
       <div class="overlay__popup login login--nojs">
-        <button type="button" class="login__close button" aria-label="close">
-          <span class="visually-hidden">Закрыть</span>
-          <svg width="14" height="14">
-            <use xlink:href="img/sprite.svg#icon-cross"></use>
-          </svg>
-        </button>
         <div class="login__content">
+          <button type="button" class="login__close button" aria-label="close">
+            <span class="visually-hidden">Закрыть</span>
+            <!--<svg width="14" height="14">
+              <use xlink:href="img/sprite.svg#icon-cross"></use>
+            </svg>-->
+          </button>
           <h3>
             Log In
           </h3>

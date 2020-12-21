@@ -18,12 +18,12 @@
   }
 
   @media (max-width: $max-tablet-width) {
-    padding: 35px 45px 50px;
+    padding: 40px 45px 50px;
     justify-content: unset;
   }
 
   @media (max-width: $max-mobile-width) {
-    padding: 33px 15px 62px;
+    padding: 40px 15px 62px;
   }
 
   h2 {
@@ -32,6 +32,7 @@
     font-family: "cormorantgaramond", "Arial", sans-serif;
     letter-spacing: 1px;
     margin-top: 10px;
+    margin-bottom: 10px;
 
     @media (min-width: 769px) and (max-width: 1365px) {
       width: 100%;
@@ -52,6 +53,7 @@
     line-height: 21px;
     margin: 0;
     color: $medium-grey;
+    margin-bottom: 40px;
 
     @media (min-width: 769px) and (max-width: 1365px) {
       width: 100%;
@@ -145,8 +147,6 @@
 .page-footer__form-container {
   width: 500px;
   margin-right: 95px;
-  display: flex;
-  flex-wrap: wrap;
 
   @media (min-width: 769px) and (max-width: 1365px) {
     width: 37%;

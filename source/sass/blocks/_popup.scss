@@ -49,6 +49,9 @@
     margin-bottom: 30px;
     text-align: center;
     display: block;
+    width: 100%;
+    margin-top: 21px;
+    margin-right: 15px;
   }
 
   h4 {
@@ -73,8 +76,8 @@
   .popup__close {
     margin-left: auto;
     display: block;
-    margin-top: 20px;
-    margin-right: 20px;
+    //margin-top: 20px;
+    //margin-right: 20px;
     padding: 0;
     background-color: transparent;
     border: none;
@@ -92,9 +95,11 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-right: 15px;
 
     @media (max-width: $max-mobile-width) {
       flex-wrap: wrap;
+      margin-top: 0;
     }
 
     span {
@@ -114,6 +119,11 @@
 
     &:last-child {
       margin-left: auto;
+      margin-right: 15px;
+
+      @media (max-width: $max-mobile-width) {
+        margin-right: 0;
+      }
     }
   }
 }
@@ -122,9 +132,18 @@
   display: flex;
   margin-bottom: 50px;
   width: 100%;
+  margin-right: 15px;
+
+  @media (max-width: $max-mobile-width) {
+    margin-right: 0;
+  }
 
   a {
     margin-right: 20px;
+
+    @media (max-width: $max-mobile-width) {
+      margin-right: 0;
+    }
   }
 
   img {
@@ -144,7 +163,11 @@
 .popup__content {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 35px 55px;
+  padding: 20px 20px 55px 35px;
+
+  @media (max-width: $max-mobile-width) {
+    padding: 15px 15px 45px 15px;
+  }
 }
 
 .popup__cart-contents {

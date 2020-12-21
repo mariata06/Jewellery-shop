@@ -139,16 +139,7 @@
 }
 
 .catalog__pagination {
-  width: 100%;
-  display: flex;
-  padding: 18px 98px 74px 398px;
   border-top: 1px solid $light-grey;
-  justify-content: space-between;
-
-  @media (min-width: 769px) and (max-width: 1365px) {
-    padding-left: 29%;
-    padding-right: 7%;
-  }
 
   @media (max-width: $max-tablet-width) {
     padding: 13px 45px 74px;
@@ -198,13 +189,37 @@
 }
 
 .catalog__pagination-pages {
-  width: 100%;
-  padding-left: 100px;
-  padding-right: 128px;
+  min-width: 500px;
   text-align: center;
+
+  @media (min-width: 769px) and (max-width: 1365px) {
+    min-width: 300px;
+  }
+
+  @media (max-width: $max-tablet-width) {
+    padding-right: 30px;
+  }
 
   @media (max-width: $max-mobile-width) {
     padding-right: 0;
     padding-left: 0;
+    min-width: unset;
+    width: 100%;
+  }
+}
+
+.catalog__pagination-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 98px 74px 398px;
+  width: 100%;
+
+  @media (min-width: 769px) and (max-width: 1365px) {
+    padding-left: 29%;
+    padding-right: 7%;
+  }
+
+  @media (max-width: $max-tablet-width) {
+    padding: 0;
   }
 }
