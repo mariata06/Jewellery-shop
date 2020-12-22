@@ -56,6 +56,18 @@
     }
   }
 
+  &:nth-child(2n+1) {
+    a {
+      margin-left: auto;
+    }
+  }
+
+  &:nth-child(2n) {
+    a {
+      margin-right: auto;
+    }
+  }
+
   img {
     @media (max-width: $max-tablet-width) {
       width: 324px;

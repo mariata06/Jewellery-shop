@@ -722,7 +722,8 @@ button.swiper-pagination-bullet {
   width: 100%;
   margin-top: 45px;
   border-top: 1px solid #f6f5f4;
-  padding-top: 25px; }
+  padding-top: 25px;
+  border-color: green; }
   @media (max-width: 1023px) {
     .navigation {
       -webkit-box-ordinal-group: 5;
@@ -815,7 +816,7 @@ button.swiper-pagination-bullet {
       -ms-flex-align: center;
           align-items: center;
   margin-left: 98px;
-  margin-right: auto; }
+  margin-right: 40%; }
   @media (max-width: 1023px) {
     .search-form {
       width: 100%;
@@ -1044,7 +1045,7 @@ button.swiper-pagination-bullet {
               justify-content: unset; } }
   @media (max-width: 767px) {
     .page-footer__content {
-      padding: 33px 15px 62px; } }
+      padding: 40px 15px 62px; } }
   .page-footer__content h2 {
     font-size: 34px;
     line-height: 44px;
@@ -1457,6 +1458,9 @@ button.swiper-pagination-bullet {
   @media (min-width: 769px) and (max-width: 1365px) {
     .catalog__pagination-pages {
       min-width: 300px; } }
+  @media (max-width: 1023px) {
+    .catalog__pagination-pages {
+      padding-right: 30px; } }
   @media (max-width: 767px) {
     .catalog__pagination-pages {
       padding-right: 0;
@@ -1526,6 +1530,10 @@ button.swiper-pagination-bullet {
       .slider__item a {
         width: 130px;
         height: 136px; } }
+  .slider__item:nth-child(2n+1) a {
+    margin-left: auto; }
+  .slider__item:nth-child(2n) a {
+    margin-right: auto; }
   @media (max-width: 1023px) {
     .slider__item img {
       width: 324px;
@@ -3071,7 +3079,7 @@ fieldset {
         fill: transparent; } }
   @media (max-width: 767px) {
     .menu {
-      padding: 38px 15px 50px; } }
+      padding: 38px 15px 33px; } }
 
 @media (max-width: 1023px) {
   .menu--hide {
@@ -3146,7 +3154,9 @@ fieldset {
   padding: 0;
   font-family: "poppins", "Arial", sans-serif;
   cursor: pointer;
-  margin-left: auto; }
+  margin-left: auto;
+  margin-right: 35px;
+  margin-bottom: 40px; }
   @media (max-width: 1023px) {
     .menu__login {
       font-size: 18px;
@@ -3168,12 +3178,16 @@ fieldset {
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  margin-left: 40px; }
-  .menu__cart-link:last-of-type {
-    margin-right: 98px; }
-    @media (max-width: 1023px) {
-      .menu__cart-link:last-of-type {
-        margin-right: 0; } }
+  margin-right: 98px;
+  margin-bottom: 40px;
+  /*
+  &:last-of-type {
+    margin-right: 98px;
+
+    @media (max-width: $max-tablet-width) {
+      margin-right: 0;
+    }
+  }*/ }
   @media (max-width: 1023px) {
     .menu__cart-link {
       margin-left: auto; } }
