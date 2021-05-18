@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Jewellery shop</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="preload" href="fonts/cormorantgaramond-italic.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/cormorantgaramond-semibold.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/cormorantgaramond-bold.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/poppins-regular.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/poppins-medium.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/poppins-bold.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="css/style.min.css" as="style">
+  <!--<link rel="preload" href="js/main.js" as="script" />-->
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <main class="page-cart">
+      <div class="overlay__popup popup cart popup--cart">
+        <button type="button" class="popup__close cart__close" aria-label="close">
+          <span class="visually-hidden">close</span>
+          <svg width="14" height="14">
+            <use xlink:href="img/sprite.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <div class="popup__content">
+          <h3>
+            The item was added to your cart
+          </h3>
+          <div class="popup__cart-items">
+            <a href="card.html" aria-label="necklace-detail">
+              <picture>
+                <!-- 1х: 70px; 2x: 140px -->
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/necklace-detail-popup-mobile.webp 1x, img/necklace-detail-popup-mobile@2x.webp 2x">
+                <!-- 1х: 88px; 2x: 176px -->
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/necklace-detail-popup-tablet.webp 1x, img/necklace-detail-popup-tablet@2x.webp 2x">
+                <!-- 1х: 84px; 2x: 168px -->
+                <img data-src="img/necklace-detail-popup-desktop.png" src="img/necklace-detail-popup-desktop.png" srcset="img/necklace-detail-popup-desktop@2x.png 2x" alt="necklace-detail" width="84" height="79" loading="lazy" class="lazyload">
+              </picture>
+            </a>
+            <h4>Gold Necklace<span>$ 155</span></h4>
+            <div class="popup__cart-contents">
+              <span class="popup__cart-quantity-increase">
+                <svg class="popup__cart-plus" width="14" height="14">
+                  <use xlink:href="img/sprite.svg#icon-cross"></use>
+                </svg>
+              </span>
+              <span class="popup__cart-quantity">1</span>
+              <span class="popup__cart-quantity-decrease">
+                <svg class="popup__cart-minus" width="14" height="2">
+                  <use xlink:href="img/sprite.svg#icon-minus"></use>
+                </svg>
+              </span>
+            </div>
+          </div>
+          <p>You have 1 item in the cart<span>Cart subtotal: $ 115</span></p>
+          <button type="button" class="popup__button button" aria-label="Continue shopping">Continue shopping</button>
+          <button type="button" class="popup__button button" aria-label="Checkout">Checkout</button>
+        </div>
+      </div>
+  </main>
+
+  <script src="js/vendor.js" defer=""></script>
+  <script src="js/accordion-main.js"></script>
+</body>
+
+</html>
